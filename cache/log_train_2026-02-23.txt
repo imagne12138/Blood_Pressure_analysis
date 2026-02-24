@@ -1,0 +1,223 @@
+[2026-02-23 16:25:36] - INFO: ######## Fold 0 ########
+[2026-02-23 16:25:36] - INFO: ############划分数据集并保存############
+[2026-02-23 16:25:36] - INFO: ############载入划分好的数据集############
+[2026-02-23 16:25:36] - INFO: ############初始化模型############
+[2026-02-23 16:25:39] - INFO: Epoch: 0, Batch[0/6479], Train loss: 22147.959, SBP loss: 17298.012, DBP loss: 4849.948
+[2026-02-23 16:25:39] - INFO: Epoch: 0, Batch[1/6479], Train loss: 20672.836, SBP loss: 16178.094, DBP loss: 4494.743
+[2026-02-23 16:25:39] - INFO: Epoch: 0, Batch[2/6479], Train loss: 21198.775, SBP loss: 16735.441, DBP loss: 4463.333
+[2026-02-23 16:25:40] - INFO: Epoch: 0, Batch[3/6479], Train loss: 19647.320, SBP loss: 15265.909, DBP loss: 4381.411
+[2026-02-23 16:25:40] - INFO: Epoch: 0, Batch[4/6479], Train loss: 20388.861, SBP loss: 15778.501, DBP loss: 4610.360
+[2026-02-23 16:25:40] - INFO: Epoch: 0, Batch[5/6479], Train loss: 20541.939, SBP loss: 15963.076, DBP loss: 4578.863
+[2026-02-23 16:25:40] - INFO: Epoch: 0, Batch[6/6479], Train loss: 21738.631, SBP loss: 17380.578, DBP loss: 4358.053
+[2026-02-23 16:25:41] - INFO: Epoch: 0, Batch[7/6479], Train loss: 22549.750, SBP loss: 17690.762, DBP loss: 4858.989
+[2026-02-23 16:25:41] - INFO: Epoch: 0, Batch[8/6479], Train loss: 19929.166, SBP loss: 15687.283, DBP loss: 4241.882
+[2026-02-23 16:25:41] - INFO: Epoch: 0, Batch[9/6479], Train loss: 20880.082, SBP loss: 16387.281, DBP loss: 4492.802
+[2026-02-23 16:25:42] - INFO: Epoch: 0, Batch[10/6479], Train loss: 19690.848, SBP loss: 15386.675, DBP loss: 4304.174
+[2026-02-23 16:25:42] - INFO: Epoch: 0, Batch[11/6479], Train loss: 20518.512, SBP loss: 16087.755, DBP loss: 4430.757
+[2026-02-23 16:25:42] - INFO: Epoch: 0, Batch[12/6479], Train loss: 18577.121, SBP loss: 14658.953, DBP loss: 3918.167
+[2026-02-23 16:25:43] - INFO: Epoch: 0, Batch[13/6479], Train loss: 19308.168, SBP loss: 15180.430, DBP loss: 4127.737
+[2026-02-23 16:25:43] - INFO: Epoch: 0, Batch[14/6479], Train loss: 18798.711, SBP loss: 14691.837, DBP loss: 4106.874
+[2026-02-23 16:25:43] - INFO: Epoch: 0, Batch[15/6479], Train loss: 18474.746, SBP loss: 14473.421, DBP loss: 4001.325
+[2026-02-23 16:25:43] - INFO: Epoch: 0, Batch[16/6479], Train loss: 18027.402, SBP loss: 14268.631, DBP loss: 3758.772
+[2026-02-23 16:25:44] - INFO: Epoch: 0, Batch[17/6479], Train loss: 18979.410, SBP loss: 15014.511, DBP loss: 3964.898
+[2026-02-23 16:25:44] - INFO: Epoch: 0, Batch[18/6479], Train loss: 17163.184, SBP loss: 13353.468, DBP loss: 3809.715
+[2026-02-23 16:25:44] - INFO: Epoch: 0, Batch[19/6479], Train loss: 17431.133, SBP loss: 13601.634, DBP loss: 3829.500
+[2026-02-23 16:25:45] - INFO: Epoch: 0, Batch[20/6479], Train loss: 16017.533, SBP loss: 12486.820, DBP loss: 3530.713
+[2026-02-23 16:25:45] - INFO: Epoch: 0, Batch[21/6479], Train loss: 16509.328, SBP loss: 12804.840, DBP loss: 3704.489
+[2026-02-23 16:25:45] - INFO: Epoch: 0, Batch[22/6479], Train loss: 16900.252, SBP loss: 13329.173, DBP loss: 3571.079
+[2026-02-23 16:25:46] - INFO: Epoch: 0, Batch[23/6479], Train loss: 16045.630, SBP loss: 12761.633, DBP loss: 3283.997
+[2026-02-23 16:25:46] - INFO: Epoch: 0, Batch[24/6479], Train loss: 15991.721, SBP loss: 12452.682, DBP loss: 3539.039
+[2026-02-23 16:25:46] - INFO: Epoch: 0, Batch[25/6479], Train loss: 15519.029, SBP loss: 12160.055, DBP loss: 3358.974
+[2026-02-23 16:25:46] - INFO: Epoch: 0, Batch[26/6479], Train loss: 14612.119, SBP loss: 11696.949, DBP loss: 2915.170
+[2026-02-23 16:25:47] - INFO: Epoch: 0, Batch[27/6479], Train loss: 15200.468, SBP loss: 12122.646, DBP loss: 3077.821
+[2026-02-23 16:25:47] - INFO: Epoch: 0, Batch[28/6479], Train loss: 13291.721, SBP loss: 10595.757, DBP loss: 2695.964
+[2026-02-23 16:25:47] - INFO: Epoch: 0, Batch[29/6479], Train loss: 13288.853, SBP loss: 10580.314, DBP loss: 2708.538
+[2026-02-23 16:25:48] - INFO: Epoch: 0, Batch[30/6479], Train loss: 12697.520, SBP loss: 10134.959, DBP loss: 2562.561
+[2026-02-23 16:25:48] - INFO: Epoch: 0, Batch[31/6479], Train loss: 12465.814, SBP loss: 9785.952, DBP loss: 2679.862
+[2026-02-23 16:25:48] - INFO: Epoch: 0, Batch[32/6479], Train loss: 12596.412, SBP loss: 10150.118, DBP loss: 2446.294
+[2026-02-23 16:25:49] - INFO: Epoch: 0, Batch[33/6479], Train loss: 11767.030, SBP loss: 9387.240, DBP loss: 2379.790
+[2026-02-23 16:55:20] - INFO: ######## Fold 0 ########
+[2026-02-23 16:55:20] - INFO: ############划分数据集并保存############
+[2026-02-23 16:55:20] - INFO: ############载入划分好的数据集############
+[2026-02-23 16:55:20] - INFO: ############初始化模型############
+[2026-02-23 16:55:21] - INFO: Epoch: 0, Batch[0/6479], Train loss: 21948.293, SBP loss: 17348.709, DBP loss: 4599.584
+[2026-02-23 16:55:22] - INFO: Epoch: 0, Batch[1/6479], Train loss: 22485.682, SBP loss: 17705.324, DBP loss: 4780.358
+[2026-02-23 16:55:22] - INFO: Epoch: 0, Batch[2/6479], Train loss: 22645.855, SBP loss: 17928.428, DBP loss: 4717.427
+[2026-02-23 16:55:22] - INFO: Epoch: 0, Batch[3/6479], Train loss: 22250.613, SBP loss: 17481.203, DBP loss: 4769.409
+[2026-02-23 16:55:22] - INFO: Epoch: 0, Batch[4/6479], Train loss: 19758.434, SBP loss: 15439.692, DBP loss: 4318.740
+[2026-02-23 16:55:23] - INFO: Epoch: 0, Batch[5/6479], Train loss: 21428.703, SBP loss: 16871.422, DBP loss: 4557.281
+[2026-02-23 16:55:23] - INFO: Epoch: 0, Batch[6/6479], Train loss: 20333.301, SBP loss: 16009.033, DBP loss: 4324.269
+[2026-02-23 16:55:23] - INFO: Epoch: 0, Batch[7/6479], Train loss: 20425.473, SBP loss: 15989.332, DBP loss: 4436.141
+[2026-02-23 16:55:24] - INFO: Epoch: 0, Batch[8/6479], Train loss: 21893.500, SBP loss: 17261.918, DBP loss: 4631.581
+[2026-02-23 16:55:24] - INFO: Epoch: 0, Batch[9/6479], Train loss: 19839.609, SBP loss: 15355.325, DBP loss: 4484.285
+[2026-02-23 16:55:24] - INFO: Epoch: 0, Batch[10/6479], Train loss: 19723.387, SBP loss: 15262.589, DBP loss: 4460.798
+[2026-02-23 16:55:24] - INFO: Epoch: 0, Batch[11/6479], Train loss: 20763.047, SBP loss: 16410.457, DBP loss: 4352.590
+[2026-02-23 16:55:25] - INFO: Epoch: 0, Batch[12/6479], Train loss: 18818.639, SBP loss: 14873.180, DBP loss: 3945.460
+[2026-02-23 16:55:25] - INFO: Epoch: 0, Batch[13/6479], Train loss: 19902.297, SBP loss: 15753.969, DBP loss: 4148.327
+[2026-02-23 16:55:25] - INFO: Epoch: 0, Batch[14/6479], Train loss: 18990.619, SBP loss: 15107.689, DBP loss: 3882.929
+[2026-02-23 16:55:26] - INFO: Epoch: 0, Batch[15/6479], Train loss: 17686.244, SBP loss: 13936.885, DBP loss: 3749.359
+[2026-02-23 16:55:26] - INFO: Epoch: 0, Batch[16/6479], Train loss: 19315.926, SBP loss: 15203.846, DBP loss: 4112.081
+[2026-02-23 16:55:26] - INFO: Epoch: 0, Batch[17/6479], Train loss: 17915.756, SBP loss: 13967.850, DBP loss: 3947.906
+[2026-02-23 16:55:26] - INFO: Epoch: 0, Batch[18/6479], Train loss: 18137.172, SBP loss: 14174.244, DBP loss: 3962.928
+[2026-02-23 16:55:27] - INFO: Epoch: 0, Batch[19/6479], Train loss: 16391.793, SBP loss: 12709.852, DBP loss: 3681.940
+[2026-02-23 16:55:27] - INFO: Epoch: 0, Batch[20/6479], Train loss: 15724.560, SBP loss: 12364.278, DBP loss: 3360.281
+[2026-02-23 16:55:27] - INFO: Epoch: 0, Batch[21/6479], Train loss: 16838.764, SBP loss: 13392.319, DBP loss: 3446.444
+[2026-02-23 16:55:28] - INFO: Epoch: 0, Batch[22/6479], Train loss: 15488.780, SBP loss: 12353.200, DBP loss: 3135.580
+[2026-02-23 16:55:28] - INFO: Epoch: 0, Batch[23/6479], Train loss: 15610.605, SBP loss: 12332.072, DBP loss: 3278.533
+[2026-02-23 16:55:28] - INFO: Epoch: 0, Batch[24/6479], Train loss: 14390.058, SBP loss: 11485.885, DBP loss: 2904.173
+[2026-02-23 16:55:28] - INFO: Epoch: 0, Batch[25/6479], Train loss: 14333.430, SBP loss: 11219.104, DBP loss: 3114.325
+[2026-02-23 16:55:29] - INFO: Epoch: 0, Batch[26/6479], Train loss: 15017.104, SBP loss: 12065.188, DBP loss: 2951.916
+[2026-02-23 16:55:29] - INFO: Epoch: 0, Batch[27/6479], Train loss: 13955.713, SBP loss: 11112.960, DBP loss: 2842.752
+[2026-02-23 16:55:29] - INFO: Epoch: 0, Batch[28/6479], Train loss: 14541.512, SBP loss: 11624.607, DBP loss: 2916.904
+[2026-02-23 16:55:29] - INFO: Epoch: 0, Batch[29/6479], Train loss: 13137.947, SBP loss: 10282.983, DBP loss: 2854.964
+[2026-02-23 16:55:30] - INFO: Epoch: 0, Batch[30/6479], Train loss: 12739.057, SBP loss: 10411.425, DBP loss: 2327.632
+[2026-02-23 16:55:30] - INFO: Epoch: 0, Batch[31/6479], Train loss: 12781.944, SBP loss: 10432.203, DBP loss: 2349.741
+[2026-02-23 16:55:30] - INFO: Epoch: 0, Batch[32/6479], Train loss: 13143.551, SBP loss: 10720.122, DBP loss: 2423.428
+[2026-02-23 16:55:31] - INFO: Epoch: 0, Batch[33/6479], Train loss: 11770.438, SBP loss: 9518.989, DBP loss: 2251.449
+[2026-02-23 16:55:31] - INFO: Epoch: 0, Batch[34/6479], Train loss: 11031.020, SBP loss: 8947.159, DBP loss: 2083.860
+[2026-02-23 16:55:31] - INFO: Epoch: 0, Batch[35/6479], Train loss: 10826.109, SBP loss: 8793.062, DBP loss: 2033.047
+[2026-02-23 16:55:31] - INFO: Epoch: 0, Batch[36/6479], Train loss: 9253.016, SBP loss: 7586.831, DBP loss: 1666.184
+[2026-02-23 16:55:32] - INFO: Epoch: 0, Batch[37/6479], Train loss: 10050.262, SBP loss: 8331.389, DBP loss: 1718.873
+[2026-02-23 16:55:32] - INFO: Epoch: 0, Batch[38/6479], Train loss: 9205.443, SBP loss: 7619.030, DBP loss: 1586.413
+[2026-02-23 16:55:32] - INFO: Epoch: 0, Batch[39/6479], Train loss: 8642.481, SBP loss: 6974.376, DBP loss: 1668.105
+[2026-02-23 16:55:33] - INFO: Epoch: 0, Batch[40/6479], Train loss: 8090.108, SBP loss: 6834.572, DBP loss: 1255.536
+[2026-02-23 16:55:33] - INFO: Epoch: 0, Batch[41/6479], Train loss: 7357.730, SBP loss: 6196.076, DBP loss: 1161.654
+[2026-02-23 16:55:33] - INFO: Epoch: 0, Batch[42/6479], Train loss: 7723.855, SBP loss: 6620.928, DBP loss: 1102.927
+[2026-02-23 16:55:33] - INFO: Epoch: 0, Batch[43/6479], Train loss: 6342.486, SBP loss: 5241.562, DBP loss: 1100.924
+[2026-02-23 16:55:34] - INFO: Epoch: 0, Batch[44/6479], Train loss: 6133.825, SBP loss: 5182.714, DBP loss: 951.111
+[2026-02-23 16:55:34] - INFO: Epoch: 0, Batch[45/6479], Train loss: 6984.390, SBP loss: 6036.067, DBP loss: 948.323
+[2026-02-23 16:55:34] - INFO: Epoch: 0, Batch[46/6479], Train loss: 6441.292, SBP loss: 5517.129, DBP loss: 924.163
+[2026-02-23 16:55:35] - INFO: Epoch: 0, Batch[47/6479], Train loss: 6250.156, SBP loss: 5422.948, DBP loss: 827.208
+[2026-02-23 16:55:35] - INFO: Epoch: 0, Batch[48/6479], Train loss: 5058.885, SBP loss: 4497.741, DBP loss: 561.144
+[2026-02-23 16:55:35] - INFO: Epoch: 0, Batch[49/6479], Train loss: 4754.400, SBP loss: 4256.727, DBP loss: 497.673
+[2026-02-23 16:55:35] - INFO: Epoch: 0, Batch[50/6479], Train loss: 4478.251, SBP loss: 4004.307, DBP loss: 473.944
+[2026-02-23 16:55:36] - INFO: Epoch: 0, Batch[51/6479], Train loss: 3787.748, SBP loss: 3470.004, DBP loss: 317.744
+[2026-02-23 16:55:36] - INFO: Epoch: 0, Batch[52/6479], Train loss: 3905.946, SBP loss: 3533.796, DBP loss: 372.150
+[2026-02-23 16:55:36] - INFO: Epoch: 0, Batch[53/6479], Train loss: 4035.892, SBP loss: 3659.465, DBP loss: 376.427
+[2026-02-23 16:55:37] - INFO: Epoch: 0, Batch[54/6479], Train loss: 3784.410, SBP loss: 3501.070, DBP loss: 283.339
+[2026-02-23 16:55:37] - INFO: Epoch: 0, Batch[55/6479], Train loss: 3436.636, SBP loss: 3148.853, DBP loss: 287.783
+[2026-02-23 16:55:37] - INFO: Epoch: 0, Batch[56/6479], Train loss: 2371.036, SBP loss: 2157.513, DBP loss: 213.523
+[2026-02-23 16:55:37] - INFO: Epoch: 0, Batch[57/6479], Train loss: 2809.724, SBP loss: 2559.758, DBP loss: 249.966
+[2026-02-23 16:55:38] - INFO: Epoch: 0, Batch[58/6479], Train loss: 2249.219, SBP loss: 2090.684, DBP loss: 158.535
+[2026-02-23 16:55:38] - INFO: Epoch: 0, Batch[59/6479], Train loss: 2047.775, SBP loss: 1920.710, DBP loss: 127.065
+[2026-02-23 16:55:38] - INFO: Epoch: 0, Batch[60/6479], Train loss: 2058.528, SBP loss: 1918.155, DBP loss: 140.373
+[2026-02-23 16:55:38] - INFO: Epoch: 0, Batch[61/6479], Train loss: 1956.923, SBP loss: 1769.883, DBP loss: 187.041
+[2026-02-23 16:55:39] - INFO: Epoch: 0, Batch[62/6479], Train loss: 1441.792, SBP loss: 1343.428, DBP loss: 98.364
+[2026-02-23 16:55:39] - INFO: Epoch: 0, Batch[63/6479], Train loss: 2024.188, SBP loss: 1888.956, DBP loss: 135.233
+[2026-02-23 16:55:39] - INFO: Epoch: 0, Batch[64/6479], Train loss: 1316.176, SBP loss: 1165.678, DBP loss: 150.498
+[2026-02-23 16:55:40] - INFO: Epoch: 0, Batch[65/6479], Train loss: 1156.396, SBP loss: 1008.237, DBP loss: 148.159
+[2026-02-23 16:55:40] - INFO: Epoch: 0, Batch[66/6479], Train loss: 1353.053, SBP loss: 1207.087, DBP loss: 145.966
+[2026-02-23 16:55:40] - INFO: Epoch: 0, Batch[67/6479], Train loss: 1245.608, SBP loss: 1045.582, DBP loss: 200.026
+[2026-02-23 16:55:40] - INFO: Epoch: 0, Batch[68/6479], Train loss: 1001.851, SBP loss: 786.726, DBP loss: 215.125
+[2026-02-23 16:55:41] - INFO: Epoch: 0, Batch[69/6479], Train loss: 968.910, SBP loss: 773.272, DBP loss: 195.638
+[2026-02-23 16:55:41] - INFO: Epoch: 0, Batch[70/6479], Train loss: 998.669, SBP loss: 746.731, DBP loss: 251.938
+[2026-02-23 16:55:41] - INFO: Epoch: 0, Batch[71/6479], Train loss: 1127.526, SBP loss: 918.481, DBP loss: 209.045
+[2026-02-23 16:55:42] - INFO: Epoch: 0, Batch[72/6479], Train loss: 922.337, SBP loss: 672.272, DBP loss: 250.065
+[2026-02-23 16:55:42] - INFO: Epoch: 0, Batch[73/6479], Train loss: 906.978, SBP loss: 665.612, DBP loss: 241.366
+[2026-02-23 16:55:42] - INFO: Epoch: 0, Batch[74/6479], Train loss: 696.334, SBP loss: 451.630, DBP loss: 244.704
+[2026-02-23 16:55:42] - INFO: Epoch: 0, Batch[75/6479], Train loss: 639.473, SBP loss: 391.755, DBP loss: 247.718
+[2026-02-23 16:55:43] - INFO: Epoch: 0, Batch[76/6479], Train loss: 795.649, SBP loss: 520.484, DBP loss: 275.166
+[2026-02-23 16:55:43] - INFO: Epoch: 0, Batch[77/6479], Train loss: 916.331, SBP loss: 647.538, DBP loss: 268.793
+[2026-02-23 16:55:43] - INFO: Epoch: 0, Batch[78/6479], Train loss: 749.992, SBP loss: 479.781, DBP loss: 270.211
+[2026-02-23 16:55:44] - INFO: Epoch: 0, Batch[79/6479], Train loss: 530.852, SBP loss: 341.840, DBP loss: 189.012
+[2026-02-23 16:55:44] - INFO: Epoch: 0, Batch[80/6479], Train loss: 617.217, SBP loss: 391.640, DBP loss: 225.576
+[2026-02-23 16:55:44] - INFO: Epoch: 0, Batch[81/6479], Train loss: 586.290, SBP loss: 404.779, DBP loss: 181.511
+[2026-02-23 16:55:45] - INFO: Epoch: 0, Batch[82/6479], Train loss: 753.521, SBP loss: 580.222, DBP loss: 173.299
+[2026-02-23 16:55:45] - INFO: Epoch: 0, Batch[83/6479], Train loss: 681.547, SBP loss: 476.035, DBP loss: 205.512
+[2026-02-23 16:55:45] - INFO: Epoch: 0, Batch[84/6479], Train loss: 677.283, SBP loss: 487.620, DBP loss: 189.663
+[2026-02-23 16:55:46] - INFO: Epoch: 0, Batch[85/6479], Train loss: 666.251, SBP loss: 515.943, DBP loss: 150.307
+[2026-02-23 16:55:46] - INFO: Epoch: 0, Batch[86/6479], Train loss: 558.065, SBP loss: 416.544, DBP loss: 141.521
+[2026-02-23 16:55:47] - INFO: Epoch: 0, Batch[87/6479], Train loss: 690.053, SBP loss: 533.022, DBP loss: 157.030
+[2026-02-23 16:55:47] - INFO: Epoch: 0, Batch[88/6479], Train loss: 625.777, SBP loss: 507.509, DBP loss: 118.268
+[2026-02-23 16:55:48] - INFO: Epoch: 0, Batch[89/6479], Train loss: 610.442, SBP loss: 499.199, DBP loss: 111.243
+[2026-02-23 16:55:48] - INFO: Epoch: 0, Batch[90/6479], Train loss: 470.840, SBP loss: 357.628, DBP loss: 113.212
+[2026-02-23 16:55:48] - INFO: Epoch: 0, Batch[91/6479], Train loss: 882.282, SBP loss: 684.728, DBP loss: 197.554
+[2026-02-23 16:55:49] - INFO: Epoch: 0, Batch[92/6479], Train loss: 587.931, SBP loss: 456.505, DBP loss: 131.426
+[2026-02-23 16:55:49] - INFO: Epoch: 0, Batch[93/6479], Train loss: 657.015, SBP loss: 533.116, DBP loss: 123.899
+[2026-02-23 16:55:50] - INFO: Epoch: 0, Batch[94/6479], Train loss: 606.049, SBP loss: 462.429, DBP loss: 143.621
+[2026-02-23 16:55:50] - INFO: Epoch: 0, Batch[95/6479], Train loss: 636.286, SBP loss: 498.173, DBP loss: 138.114
+[2026-02-23 16:55:50] - INFO: Epoch: 0, Batch[96/6479], Train loss: 684.959, SBP loss: 566.878, DBP loss: 118.081
+[2026-02-23 16:55:51] - INFO: Epoch: 0, Batch[97/6479], Train loss: 679.951, SBP loss: 513.073, DBP loss: 166.878
+[2026-02-23 16:55:51] - INFO: Epoch: 0, Batch[98/6479], Train loss: 573.543, SBP loss: 462.274, DBP loss: 111.269
+[2026-02-23 16:55:52] - INFO: Epoch: 0, Batch[99/6479], Train loss: 632.552, SBP loss: 473.603, DBP loss: 158.949
+[2026-02-23 16:55:52] - INFO: Epoch: 0, Batch[100/6479], Train loss: 484.597, SBP loss: 405.982, DBP loss: 78.614
+[2026-02-23 16:55:53] - INFO: Epoch: 0, Batch[101/6479], Train loss: 662.808, SBP loss: 452.615, DBP loss: 210.193
+[2026-02-23 16:55:53] - INFO: Epoch: 0, Batch[102/6479], Train loss: 495.235, SBP loss: 395.637, DBP loss: 99.598
+[2026-02-23 16:55:53] - INFO: Epoch: 0, Batch[103/6479], Train loss: 637.067, SBP loss: 500.948, DBP loss: 136.119
+[2026-02-23 16:55:54] - INFO: Epoch: 0, Batch[104/6479], Train loss: 582.383, SBP loss: 436.412, DBP loss: 145.971
+[2026-02-23 16:55:54] - INFO: Epoch: 0, Batch[105/6479], Train loss: 743.349, SBP loss: 601.898, DBP loss: 141.451
+[2026-02-23 16:55:55] - INFO: Epoch: 0, Batch[106/6479], Train loss: 668.897, SBP loss: 416.042, DBP loss: 252.855
+[2026-02-23 16:55:55] - INFO: Epoch: 0, Batch[107/6479], Train loss: 661.443, SBP loss: 530.911, DBP loss: 130.533
+[2026-02-23 16:55:55] - INFO: Epoch: 0, Batch[108/6479], Train loss: 813.032, SBP loss: 616.028, DBP loss: 197.005
+[2026-02-23 16:55:56] - INFO: Epoch: 0, Batch[109/6479], Train loss: 613.121, SBP loss: 454.451, DBP loss: 158.670
+[2026-02-23 16:55:56] - INFO: Epoch: 0, Batch[110/6479], Train loss: 860.515, SBP loss: 705.661, DBP loss: 154.854
+[2026-02-23 16:55:57] - INFO: Epoch: 0, Batch[111/6479], Train loss: 456.299, SBP loss: 359.947, DBP loss: 96.352
+[2026-02-23 16:55:57] - INFO: Epoch: 0, Batch[112/6479], Train loss: 546.705, SBP loss: 337.242, DBP loss: 209.463
+[2026-02-23 16:55:57] - INFO: Epoch: 0, Batch[113/6479], Train loss: 600.616, SBP loss: 453.753, DBP loss: 146.863
+[2026-02-23 16:55:58] - INFO: Epoch: 0, Batch[114/6479], Train loss: 645.394, SBP loss: 498.323, DBP loss: 147.070
+[2026-02-23 16:55:58] - INFO: Epoch: 0, Batch[115/6479], Train loss: 681.327, SBP loss: 508.938, DBP loss: 172.390
+[2026-02-23 16:55:59] - INFO: Epoch: 0, Batch[116/6479], Train loss: 658.820, SBP loss: 557.270, DBP loss: 101.550
+[2026-02-23 16:55:59] - INFO: Epoch: 0, Batch[117/6479], Train loss: 645.196, SBP loss: 537.152, DBP loss: 108.044
+[2026-02-23 16:55:59] - INFO: Epoch: 0, Batch[118/6479], Train loss: 698.727, SBP loss: 535.944, DBP loss: 162.783
+[2026-02-23 16:56:00] - INFO: Epoch: 0, Batch[119/6479], Train loss: 542.879, SBP loss: 388.451, DBP loss: 154.428
+[2026-02-23 16:56:00] - INFO: Epoch: 0, Batch[120/6479], Train loss: 659.581, SBP loss: 545.011, DBP loss: 114.569
+[2026-02-23 16:56:00] - INFO: Epoch: 0, Batch[121/6479], Train loss: 510.123, SBP loss: 416.919, DBP loss: 93.204
+[2026-02-23 16:56:01] - INFO: Epoch: 0, Batch[122/6479], Train loss: 561.112, SBP loss: 460.183, DBP loss: 100.929
+[2026-02-23 16:56:01] - INFO: Epoch: 0, Batch[123/6479], Train loss: 605.930, SBP loss: 483.902, DBP loss: 122.028
+[2026-02-23 16:56:02] - INFO: Epoch: 0, Batch[124/6479], Train loss: 532.698, SBP loss: 408.845, DBP loss: 123.853
+[2026-02-23 16:56:02] - INFO: Epoch: 0, Batch[125/6479], Train loss: 975.326, SBP loss: 808.348, DBP loss: 166.977
+[2026-02-23 16:56:02] - INFO: Epoch: 0, Batch[126/6479], Train loss: 495.403, SBP loss: 415.352, DBP loss: 80.051
+[2026-02-23 16:56:03] - INFO: Epoch: 0, Batch[127/6479], Train loss: 605.939, SBP loss: 493.260, DBP loss: 112.679
+[2026-02-23 16:56:03] - INFO: Epoch: 0, Batch[128/6479], Train loss: 591.214, SBP loss: 455.412, DBP loss: 135.802
+[2026-02-23 16:56:04] - INFO: Epoch: 0, Batch[129/6479], Train loss: 632.460, SBP loss: 489.755, DBP loss: 142.705
+[2026-02-23 16:56:04] - INFO: Epoch: 0, Batch[130/6479], Train loss: 598.096, SBP loss: 512.926, DBP loss: 85.171
+[2026-02-23 16:56:04] - INFO: Epoch: 0, Batch[131/6479], Train loss: 498.959, SBP loss: 377.712, DBP loss: 121.247
+[2026-02-23 16:56:05] - INFO: Epoch: 0, Batch[132/6479], Train loss: 537.068, SBP loss: 401.492, DBP loss: 135.576
+[2026-02-23 16:56:05] - INFO: Epoch: 0, Batch[133/6479], Train loss: 529.287, SBP loss: 398.386, DBP loss: 130.901
+[2026-02-23 16:56:05] - INFO: Epoch: 0, Batch[134/6479], Train loss: 660.184, SBP loss: 536.378, DBP loss: 123.806
+[2026-02-23 16:56:06] - INFO: Epoch: 0, Batch[135/6479], Train loss: 567.597, SBP loss: 460.935, DBP loss: 106.662
+[2026-02-23 16:56:06] - INFO: Epoch: 0, Batch[136/6479], Train loss: 673.498, SBP loss: 567.576, DBP loss: 105.923
+[2026-02-23 16:56:06] - INFO: Epoch: 0, Batch[137/6479], Train loss: 521.805, SBP loss: 389.851, DBP loss: 131.954
+[2026-02-23 16:56:07] - INFO: Epoch: 0, Batch[138/6479], Train loss: 696.154, SBP loss: 582.522, DBP loss: 113.632
+[2026-02-23 16:56:07] - INFO: Epoch: 0, Batch[139/6479], Train loss: 525.375, SBP loss: 433.899, DBP loss: 91.476
+[2026-02-23 16:56:07] - INFO: Epoch: 0, Batch[140/6479], Train loss: 587.257, SBP loss: 468.993, DBP loss: 118.264
+[2026-02-23 16:56:08] - INFO: Epoch: 0, Batch[141/6479], Train loss: 481.652, SBP loss: 360.171, DBP loss: 121.481
+[2026-02-23 16:56:08] - INFO: Epoch: 0, Batch[142/6479], Train loss: 619.806, SBP loss: 486.882, DBP loss: 132.923
+[2026-02-23 16:56:08] - INFO: Epoch: 0, Batch[143/6479], Train loss: 610.036, SBP loss: 437.736, DBP loss: 172.301
+[2026-02-23 16:56:09] - INFO: Epoch: 0, Batch[144/6479], Train loss: 722.230, SBP loss: 518.130, DBP loss: 204.101
+[2026-02-23 16:56:09] - INFO: Epoch: 0, Batch[145/6479], Train loss: 676.009, SBP loss: 564.524, DBP loss: 111.485
+[2026-02-23 16:56:09] - INFO: Epoch: 0, Batch[146/6479], Train loss: 679.733, SBP loss: 528.347, DBP loss: 151.386
+[2026-02-23 16:56:10] - INFO: Epoch: 0, Batch[147/6479], Train loss: 668.216, SBP loss: 542.887, DBP loss: 125.328
+[2026-02-23 16:56:10] - INFO: Epoch: 0, Batch[148/6479], Train loss: 583.606, SBP loss: 478.336, DBP loss: 105.270
+[2026-02-23 16:56:10] - INFO: Epoch: 0, Batch[149/6479], Train loss: 646.505, SBP loss: 556.560, DBP loss: 89.945
+[2026-02-23 16:56:10] - INFO: Epoch: 0, Batch[150/6479], Train loss: 607.740, SBP loss: 503.644, DBP loss: 104.097
+[2026-02-23 16:56:11] - INFO: Epoch: 0, Batch[151/6479], Train loss: 487.474, SBP loss: 361.979, DBP loss: 125.495
+[2026-02-23 16:56:11] - INFO: Epoch: 0, Batch[152/6479], Train loss: 682.610, SBP loss: 563.404, DBP loss: 119.205
+[2026-02-23 16:56:11] - INFO: Epoch: 0, Batch[153/6479], Train loss: 453.210, SBP loss: 350.350, DBP loss: 102.860
+
+[2026-02-23 17:12:27] - INFO: Epoch: 0, Train loss: 539.104, SBP loss: 419.158, DBP loss: 119.947, Epoch time = 1321.627s
+[2026-02-23 17:14:20] - INFO: Epoch 0, Val loss: 571.493, Val SBP loss: 489.637, Val DBP loss: 81.856,                           Val MAE: 12.376, Val SBP MAE: 18.044, Val DBP MAE: 6.708
+[2026-02-23 17:14:20] - INFO: Best model saved
+[2026-02-23 17:37:14] - INFO: Epoch: 1, Train loss: 255.428, SBP loss: 189.716, DBP loss: 65.712, Epoch time = 1373.482s
+[2026-02-23 17:39:09] - INFO: Epoch 1, Val loss: 654.043, Val SBP loss: 568.025, Val DBP loss: 86.018,                           Val MAE: 13.071, Val SBP MAE: 19.230, Val DBP MAE: 6.913
+[2026-02-23 18:01:57] - INFO: Epoch: 2, Train loss: 205.578, SBP loss: 150.509, DBP loss: 55.069, Epoch time = 1368.136s
+[2026-02-23 18:03:48] - INFO: Epoch 2, Val loss: 632.157, Val SBP loss: 538.717, Val DBP loss: 93.440,                           Val MAE: 12.901, Val SBP MAE: 18.586, Val DBP MAE: 7.216
+[2026-02-23 18:26:19] - INFO: Epoch: 3, Train loss: 176.805, SBP loss: 129.848, DBP loss: 46.957, Epoch time = 1351.494s
+[2026-02-23 18:28:09] - INFO: Epoch 3, Val loss: 649.148, Val SBP loss: 549.551, Val DBP loss: 99.597,                           Val MAE: 13.075, Val SBP MAE: 18.706, Val DBP MAE: 7.445
+[2026-02-23 18:50:40] - INFO: Epoch: 4, Train loss: 160.011, SBP loss: 118.364, DBP loss: 41.647, Epoch time = 1350.887s
+[2026-02-23 18:52:35] - INFO: Epoch 4, Val loss: 604.671, Val SBP loss: 509.497, Val DBP loss: 95.174,                           Val MAE: 12.753, Val SBP MAE: 18.155, Val DBP MAE: 7.350
+[2026-02-23 19:15:02] - INFO: Epoch: 5, Train loss: 147.494, SBP loss: 109.453, DBP loss: 38.041, Epoch time = 1347.029s
+[2026-02-23 19:16:58] - INFO: Epoch 5, Val loss: 608.476, Val SBP loss: 507.511, Val DBP loss: 100.965,                           Val MAE: 12.865, Val SBP MAE: 18.268, Val DBP MAE: 7.463
+[2026-02-23 23:04:21] - INFO: ######## Fold 0 ########
+[2026-02-23 23:04:21] - INFO: ############划分数据集并保存############
+[2026-02-23 23:04:21] - INFO: ############载入划分好的数据集############
+[2026-02-23 23:04:21] - INFO: ############初始化模型############
+[2026-02-23 23:27:34] - INFO: Epoch: 0, Train loss: 0.835, SBP loss: 0.401, In mmHg: 168.534, DBP loss: 0.434, In mmHg:43.578, Epoch time = 1392.128s
+[2026-02-23 23:29:23] - INFO: Epoch 0, Val loss: 2.446, Val SBP loss: 1.470, In mmHg: 617.367, Val DBP loss: 0.976, In mmHg: 97.979                           Val MAE: 0.848, Val SBP MAE: 0.972, In mmHg: 19.910, Val DBP MAE: 0.725, In mmHg: 7.265
+[2026-02-23 23:29:23] - INFO: Best model saved
+[2026-02-23 23:51:14] - INFO: Epoch: 1, Train loss: 0.343, SBP loss: 0.157, In mmHg: 66.140, DBP loss: 0.185, In mmHg:18.613, Epoch time = 1311.576s
+[2026-02-23 23:53:03] - INFO: Epoch 1, Val loss: 2.461, Val SBP loss: 1.377, In mmHg: 578.445, Val DBP loss: 1.084, In mmHg: 108.808                           Val MAE: 0.870, Val SBP MAE: 0.956, In mmHg: 19.585, Val DBP MAE: 0.784, In mmHg: 7.855
+[2026-02-24 00:15:22] - INFO: Epoch: 2, Train loss: 0.244, SBP loss: 0.110, In mmHg: 46.364, DBP loss: 0.134, In mmHg:13.432, Epoch time = 1339.022s
+[2026-02-24 00:17:11] - INFO: Epoch 2, Val loss: 2.341, Val SBP loss: 1.266, In mmHg: 531.800, Val DBP loss: 1.074, In mmHg: 107.842                           Val MAE: 0.835, Val SBP MAE: 0.891, In mmHg: 18.267, Val DBP MAE: 0.778, In mmHg: 7.792
+[2026-02-24 00:17:11] - INFO: Best model saved
+
