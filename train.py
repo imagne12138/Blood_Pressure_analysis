@@ -68,15 +68,17 @@ def train_model(cfg, fold):
             loss = sbp_loss + dbp_loss
             loss.backward()
             optimizer.step()
-            losses += loss.item()
-            sbp_losses += sbp_loss.item()
-            dbp_losses += dbp_loss.item()
-            # 反标准化mse
-            mmHg_sbp_losses += sbp_loss.item() * fold_sbp_std ** 2
-            mmHg_dbp_losses += dbp_loss.item() * fold_dbp_std ** 2
+            # 修改，断开梯度计算
+            with torch.no_grad():
+                losses += loss.item()
+                sbp_losses += sbp_loss.item()
+                dbp_losses += dbp_loss.item()
+                # 反标准化mse
+                mmHg_sbp_losses += sbp_loss.item() * fold_sbp_std ** 2
+                mmHg_dbp_losses += dbp_loss.item() * fold_dbp_std ** 2
 
-            # msg = f"Epoch: {epoch}, Batch[{idx}/{len(train_iter)}], Train loss: {loss.item():.3f}, SBP loss: {sbp_loss.item():.3f}, DBP loss: {dbp_loss.item():.3f}"
-            # logging.info(msg)
+                # msg = f"Epoch: {epoch}, Batch[{idx}/{len(train_iter)}], Train loss: {loss.item():.3f}, SBP loss: {sbp_loss.item():.3f}, DBP loss: {dbp_loss.item():.3f}"
+                # logging.info(msg)
 
         end_time = time.time()
         train_loss = losses / len(train_iter)

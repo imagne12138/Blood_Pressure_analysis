@@ -59,11 +59,16 @@ class Config():
     
 
     def _init_device(self):
-        device = None
+        self.device = None
         if torch.cuda.is_available():
             self.device = torch.device('cuda:0') 
         elif torch.backends.mps.is_available():
-            device = torch.device("mps")
+            self.device = torch.device("mps")
         else:
-            device = torch.device("cpu")
-        return device
+            self.device = torch.device("cpu")
+        return self.device
+    
+
+if __name__ == "__main__":
+    cfg = Config()
+    print(cfg.device)
