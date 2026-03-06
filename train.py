@@ -1,6 +1,7 @@
 from copy import deepcopy
 from config.config import Config
 from model.baseline_model import BaselineModel
+from model.model_2 import Model_2_Head
 from utils.data_helper import chain
 from utils.create_data import LoadPPGDataset
 from tqdm import tqdm
@@ -24,6 +25,8 @@ def train_model(cfg, fold):
 
     logging.info("############初始化模型############")
     model = BaselineModel(filters=cfg.filters, num_layers=cfg.num_layers)
+    # model = Model_2_Head(filters=cfg.filters, num_layers=cfg.num_layers)
+    
     model_save_path = os.path.join(cfg.model_save_dir, f'model_fold_{fold}.pkl')
 
     model = model.to(cfg.device)

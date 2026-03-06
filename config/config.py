@@ -34,7 +34,7 @@ class Config():
         self.k = 5
         
         #  模型相关配置
-        self.batch_size = 64
+        self.batch_size = 128
         self.filters = [1, 32, 64, 128]
         self.lr = 0.001
         self.num_layers = 2
