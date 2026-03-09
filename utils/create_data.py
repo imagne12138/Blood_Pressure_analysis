@@ -13,7 +13,6 @@ class PPGDataset(Dataset):
         输出x, y, 形状为[1, 1024], [2]
         """
         self.data_path = data_dir
-        self.file = None # 防止频繁读取影响速度
 
         self.sbp_mean = sbp_mean
         self.sbp_std = sbp_std
@@ -29,14 +28,11 @@ class PPGDataset(Dataset):
         # f"cv_fold_{}.npz", 分train_idx和val_idx
     
     def __getitem__(self, index):
-        # num_workers = 0
-        if self.file is None:
-            self.file = h5py.File(self.data_path, "r")
-
-        idx = self.indices[index] # 在训练或验证的窗口索引里取一个
-        ppg = self.file["ppg"][idx] # (1024,)
-        sbp = self.file["sbp"][idx] # 一个数字
-        dbp = self.file["dbp"][idx] # 一个数字
+        with h5py.File(self.data_path, "r") as file: # 关闭文件
+            idx = self.indices[index] # 在训练或验证的窗口索引里取一个
+            ppg = file["ppg"][idx] # (1024,)
+            sbp = file["sbp"][idx] # 一个数字
+            dbp = file["dbp"][idx] # 一个数字
 
         if self.sbp_mean is not None:
             sbp = (sbp - self.sbp_mean) / self.sbp_std
@@ -103,10 +99,10 @@ class LoadPPGDataset:
         sbp = []
         dbp = []
 
-        file = h5py.File(dataset.data_path, "r")
-        indices = dataset.indices
+        with h5py.File(dataset.data_path, "r") as file: # 关闭文件
+            indices = dataset.indices
 
-        sbp = file["sbp"][indices]
-        dbp = file["dbp"][indices]
+            sbp = file["sbp"][indices]
+            dbp = file["dbp"][indices]
 
         return (sbp.mean(), sbp.std(), dbp.mean(), dbp.std())
