@@ -1,0 +1,215 @@
+[2026-05-31 13:21:46] - INFO: ######## Fold 0 ########
+[2026-05-31 13:21:46] - INFO: ############ 载入融合数据集 (PPG + 26-dim features) ############
+[2026-05-31 13:21:46] - INFO: ############ 初始化 FusionModel26 ############
+[2026-05-31 13:22:44] - INFO: Epoch: 0, Train loss: 1.564, SBP loss: 0.768, In mmHg: 322.402, DBP loss: 0.796, In mmHg: 79.896, Epoch time = 56.580s
+[2026-05-31 13:22:47] - INFO: Epoch 0, Val loss: 2.201, Val SBP loss: 1.318, In mmHg: 553.640, Val DBP loss: 0.883, In mmHg: 88.616  Val MAE: 0.839, Val SBP MAE: 0.965, In mmHg: 19.779, Val DBP MAE: 0.713, In mmHg: 7.146
+[2026-05-31 13:22:47] - INFO: Best model saved
+[2026-05-31 13:23:42] - INFO: Epoch: 1, Train loss: 1.334, SBP loss: 0.667, In mmHg: 280.337, DBP loss: 0.666, In mmHg: 66.876, Epoch time = 55.182s
+[2026-05-31 13:23:45] - INFO: Epoch 1, Val loss: 2.217, Val SBP loss: 1.333, In mmHg: 559.887, Val DBP loss: 0.884, In mmHg: 88.698  Val MAE: 0.830, Val SBP MAE: 0.961, In mmHg: 19.694, Val DBP MAE: 0.700, In mmHg: 7.009
+[2026-05-31 13:24:40] - INFO: Epoch: 2, Train loss: 1.264, SBP loss: 0.634, In mmHg: 266.408, DBP loss: 0.630, In mmHg: 63.187, Epoch time = 55.104s
+[2026-05-31 13:24:43] - INFO: Epoch 2, Val loss: 2.265, Val SBP loss: 1.361, In mmHg: 571.745, Val DBP loss: 0.903, In mmHg: 90.673  Val MAE: 0.837, Val SBP MAE: 0.967, In mmHg: 19.825, Val DBP MAE: 0.707, In mmHg: 7.085
+[2026-05-31 13:25:38] - INFO: Epoch: 3, Train loss: 1.217, SBP loss: 0.612, In mmHg: 257.081, DBP loss: 0.605, In mmHg: 60.694, Epoch time = 55.484s
+[2026-05-31 13:25:41] - INFO: Epoch 3, Val loss: 2.233, Val SBP loss: 1.330, In mmHg: 558.522, Val DBP loss: 0.903, In mmHg: 90.602  Val MAE: 0.825, Val SBP MAE: 0.950, In mmHg: 19.468, Val DBP MAE: 0.701, In mmHg: 7.022
+[2026-05-31 13:26:36] - INFO: Epoch: 4, Train loss: 1.182, SBP loss: 0.595, In mmHg: 249.836, DBP loss: 0.587, In mmHg: 58.913, Epoch time = 55.048s
+[2026-05-31 13:26:39] - INFO: Epoch 4, Val loss: 2.098, Val SBP loss: 1.237, In mmHg: 519.579, Val DBP loss: 0.861, In mmHg: 86.379  Val MAE: 0.800, Val SBP MAE: 0.920, In mmHg: 18.854, Val DBP MAE: 0.680, In mmHg: 6.815
+[2026-05-31 13:26:39] - INFO: Best model saved
+[2026-05-31 13:27:34] - INFO: Epoch: 5, Train loss: 1.151, SBP loss: 0.580, In mmHg: 243.397, DBP loss: 0.572, In mmHg: 57.408, Epoch time = 55.145s
+[2026-05-31 13:27:37] - INFO: Epoch 5, Val loss: 2.046, Val SBP loss: 1.227, In mmHg: 515.158, Val DBP loss: 0.820, In mmHg: 82.269  Val MAE: 0.779, Val SBP MAE: 0.907, In mmHg: 18.588, Val DBP MAE: 0.650, In mmHg: 6.516
+[2026-05-31 13:27:37] - INFO: Best model saved
+[2026-05-31 13:28:32] - INFO: Epoch: 6, Train loss: 1.124, SBP loss: 0.564, In mmHg: 236.737, DBP loss: 0.560, In mmHg: 56.211, Epoch time = 55.147s
+[2026-05-31 13:28:35] - INFO: Epoch 6, Val loss: 2.008, Val SBP loss: 1.200, In mmHg: 504.115, Val DBP loss: 0.808, In mmHg: 81.087  Val MAE: 0.768, Val SBP MAE: 0.891, In mmHg: 18.255, Val DBP MAE: 0.646, In mmHg: 6.467
+[2026-05-31 13:28:35] - INFO: Best model saved
+[2026-05-31 13:29:29] - INFO: Epoch: 7, Train loss: 1.102, SBP loss: 0.553, In mmHg: 232.122, DBP loss: 0.549, In mmHg: 55.124, Epoch time = 54.546s
+[2026-05-31 13:29:32] - INFO: Epoch 7, Val loss: 2.087, Val SBP loss: 1.256, In mmHg: 527.464, Val DBP loss: 0.831, In mmHg: 83.415  Val MAE: 0.785, Val SBP MAE: 0.917, In mmHg: 18.789, Val DBP MAE: 0.654, In mmHg: 6.551
+[2026-05-31 13:30:28] - INFO: Epoch: 8, Train loss: 1.086, SBP loss: 0.543, In mmHg: 228.255, DBP loss: 0.543, In mmHg: 54.491, Epoch time = 55.432s
+[2026-05-31 13:30:30] - INFO: Epoch 8, Val loss: 2.043, Val SBP loss: 1.239, In mmHg: 520.184, Val DBP loss: 0.804, In mmHg: 80.717  Val MAE: 0.776, Val SBP MAE: 0.912, In mmHg: 18.689, Val DBP MAE: 0.641, In mmHg: 6.417
+[2026-05-31 13:31:25] - INFO: Epoch: 9, Train loss: 1.066, SBP loss: 0.532, In mmHg: 223.312, DBP loss: 0.534, In mmHg: 53.636, Epoch time = 54.988s
+[2026-05-31 13:31:28] - INFO: Epoch 9, Val loss: 2.173, Val SBP loss: 1.338, In mmHg: 562.082, Val DBP loss: 0.835, In mmHg: 83.807  Val MAE: 0.800, Val SBP MAE: 0.949, In mmHg: 19.448, Val DBP MAE: 0.651, In mmHg: 6.522
+[2026-05-31 13:32:23] - INFO: Epoch: 10, Train loss: 1.047, SBP loss: 0.521, In mmHg: 218.682, DBP loss: 0.527, In mmHg: 52.846, Epoch time = 55.219s
+[2026-05-31 13:32:26] - INFO: Epoch 10, Val loss: 2.176, Val SBP loss: 1.337, In mmHg: 561.545, Val DBP loss: 0.839, In mmHg: 84.182  Val MAE: 0.808, Val SBP MAE: 0.951, In mmHg: 19.488, Val DBP MAE: 0.664, In mmHg: 6.653
+[2026-05-31 13:33:22] - INFO: Epoch: 11, Train loss: 1.014, SBP loss: 0.502, In mmHg: 210.933, DBP loss: 0.511, In mmHg: 51.321, Epoch time = 55.473s
+[2026-05-31 13:33:24] - INFO: Epoch 11, Val loss: 2.054, Val SBP loss: 1.254, In mmHg: 526.521, Val DBP loss: 0.801, In mmHg: 80.360  Val MAE: 0.786, Val SBP MAE: 0.920, In mmHg: 18.856, Val DBP MAE: 0.652, In mmHg: 6.528
+[2026-05-31 13:34:19] - INFO: Epoch: 12, Train loss: 1.002, SBP loss: 0.496, In mmHg: 208.141, DBP loss: 0.507, In mmHg: 50.875, Epoch time = 54.934s
+[2026-05-31 13:34:22] - INFO: Epoch 12, Val loss: 2.170, Val SBP loss: 1.353, In mmHg: 568.218, Val DBP loss: 0.817, In mmHg: 82.047  Val MAE: 0.805, Val SBP MAE: 0.957, In mmHg: 19.615, Val DBP MAE: 0.653, In mmHg: 6.543
+[2026-05-31 13:35:18] - INFO: Epoch: 13, Train loss: 0.995, SBP loss: 0.492, In mmHg: 206.431, DBP loss: 0.504, In mmHg: 50.566, Epoch time = 55.667s
+[2026-05-31 13:35:20] - INFO: Epoch 13, Val loss: 2.353, Val SBP loss: 1.483, In mmHg: 622.887, Val DBP loss: 0.870, In mmHg: 87.309  Val MAE: 0.822, Val SBP MAE: 0.990, In mmHg: 20.295, Val DBP MAE: 0.654, In mmHg: 6.554
+[2026-05-31 13:36:15] - INFO: Epoch: 14, Train loss: 0.988, SBP loss: 0.487, In mmHg: 204.438, DBP loss: 0.502, In mmHg: 50.335, Epoch time = 54.928s
+[2026-05-31 13:36:18] - INFO: Epoch 14, Val loss: 2.120, Val SBP loss: 1.321, In mmHg: 554.682, Val DBP loss: 0.799, In mmHg: 80.195  Val MAE: 0.799, Val SBP MAE: 0.943, In mmHg: 19.335, Val DBP MAE: 0.654, In mmHg: 6.553
+[2026-05-31 13:37:13] - INFO: Epoch: 15, Train loss: 0.967, SBP loss: 0.475, In mmHg: 199.363, DBP loss: 0.493, In mmHg: 49.461, Epoch time = 54.574s
+[2026-05-31 13:37:15] - INFO: Epoch 15, Val loss: 2.090, Val SBP loss: 1.287, In mmHg: 540.525, Val DBP loss: 0.803, In mmHg: 80.626  Val MAE: 0.790, Val SBP MAE: 0.932, In mmHg: 19.102, Val DBP MAE: 0.649, In mmHg: 6.498
+[2026-05-31 13:38:11] - INFO: Epoch: 16, Train loss: 0.962, SBP loss: 0.471, In mmHg: 197.843, DBP loss: 0.491, In mmHg: 49.294, Epoch time = 55.220s
+[2026-05-31 13:38:13] - INFO: Epoch 16, Val loss: 2.261, Val SBP loss: 1.430, In mmHg: 600.449, Val DBP loss: 0.831, In mmHg: 83.455  Val MAE: 0.815, Val SBP MAE: 0.979, In mmHg: 20.068, Val DBP MAE: 0.652, In mmHg: 6.529
+[2026-05-31 13:39:08] - INFO: Epoch: 17, Train loss: 0.958, SBP loss: 0.469, In mmHg: 196.860, DBP loss: 0.490, In mmHg: 49.131, Epoch time = 54.969s
+[2026-05-31 13:39:11] - INFO: Epoch 17, Val loss: 2.212, Val SBP loss: 1.384, In mmHg: 581.414, Val DBP loss: 0.828, In mmHg: 83.109  Val MAE: 0.807, Val SBP MAE: 0.963, In mmHg: 19.729, Val DBP MAE: 0.652, In mmHg: 6.531
+[2026-05-31 13:39:11] - INFO: Early stopping at epoch 17
+[2026-05-31 13:39:11] - INFO: 1 fold MAE: 0.768 ± 0.000
+[2026-05-31 13:39:11] - INFO: 1 fold SBP MAE: 0.891 ± 0.000
+[2026-05-31 13:39:11] - INFO: 1 fold DBP MAE: 0.646 ± 0.000
+[2026-05-31 13:39:11] - INFO: 1 fold SBP MAE in mmHg: 18.255 ± 0.000
+[2026-05-31 13:39:11] - INFO: 1 fold DBP MAE in mmHg: 6.467 ± 0.000
+[2026-05-31 13:39:11] - INFO: ######## Fold 1 ########
+[2026-05-31 13:39:11] - INFO: ############ 载入融合数据集 (PPG + 26-dim features) ############
+[2026-05-31 13:39:12] - INFO: ############ 初始化 FusionModel26 ############
+[2026-05-31 13:40:08] - INFO: Epoch: 0, Train loss: 1.493, SBP loss: 0.736, In mmHg: 328.731, DBP loss: 0.758, In mmHg: 68.449, Epoch time = 55.842s
+[2026-05-31 13:40:11] - INFO: Epoch 0, Val loss: 2.647, Val SBP loss: 1.038, In mmHg: 463.658, Val DBP loss: 1.609, In mmHg: 145.333  Val MAE: 0.861, Val SBP MAE: 0.801, In mmHg: 16.933, Val DBP MAE: 0.920, In mmHg: 8.747
+[2026-05-31 13:40:11] - INFO: Best model saved
+[2026-05-31 13:41:07] - INFO: Epoch: 1, Train loss: 1.291, SBP loss: 0.643, In mmHg: 287.228, DBP loss: 0.649, In mmHg: 58.585, Epoch time = 55.783s
+[2026-05-31 13:41:10] - INFO: Epoch 1, Val loss: 2.490, Val SBP loss: 0.953, In mmHg: 425.860, Val DBP loss: 1.537, In mmHg: 138.807  Val MAE: 0.838, Val SBP MAE: 0.778, In mmHg: 16.438, Val DBP MAE: 0.898, In mmHg: 8.537
+[2026-05-31 13:41:10] - INFO: Best model saved
+[2026-05-31 13:42:05] - INFO: Epoch: 2, Train loss: 1.227, SBP loss: 0.609, In mmHg: 272.348, DBP loss: 0.618, In mmHg: 55.788, Epoch time = 55.905s
+[2026-05-31 13:42:08] - INFO: Epoch 2, Val loss: 2.545, Val SBP loss: 0.973, In mmHg: 434.713, Val DBP loss: 1.573, In mmHg: 142.040  Val MAE: 0.855, Val SBP MAE: 0.785, In mmHg: 16.596, Val DBP MAE: 0.925, In mmHg: 8.790
+[2026-05-31 13:43:04] - INFO: Epoch: 3, Train loss: 1.189, SBP loss: 0.590, In mmHg: 263.637, DBP loss: 0.599, In mmHg: 54.129, Epoch time = 55.603s
+[2026-05-31 13:43:07] - INFO: Epoch 3, Val loss: 2.542, Val SBP loss: 0.987, In mmHg: 440.908, Val DBP loss: 1.556, In mmHg: 140.504  Val MAE: 0.859, Val SBP MAE: 0.789, In mmHg: 16.672, Val DBP MAE: 0.930, In mmHg: 8.839
+[2026-05-31 13:44:02] - INFO: Epoch: 4, Train loss: 1.165, SBP loss: 0.577, In mmHg: 257.728, DBP loss: 0.588, In mmHg: 53.144, Epoch time = 55.077s
+[2026-05-31 13:44:04] - INFO: Epoch 4, Val loss: 2.535, Val SBP loss: 0.984, In mmHg: 439.599, Val DBP loss: 1.551, In mmHg: 140.110  Val MAE: 0.846, Val SBP MAE: 0.781, In mmHg: 16.518, Val DBP MAE: 0.910, In mmHg: 8.653
+[2026-05-31 13:45:00] - INFO: Epoch: 5, Train loss: 1.142, SBP loss: 0.565, In mmHg: 252.298, DBP loss: 0.577, In mmHg: 52.110, Epoch time = 55.790s
+[2026-05-31 13:45:03] - INFO: Epoch 5, Val loss: 2.525, Val SBP loss: 0.992, In mmHg: 443.407, Val DBP loss: 1.533, In mmHg: 138.467  Val MAE: 0.853, Val SBP MAE: 0.788, In mmHg: 16.649, Val DBP MAE: 0.918, In mmHg: 8.721
+[2026-05-31 13:45:59] - INFO: Epoch: 6, Train loss: 1.111, SBP loss: 0.548, In mmHg: 244.854, DBP loss: 0.563, In mmHg: 50.826, Epoch time = 55.657s
+[2026-05-31 13:46:02] - INFO: Epoch 6, Val loss: 2.569, Val SBP loss: 0.991, In mmHg: 442.634, Val DBP loss: 1.579, In mmHg: 142.598  Val MAE: 0.856, Val SBP MAE: 0.785, In mmHg: 16.590, Val DBP MAE: 0.928, In mmHg: 8.815
+[2026-05-31 13:46:58] - INFO: Epoch: 7, Train loss: 1.099, SBP loss: 0.542, In mmHg: 242.288, DBP loss: 0.557, In mmHg: 50.335, Epoch time = 55.704s
+[2026-05-31 13:47:01] - INFO: Epoch 7, Val loss: 2.548, Val SBP loss: 0.988, In mmHg: 441.447, Val DBP loss: 1.560, In mmHg: 140.872  Val MAE: 0.860, Val SBP MAE: 0.788, In mmHg: 16.652, Val DBP MAE: 0.932, In mmHg: 8.854
+[2026-05-31 13:59:16] - INFO: Epoch: 8, Train loss: 1.091, SBP loss: 0.538, In mmHg: 240.271, DBP loss: 0.553, In mmHg: 49.941, Epoch time = 735.320s
+[2026-05-31 13:59:19] - INFO: Epoch 8, Val loss: 2.592, Val SBP loss: 1.013, In mmHg: 452.822, Val DBP loss: 1.579, In mmHg: 142.573  Val MAE: 0.863, Val SBP MAE: 0.794, In mmHg: 16.775, Val DBP MAE: 0.932, In mmHg: 8.854
+[2026-05-31 14:00:14] - INFO: Epoch: 9, Train loss: 1.083, SBP loss: 0.533, In mmHg: 238.299, DBP loss: 0.549, In mmHg: 49.615, Epoch time = 55.441s
+[2026-05-31 14:00:18] - INFO: Epoch 9, Val loss: 2.593, Val SBP loss: 1.007, In mmHg: 449.863, Val DBP loss: 1.586, In mmHg: 143.248  Val MAE: 0.863, Val SBP MAE: 0.792, In mmHg: 16.748, Val DBP MAE: 0.933, In mmHg: 8.869
+[2026-05-31 14:01:13] - INFO: Epoch: 10, Train loss: 1.063, SBP loss: 0.523, In mmHg: 233.742, DBP loss: 0.540, In mmHg: 48.787, Epoch time = 55.205s
+[2026-05-31 14:01:16] - INFO: Epoch 10, Val loss: 2.605, Val SBP loss: 1.023, In mmHg: 457.057, Val DBP loss: 1.583, In mmHg: 142.935  Val MAE: 0.874, Val SBP MAE: 0.802, In mmHg: 16.948, Val DBP MAE: 0.946, In mmHg: 8.987
+[2026-05-31 14:02:12] - INFO: Epoch: 11, Train loss: 1.059, SBP loss: 0.521, In mmHg: 232.639, DBP loss: 0.538, In mmHg: 48.634, Epoch time = 55.972s
+[2026-05-31 14:02:15] - INFO: Epoch 11, Val loss: 2.550, Val SBP loss: 0.985, In mmHg: 440.208, Val DBP loss: 1.565, In mmHg: 141.372  Val MAE: 0.852, Val SBP MAE: 0.782, In mmHg: 16.531, Val DBP MAE: 0.922, In mmHg: 8.766
+[2026-05-31 14:03:10] - INFO: Epoch: 12, Train loss: 1.053, SBP loss: 0.518, In mmHg: 231.474, DBP loss: 0.535, In mmHg: 48.332, Epoch time = 55.406s
+[2026-05-31 14:03:13] - INFO: Epoch 12, Val loss: 2.562, Val SBP loss: 0.999, In mmHg: 446.476, Val DBP loss: 1.563, In mmHg: 141.193  Val MAE: 0.857, Val SBP MAE: 0.789, In mmHg: 16.688, Val DBP MAE: 0.924, In mmHg: 8.778
+[2026-05-31 14:03:13] - INFO: Early stopping at epoch 12
+[2026-05-31 14:03:13] - INFO: 2 fold MAE: 0.803 ± 0.035
+[2026-05-31 14:03:13] - INFO: 2 fold SBP MAE: 0.834 ± 0.057
+[2026-05-31 14:03:13] - INFO: 2 fold DBP MAE: 0.772 ± 0.126
+[2026-05-31 14:03:13] - INFO: 2 fold SBP MAE in mmHg: 17.346 ± 0.909
+[2026-05-31 14:03:13] - INFO: 2 fold DBP MAE in mmHg: 7.502 ± 1.035
+[2026-05-31 14:03:13] - INFO: ######## Fold 2 ########
+[2026-05-31 14:03:13] - INFO: ############ 载入融合数据集 (PPG + 26-dim features) ############
+[2026-05-31 14:03:14] - INFO: ############ 初始化 FusionModel26 ############
+[2026-05-31 14:04:10] - INFO: Epoch: 0, Train loss: 1.618, SBP loss: 0.758, In mmHg: 351.533, DBP loss: 0.860, In mmHg: 83.545, Epoch time = 55.674s
+[2026-05-31 14:04:13] - INFO: Epoch 0, Val loss: 1.722, Val SBP loss: 0.766, In mmHg: 355.231, Val DBP loss: 0.956, In mmHg: 92.869  Val MAE: 0.723, Val SBP MAE: 0.689, In mmHg: 14.832, Val DBP MAE: 0.757, In mmHg: 7.458
+[2026-05-31 14:04:13] - INFO: Best model saved
+[2026-05-31 14:05:08] - INFO: Epoch: 1, Train loss: 1.390, SBP loss: 0.664, In mmHg: 307.670, DBP loss: 0.726, In mmHg: 70.549, Epoch time = 55.505s
+[2026-05-31 14:05:11] - INFO: Epoch 1, Val loss: 1.602, Val SBP loss: 0.699, In mmHg: 324.098, Val DBP loss: 0.903, In mmHg: 87.721  Val MAE: 0.695, Val SBP MAE: 0.655, In mmHg: 14.112, Val DBP MAE: 0.734, In mmHg: 7.234
+[2026-05-31 14:05:11] - INFO: Best model saved
+[2026-05-31 14:06:07] - INFO: Epoch: 2, Train loss: 1.288, SBP loss: 0.617, In mmHg: 285.983, DBP loss: 0.671, In mmHg: 65.185, Epoch time = 55.636s
+[2026-05-31 14:06:10] - INFO: Epoch 2, Val loss: 1.586, Val SBP loss: 0.709, In mmHg: 328.824, Val DBP loss: 0.877, In mmHg: 85.209  Val MAE: 0.683, Val SBP MAE: 0.654, In mmHg: 14.073, Val DBP MAE: 0.713, In mmHg: 7.028
+[2026-05-31 14:06:10] - INFO: Best model saved
+[2026-05-31 14:07:05] - INFO: Epoch: 3, Train loss: 1.232, SBP loss: 0.589, In mmHg: 273.241, DBP loss: 0.642, In mmHg: 62.394, Epoch time = 55.476s
+[2026-05-31 14:07:08] - INFO: Epoch 3, Val loss: 1.512, Val SBP loss: 0.694, In mmHg: 321.585, Val DBP loss: 0.818, In mmHg: 79.521  Val MAE: 0.667, Val SBP MAE: 0.648, In mmHg: 13.957, Val DBP MAE: 0.686, In mmHg: 6.767
+[2026-05-31 14:07:08] - INFO: Best model saved
+[2026-05-31 14:08:03] - INFO: Epoch: 4, Train loss: 1.188, SBP loss: 0.568, In mmHg: 263.246, DBP loss: 0.620, In mmHg: 60.261, Epoch time = 55.503s
+[2026-05-31 14:08:06] - INFO: Epoch 4, Val loss: 1.526, Val SBP loss: 0.700, In mmHg: 324.314, Val DBP loss: 0.827, In mmHg: 80.330  Val MAE: 0.673, Val SBP MAE: 0.656, In mmHg: 14.130, Val DBP MAE: 0.690, In mmHg: 6.797
+[2026-05-31 14:09:02] - INFO: Epoch: 5, Train loss: 1.150, SBP loss: 0.549, In mmHg: 254.720, DBP loss: 0.601, In mmHg: 58.398, Epoch time = 55.824s
+[2026-05-31 14:09:05] - INFO: Epoch 5, Val loss: 1.468, Val SBP loss: 0.684, In mmHg: 317.050, Val DBP loss: 0.785, In mmHg: 76.236  Val MAE: 0.661, Val SBP MAE: 0.643, In mmHg: 13.837, Val DBP MAE: 0.680, In mmHg: 6.705
+[2026-05-31 14:09:05] - INFO: Best model saved
+[2026-05-31 14:10:00] - INFO: Epoch: 6, Train loss: 1.124, SBP loss: 0.537, In mmHg: 248.951, DBP loss: 0.587, In mmHg: 57.045, Epoch time = 55.724s
+[2026-05-31 14:10:03] - INFO: Epoch 6, Val loss: 1.535, Val SBP loss: 0.702, In mmHg: 325.269, Val DBP loss: 0.834, In mmHg: 81.005  Val MAE: 0.677, Val SBP MAE: 0.660, In mmHg: 14.207, Val DBP MAE: 0.695, In mmHg: 6.850
+[2026-05-31 14:10:59] - INFO: Epoch: 7, Train loss: 1.101, SBP loss: 0.524, In mmHg: 243.109, DBP loss: 0.576, In mmHg: 55.986, Epoch time = 55.649s
+[2026-05-31 14:11:02] - INFO: Epoch 7, Val loss: 1.556, Val SBP loss: 0.718, In mmHg: 332.966, Val DBP loss: 0.838, In mmHg: 81.408  Val MAE: 0.678, Val SBP MAE: 0.663, In mmHg: 14.264, Val DBP MAE: 0.693, In mmHg: 6.834
+[2026-05-31 14:11:58] - INFO: Epoch: 8, Train loss: 1.078, SBP loss: 0.513, In mmHg: 237.752, DBP loss: 0.565, In mmHg: 54.935, Epoch time = 55.899s
+[2026-05-31 14:12:01] - INFO: Epoch 8, Val loss: 1.496, Val SBP loss: 0.709, In mmHg: 328.590, Val DBP loss: 0.788, In mmHg: 76.530  Val MAE: 0.673, Val SBP MAE: 0.664, In mmHg: 14.286, Val DBP MAE: 0.682, In mmHg: 6.724
+[2026-05-31 14:12:56] - INFO: Epoch: 9, Train loss: 1.064, SBP loss: 0.506, In mmHg: 234.560, DBP loss: 0.558, In mmHg: 54.229, Epoch time = 55.263s
+[2026-05-31 14:12:59] - INFO: Epoch 9, Val loss: 1.494, Val SBP loss: 0.707, In mmHg: 327.572, Val DBP loss: 0.788, In mmHg: 76.559  Val MAE: 0.669, Val SBP MAE: 0.659, In mmHg: 14.199, Val DBP MAE: 0.678, In mmHg: 6.680
+[2026-05-31 14:13:55] - INFO: Epoch: 10, Train loss: 1.026, SBP loss: 0.487, In mmHg: 225.842, DBP loss: 0.539, In mmHg: 52.379, Epoch time = 56.168s
+[2026-05-31 14:13:58] - INFO: Epoch 10, Val loss: 1.556, Val SBP loss: 0.735, In mmHg: 340.712, Val DBP loss: 0.821, In mmHg: 79.785  Val MAE: 0.682, Val SBP MAE: 0.676, In mmHg: 14.547, Val DBP MAE: 0.687, In mmHg: 6.776
+[2026-05-31 14:14:53] - INFO: Epoch: 11, Train loss: 1.016, SBP loss: 0.482, In mmHg: 223.322, DBP loss: 0.534, In mmHg: 51.930, Epoch time = 55.627s
+[2026-05-31 14:14:56] - INFO: Epoch 11, Val loss: 1.601, Val SBP loss: 0.790, In mmHg: 366.444, Val DBP loss: 0.810, In mmHg: 78.756  Val MAE: 0.701, Val SBP MAE: 0.711, In mmHg: 15.303, Val DBP MAE: 0.691, In mmHg: 6.814
+[2026-05-31 14:15:52] - INFO: Epoch: 12, Train loss: 1.010, SBP loss: 0.479, In mmHg: 222.020, DBP loss: 0.531, In mmHg: 51.621, Epoch time = 55.581s
+[2026-05-31 14:15:55] - INFO: Epoch 12, Val loss: 1.571, Val SBP loss: 0.737, In mmHg: 341.770, Val DBP loss: 0.834, In mmHg: 81.030  Val MAE: 0.688, Val SBP MAE: 0.679, In mmHg: 14.621, Val DBP MAE: 0.697, In mmHg: 6.874
+[2026-05-31 14:16:50] - INFO: Epoch: 13, Train loss: 1.005, SBP loss: 0.477, In mmHg: 220.950, DBP loss: 0.528, In mmHg: 51.297, Epoch time = 55.091s
+[2026-05-31 14:16:52] - INFO: Epoch 13, Val loss: 1.579, Val SBP loss: 0.772, In mmHg: 357.657, Val DBP loss: 0.807, In mmHg: 78.451  Val MAE: 0.690, Val SBP MAE: 0.695, In mmHg: 14.973, Val DBP MAE: 0.684, In mmHg: 6.745
+[2026-05-31 14:17:47] - INFO: Epoch: 14, Train loss: 0.984, SBP loss: 0.466, In mmHg: 216.102, DBP loss: 0.518, In mmHg: 50.341, Epoch time = 54.422s
+[2026-05-31 14:17:49] - INFO: Epoch 14, Val loss: 1.654, Val SBP loss: 0.829, In mmHg: 384.252, Val DBP loss: 0.825, In mmHg: 80.198  Val MAE: 0.714, Val SBP MAE: 0.728, In mmHg: 15.666, Val DBP MAE: 0.701, In mmHg: 6.911
+[2026-05-31 14:18:46] - INFO: Epoch: 15, Train loss: 0.979, SBP loss: 0.464, In mmHg: 214.875, DBP loss: 0.515, In mmHg: 50.069, Epoch time = 56.176s
+[2026-05-31 14:18:48] - INFO: Epoch 15, Val loss: 1.582, Val SBP loss: 0.761, In mmHg: 352.865, Val DBP loss: 0.821, In mmHg: 79.731  Val MAE: 0.692, Val SBP MAE: 0.693, In mmHg: 14.929, Val DBP MAE: 0.691, In mmHg: 6.812
+[2026-05-31 14:27:24] - INFO: Epoch: 16, Train loss: 0.975, SBP loss: 0.461, In mmHg: 213.809, DBP loss: 0.514, In mmHg: 49.974, Epoch time = 515.467s
+[2026-05-31 14:27:27] - INFO: Epoch 16, Val loss: 1.592, Val SBP loss: 0.776, In mmHg: 359.929, Val DBP loss: 0.816, In mmHg: 79.267  Val MAE: 0.696, Val SBP MAE: 0.698, In mmHg: 15.035, Val DBP MAE: 0.693, In mmHg: 6.832
+[2026-05-31 14:27:27] - INFO: Early stopping at epoch 16
+[2026-05-31 14:27:27] - INFO: 3 fold MAE: 0.756 ± 0.073
+[2026-05-31 14:27:27] - INFO: 3 fold SBP MAE: 0.770 ± 0.101
+[2026-05-31 14:27:27] - INFO: 3 fold DBP MAE: 0.741 ± 0.112
+[2026-05-31 14:27:27] - INFO: 3 fold SBP MAE in mmHg: 16.177 ± 1.813
+[2026-05-31 14:27:27] - INFO: 3 fold DBP MAE in mmHg: 7.236 ± 0.925
+[2026-05-31 14:27:27] - INFO: ######## Fold 3 ########
+[2026-05-31 14:27:27] - INFO: ############ 载入融合数据集 (PPG + 26-dim features) ############
+[2026-05-31 14:27:27] - INFO: ############ 初始化 FusionModel26 ############
+[2026-05-31 14:28:23] - INFO: Epoch: 0, Train loss: 1.511, SBP loss: 0.738, In mmHg: 332.947, DBP loss: 0.773, In mmHg: 82.566, Epoch time = 55.861s
+[2026-05-31 14:28:26] - INFO: Epoch 0, Val loss: 1.523, Val SBP loss: 0.897, In mmHg: 404.784, Val DBP loss: 0.626, In mmHg: 66.910  Val MAE: 0.689, Val SBP MAE: 0.774, In mmHg: 16.434, Val DBP MAE: 0.604, In mmHg: 6.243
+[2026-05-31 14:28:26] - INFO: Best model saved
+[2026-05-31 14:29:22] - INFO: Epoch: 1, Train loss: 1.267, SBP loss: 0.626, In mmHg: 282.436, DBP loss: 0.641, In mmHg: 68.517, Epoch time = 55.969s
+[2026-05-31 14:29:25] - INFO: Epoch 1, Val loss: 1.396, Val SBP loss: 0.852, In mmHg: 384.582, Val DBP loss: 0.544, In mmHg: 58.097  Val MAE: 0.658, Val SBP MAE: 0.749, In mmHg: 15.917, Val DBP MAE: 0.567, In mmHg: 5.855
+[2026-05-31 14:29:25] - INFO: Best model saved
+[2026-05-31 14:30:19] - INFO: Epoch: 2, Train loss: 1.193, SBP loss: 0.587, In mmHg: 264.987, DBP loss: 0.606, In mmHg: 64.745, Epoch time = 53.595s
+[2026-05-31 14:30:22] - INFO: Epoch 2, Val loss: 1.468, Val SBP loss: 0.883, In mmHg: 398.593, Val DBP loss: 0.585, In mmHg: 62.505  Val MAE: 0.678, Val SBP MAE: 0.764, In mmHg: 16.226, Val DBP MAE: 0.592, In mmHg: 6.122
+[2026-05-31 14:31:18] - INFO: Epoch: 3, Train loss: 1.153, SBP loss: 0.566, In mmHg: 255.519, DBP loss: 0.587, In mmHg: 62.669, Epoch time = 55.476s
+[2026-05-31 14:31:20] - INFO: Epoch 3, Val loss: 1.482, Val SBP loss: 0.894, In mmHg: 403.620, Val DBP loss: 0.588, In mmHg: 62.794  Val MAE: 0.676, Val SBP MAE: 0.763, In mmHg: 16.205, Val DBP MAE: 0.589, In mmHg: 6.083
+[2026-05-31 14:32:16] - INFO: Epoch: 4, Train loss: 1.122, SBP loss: 0.548, In mmHg: 247.473, DBP loss: 0.574, In mmHg: 61.306, Epoch time = 55.310s
+[2026-05-31 14:32:19] - INFO: Epoch 4, Val loss: 1.469, Val SBP loss: 0.893, In mmHg: 403.188, Val DBP loss: 0.576, In mmHg: 61.552  Val MAE: 0.670, Val SBP MAE: 0.763, In mmHg: 16.204, Val DBP MAE: 0.578, In mmHg: 5.970
+[2026-05-31 14:33:14] - INFO: Epoch: 5, Train loss: 1.097, SBP loss: 0.535, In mmHg: 241.522, DBP loss: 0.562, In mmHg: 60.025, Epoch time = 55.893s
+[2026-05-31 14:33:17] - INFO: Epoch 5, Val loss: 1.506, Val SBP loss: 0.920, In mmHg: 415.447, Val DBP loss: 0.586, In mmHg: 62.592  Val MAE: 0.675, Val SBP MAE: 0.772, In mmHg: 16.394, Val DBP MAE: 0.579, In mmHg: 5.979
+[2026-05-31 14:34:13] - INFO: Epoch: 6, Train loss: 1.059, SBP loss: 0.516, In mmHg: 232.870, DBP loss: 0.544, In mmHg: 58.061, Epoch time = 55.399s
+[2026-05-31 14:34:15] - INFO: Epoch 6, Val loss: 1.558, Val SBP loss: 0.930, In mmHg: 419.802, Val DBP loss: 0.628, In mmHg: 67.079  Val MAE: 0.693, Val SBP MAE: 0.780, In mmHg: 16.573, Val DBP MAE: 0.606, In mmHg: 6.266
+[2026-05-31 14:35:11] - INFO: Epoch: 7, Train loss: 1.049, SBP loss: 0.509, In mmHg: 229.681, DBP loss: 0.540, In mmHg: 57.652, Epoch time = 55.603s
+[2026-05-31 14:35:14] - INFO: Epoch 7, Val loss: 1.537, Val SBP loss: 0.920, In mmHg: 415.267, Val DBP loss: 0.617, In mmHg: 65.883  Val MAE: 0.687, Val SBP MAE: 0.773, In mmHg: 16.426, Val DBP MAE: 0.601, In mmHg: 6.215
+[2026-05-31 14:36:10] - INFO: Epoch: 8, Train loss: 1.036, SBP loss: 0.502, In mmHg: 226.591, DBP loss: 0.534, In mmHg: 57.008, Epoch time = 55.835s
+[2026-05-31 14:36:12] - INFO: Epoch 8, Val loss: 1.599, Val SBP loss: 0.913, In mmHg: 412.227, Val DBP loss: 0.686, In mmHg: 73.297  Val MAE: 0.713, Val SBP MAE: 0.781, In mmHg: 16.588, Val DBP MAE: 0.645, In mmHg: 6.666
+[2026-05-31 14:37:07] - INFO: Epoch: 9, Train loss: 1.027, SBP loss: 0.498, In mmHg: 224.683, DBP loss: 0.529, In mmHg: 56.485, Epoch time = 55.228s
+[2026-05-31 14:37:10] - INFO: Epoch 9, Val loss: 1.609, Val SBP loss: 0.909, In mmHg: 410.284, Val DBP loss: 0.700, In mmHg: 74.720  Val MAE: 0.716, Val SBP MAE: 0.778, In mmHg: 16.523, Val DBP MAE: 0.654, In mmHg: 6.758
+[2026-05-31 14:38:06] - INFO: Epoch: 10, Train loss: 1.009, SBP loss: 0.489, In mmHg: 220.533, DBP loss: 0.520, In mmHg: 55.593, Epoch time = 55.555s
+[2026-05-31 14:38:09] - INFO: Epoch 10, Val loss: 1.618, Val SBP loss: 0.942, In mmHg: 425.378, Val DBP loss: 0.675, In mmHg: 72.146  Val MAE: 0.709, Val SBP MAE: 0.787, In mmHg: 16.716, Val DBP MAE: 0.630, In mmHg: 6.516
+[2026-05-31 14:39:04] - INFO: Epoch: 11, Train loss: 1.002, SBP loss: 0.485, In mmHg: 219.039, DBP loss: 0.517, In mmHg: 55.225, Epoch time = 55.784s
+[2026-05-31 14:39:07] - INFO: Epoch 11, Val loss: 1.556, Val SBP loss: 0.916, In mmHg: 413.491, Val DBP loss: 0.640, In mmHg: 68.344  Val MAE: 0.696, Val SBP MAE: 0.775, In mmHg: 16.472, Val DBP MAE: 0.616, In mmHg: 6.368
+[2026-05-31 14:40:03] - INFO: Epoch: 12, Train loss: 0.999, SBP loss: 0.483, In mmHg: 217.845, DBP loss: 0.516, In mmHg: 55.105, Epoch time = 56.017s
+[2026-05-31 14:40:06] - INFO: Epoch 12, Val loss: 1.579, Val SBP loss: 0.927, In mmHg: 418.569, Val DBP loss: 0.652, In mmHg: 69.633  Val MAE: 0.697, Val SBP MAE: 0.776, In mmHg: 16.484, Val DBP MAE: 0.618, In mmHg: 6.386
+[2026-05-31 14:40:06] - INFO: Early stopping at epoch 12
+[2026-05-31 14:40:06] - INFO: 4 fold MAE: 0.731 ± 0.076
+[2026-05-31 14:40:06] - INFO: 4 fold SBP MAE: 0.765 ± 0.088
+[2026-05-31 14:40:06] - INFO: 4 fold DBP MAE: 0.698 ± 0.123
+[2026-05-31 14:40:06] - INFO: 4 fold SBP MAE in mmHg: 16.112 ± 1.574
+[2026-05-31 14:40:06] - INFO: 4 fold DBP MAE in mmHg: 6.891 ± 0.999
+[2026-05-31 14:40:06] - INFO: ######## Fold 4 ########
+[2026-05-31 14:40:06] - INFO: ############ 载入融合数据集 (PPG + 26-dim features) ############
+[2026-05-31 14:40:07] - INFO: ############ 初始化 FusionModel26 ############
+[2026-05-31 14:41:02] - INFO: Epoch: 0, Train loss: 1.569, SBP loss: 0.759, In mmHg: 332.542, DBP loss: 0.810, In mmHg: 78.473, Epoch time = 55.514s
+[2026-05-31 14:41:05] - INFO: Epoch 0, Val loss: 1.843, Val SBP loss: 0.881, In mmHg: 385.792, Val DBP loss: 0.962, In mmHg: 93.220  Val MAE: 0.743, Val SBP MAE: 0.766, In mmHg: 16.025, Val DBP MAE: 0.720, In mmHg: 7.089
+[2026-05-31 14:41:05] - INFO: Best model saved
+[2026-05-31 14:42:01] - INFO: Epoch: 1, Train loss: 1.371, SBP loss: 0.670, In mmHg: 293.525, DBP loss: 0.701, In mmHg: 67.901, Epoch time = 55.233s
+[2026-05-31 14:42:03] - INFO: Epoch 1, Val loss: 1.773, Val SBP loss: 0.871, In mmHg: 381.571, Val DBP loss: 0.902, In mmHg: 87.364  Val MAE: 0.732, Val SBP MAE: 0.769, In mmHg: 16.083, Val DBP MAE: 0.696, In mmHg: 6.849
+[2026-05-31 14:42:03] - INFO: Best model saved
+[2026-05-31 14:42:59] - INFO: Epoch: 2, Train loss: 1.270, SBP loss: 0.628, In mmHg: 274.870, DBP loss: 0.642, In mmHg: 62.218, Epoch time = 55.840s
+[2026-05-31 14:43:02] - INFO: Epoch 2, Val loss: 1.808, Val SBP loss: 0.898, In mmHg: 393.121, Val DBP loss: 0.910, In mmHg: 88.173  Val MAE: 0.751, Val SBP MAE: 0.787, In mmHg: 16.476, Val DBP MAE: 0.715, In mmHg: 7.036
+[2026-05-31 14:43:56] - INFO: Epoch: 3, Train loss: 1.217, SBP loss: 0.603, In mmHg: 264.003, DBP loss: 0.614, In mmHg: 59.515, Epoch time = 54.353s
+[2026-05-31 14:43:59] - INFO: Epoch 3, Val loss: 1.814, Val SBP loss: 0.910, In mmHg: 398.412, Val DBP loss: 0.904, In mmHg: 87.636  Val MAE: 0.762, Val SBP MAE: 0.795, In mmHg: 16.637, Val DBP MAE: 0.728, In mmHg: 7.166
+[2026-05-31 14:44:54] - INFO: Epoch: 4, Train loss: 1.179, SBP loss: 0.585, In mmHg: 256.223, DBP loss: 0.594, In mmHg: 57.547, Epoch time = 55.262s
+[2026-05-31 14:44:57] - INFO: Epoch 4, Val loss: 1.959, Val SBP loss: 0.975, In mmHg: 427.032, Val DBP loss: 0.984, In mmHg: 95.347  Val MAE: 0.807, Val SBP MAE: 0.829, In mmHg: 17.352, Val DBP MAE: 0.785, In mmHg: 7.732
+[2026-05-31 14:45:53] - INFO: Epoch: 5, Train loss: 1.150, SBP loss: 0.571, In mmHg: 250.194, DBP loss: 0.579, In mmHg: 56.064, Epoch time = 55.691s
+[2026-05-31 14:45:56] - INFO: Epoch 5, Val loss: 1.805, Val SBP loss: 0.920, In mmHg: 403.044, Val DBP loss: 0.884, In mmHg: 85.688  Val MAE: 0.760, Val SBP MAE: 0.801, In mmHg: 16.770, Val DBP MAE: 0.718, In mmHg: 7.067
+[2026-05-31 14:46:51] - INFO: Epoch: 6, Train loss: 1.110, SBP loss: 0.552, In mmHg: 241.780, DBP loss: 0.558, In mmHg: 54.045, Epoch time = 55.373s
+[2026-05-31 14:46:54] - INFO: Epoch 6, Val loss: 1.944, Val SBP loss: 0.990, In mmHg: 433.637, Val DBP loss: 0.954, In mmHg: 92.457  Val MAE: 0.806, Val SBP MAE: 0.839, In mmHg: 17.549, Val DBP MAE: 0.774, In mmHg: 7.615
+[2026-05-31 14:47:50] - INFO: Epoch: 7, Train loss: 1.095, SBP loss: 0.545, In mmHg: 238.748, DBP loss: 0.550, In mmHg: 53.311, Epoch time = 55.657s
+[2026-05-31 14:47:53] - INFO: Epoch 7, Val loss: 2.153, Val SBP loss: 1.055, In mmHg: 462.018, Val DBP loss: 1.098, In mmHg: 106.352  Val MAE: 0.855, Val SBP MAE: 0.870, In mmHg: 18.208, Val DBP MAE: 0.840, In mmHg: 8.268
+[2026-05-31 14:48:48] - INFO: Epoch: 8, Train loss: 1.083, SBP loss: 0.540, In mmHg: 236.433, DBP loss: 0.543, In mmHg: 52.660, Epoch time = 55.572s
+[2026-05-31 14:48:51] - INFO: Epoch 8, Val loss: 1.909, Val SBP loss: 0.953, In mmHg: 417.513, Val DBP loss: 0.955, In mmHg: 92.555  Val MAE: 0.793, Val SBP MAE: 0.820, In mmHg: 17.151, Val DBP MAE: 0.767, In mmHg: 7.553
+[2026-05-31 14:49:47] - INFO: Epoch: 9, Train loss: 1.070, SBP loss: 0.533, In mmHg: 233.381, DBP loss: 0.537, In mmHg: 52.027, Epoch time = 55.516s
+[2026-05-31 14:49:50] - INFO: Epoch 9, Val loss: 2.202, Val SBP loss: 1.080, In mmHg: 473.108, Val DBP loss: 1.121, In mmHg: 108.657  Val MAE: 0.866, Val SBP MAE: 0.882, In mmHg: 18.451, Val DBP MAE: 0.850, In mmHg: 8.371
+[2026-05-31 14:50:45] - INFO: Epoch: 10, Train loss: 1.048, SBP loss: 0.523, In mmHg: 229.066, DBP loss: 0.525, In mmHg: 50.865, Epoch time = 55.775s
+[2026-05-31 14:50:48] - INFO: Epoch 10, Val loss: 2.185, Val SBP loss: 1.081, In mmHg: 473.269, Val DBP loss: 1.105, In mmHg: 107.041  Val MAE: 0.864, Val SBP MAE: 0.882, In mmHg: 18.462, Val DBP MAE: 0.845, In mmHg: 8.320
+[2026-05-31 14:51:44] - INFO: Epoch: 11, Train loss: 1.041, SBP loss: 0.518, In mmHg: 227.011, DBP loss: 0.522, In mmHg: 50.627, Epoch time = 55.504s
+[2026-05-31 14:51:47] - INFO: Epoch 11, Val loss: 2.117, Val SBP loss: 1.056, In mmHg: 462.457, Val DBP loss: 1.061, In mmHg: 102.767  Val MAE: 0.848, Val SBP MAE: 0.870, In mmHg: 18.198, Val DBP MAE: 0.826, In mmHg: 8.127
+[2026-05-31 14:52:42] - INFO: Epoch: 12, Train loss: 1.034, SBP loss: 0.515, In mmHg: 225.638, DBP loss: 0.519, In mmHg: 50.276, Epoch time = 55.436s
+[2026-05-31 14:52:45] - INFO: Epoch 12, Val loss: 2.403, Val SBP loss: 1.171, In mmHg: 512.624, Val DBP loss: 1.232, In mmHg: 119.415  Val MAE: 0.909, Val SBP MAE: 0.923, In mmHg: 19.309, Val DBP MAE: 0.894, In mmHg: 8.804
+[2026-05-31 14:52:45] - INFO: Early stopping at epoch 12
+[2026-05-31 14:52:45] - INFO: 5 fold MAE: 0.732 ± 0.068
+[2026-05-31 14:52:45] - INFO: 5 fold SBP MAE: 0.766 ± 0.079
+[2026-05-31 14:52:45] - INFO: 5 fold DBP MAE: 0.697 ± 0.110
+[2026-05-31 14:52:45] - INFO: 5 fold SBP MAE in mmHg: 16.106 ± 1.408
+[2026-05-31 14:52:45] - INFO: 5 fold DBP MAE in mmHg: 6.883 ± 0.894
+[2026-05-31 14:52:45] - INFO: ============================================================
+[2026-05-31 14:52:45] - INFO: FINAL 5-FOLD CROSS-VALIDATION RESULTS (FusionModel26)
+[2026-05-31 14:52:45] - INFO: ============================================================
+[2026-05-31 14:52:45] - INFO: SBP MAE = 16.11 ± 1.41 mmHg
+[2026-05-31 14:52:45] - INFO: DBP MAE = 6.88 ± 0.89 mmHg
+[2026-05-31 14:52:45] - INFO: SBP RMSE = 20.07 ± 1.52 mmHg
+[2026-05-31 14:52:45] - INFO: DBP RMSE = 9.40 ± 1.37 mmHg

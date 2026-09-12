@@ -28,6 +28,7 @@ class BaselineModel(nn.Module):
                                     padding=1),
                           nn.BatchNorm1d(num_features=self.filters[i+1]),
                           nn.ReLU(),
+                          nn.Dropout(drop_prob),
                           nn.MaxPool1d(kernel_size=2, stride=2)) # pool stride可选1，对比
                 for i in range(len(self.filters) - 1)
             ]) # 输入1dCNN: [batch_size, feature_dim=1, window_size(seq_len)=1024]
@@ -49,12 +50,13 @@ class BaselineModel(nn.Module):
                                 batch_first=True,
                                 dropout=drop_prob, 
                                 bidirectional=False)
-        # self.linear_attn = nn.Linear(self.hidden_dim * self.num_directions, self.attn_out) # 单层attention
-        self.linear_attn = nn.Sequential(
-            nn.Linear(self.hidden_dim * self.num_directions, self.hidden_dim),
-            nn.Tanh(),
-            nn.Linear(self.hidden_dim, self.attn_out),
-        )
+        self.linear_attn = nn.Sequential(nn.Linear(self.hidden_dim * self.num_directions, self.attn_out),
+                                         nn.Tanh()) # 单层attention
+        # self.linear_attn = nn.Sequential(
+        #     nn.Linear(self.hidden_dim * self.num_directions, self.hidden_dim),
+        #     nn.Tanh(),
+        #     nn.Linear(self.hidden_dim, self.attn_out),
+        # )
 
         self.linear_out = nn.Sequential(
             nn.Linear(self.hidden_dim * self.num_directions, self.hidden_dim),
@@ -62,6 +64,7 @@ class BaselineModel(nn.Module):
             nn.Dropout(drop_prob),
             nn.Linear(self.hidden_dim, self.output)
         )
+        # self.linear_out = nn.Linear(self.hidden_dim * self.num_directions, self.output) # 单层输出
 
 
     def forward(self, x):

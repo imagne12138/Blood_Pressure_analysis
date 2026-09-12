@@ -1,0 +1,16 @@
+[2026-06-21 15:16:25] - INFO: ######## Fold 0 ########
+[2026-06-21 15:16:25] - INFO: ############ 载入融合数据集 (PPG + 26-dim features) ############
+[2026-06-21 15:16:52] - INFO: 自动确定 SBP 区间: ['-4--1', '-1--0', '-0-1', '1-4']
+[2026-06-21 15:16:52] - INFO: 自动确定 DBP 区间: ['-3--1', '-1--0', '-0-1', '1-10']
+[2026-06-21 15:16:52] - INFO:   SBP bin 0 (-4--1): 103662 samples
+[2026-06-21 15:16:52] - INFO:   SBP bin 1 (-1--0): 103659 samples
+[2026-06-21 15:16:52] - INFO:   SBP bin 2 (-0-1): 103664 samples
+[2026-06-21 15:16:52] - INFO:   SBP bin 3 (1-4): 103662 samples
+[2026-06-21 15:16:52] - INFO:   DBP bin 0 (-3--1): 103662 samples
+[2026-06-21 15:16:52] - INFO:   DBP bin 1 (-1--0): 103661 samples
+[2026-06-21 15:16:52] - INFO:   DBP bin 2 (-0-1): 103662 samples
+[2026-06-21 15:16:52] - INFO:   DBP bin 3 (1-10): 103662 samples
+[2026-06-21 15:16:52] - INFO: ############ 初始化 TwoStageBPModel ############
+[2026-06-21 15:18:35] - INFO: Epoch: 0, Train loss: 2.187, Reg MAE: 1.404, Epoch time = 100.425s
+[2026-06-21 15:18:55] - INFO: Epoch 0, Val loss: 2.438  Val SBP MAE: 19.219 mmHg, Val DBP MAE: 6.868 mmHg  Cls Acc SBP: 33.5%, Cls Acc DBP: 29.3%
+[2026-06-21 15:18:55] - INFO: Best model saved

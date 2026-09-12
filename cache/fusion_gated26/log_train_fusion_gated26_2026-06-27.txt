@@ -1,0 +1,414 @@
+[2026-06-27 17:26:30] - INFO: ######## Fold 0 ########
+[2026-06-27 17:27:36] - INFO: Epoch: 0, Train loss: 1.561, SBP mmHg: 320.150, DBP mmHg: 80.172, Time: 65.2s
+[2026-06-27 17:27:39] - INFO: Fold 0 Gate cosine similarity: 0.0385
+[2026-06-27 17:27:39] - INFO: Epoch 0, Val loss: 2.117, SBP mmHg: 534.399, DBP mmHg: 84.819  MAE: 0.829, SBP MAE: 0.962, mmHg: 19.716, DBP MAE: 0.696, mmHg: 6.970
+[2026-06-27 17:27:39] - INFO: Best model saved
+[2026-06-27 17:28:48] - INFO: Epoch: 1, Train loss: 1.350, SBP mmHg: 281.878, DBP mmHg: 68.177, Time: 68.3s
+[2026-06-27 17:28:51] - INFO: Fold 0 Gate cosine similarity: 0.1910
+[2026-06-27 17:28:51] - INFO: Epoch 1, Val loss: 2.140, SBP mmHg: 528.159, DBP mmHg: 88.549  MAE: 0.819, SBP MAE: 0.942, mmHg: 19.312, DBP MAE: 0.696, mmHg: 6.972
+[2026-06-27 17:29:59] - INFO: Epoch: 2, Train loss: 1.269, SBP mmHg: 265.154, DBP mmHg: 64.008, Time: 68.5s
+[2026-06-27 17:30:03] - INFO: Fold 0 Gate cosine similarity: 0.2224
+[2026-06-27 17:30:03] - INFO: Epoch 2, Val loss: 2.110, SBP mmHg: 529.177, DBP mmHg: 85.280  MAE: 0.814, SBP MAE: 0.941, mmHg: 19.289, DBP MAE: 0.686, mmHg: 6.877
+[2026-06-27 17:30:03] - INFO: Best model saved
+[2026-06-27 17:31:14] - INFO: Epoch: 3, Train loss: 1.204, SBP mmHg: 251.550, DBP mmHg: 60.743, Time: 70.5s
+[2026-06-27 17:31:17] - INFO: Fold 0 Gate cosine similarity: 0.2347
+[2026-06-27 17:31:17] - INFO: Epoch 3, Val loss: 2.031, SBP mmHg: 499.031, DBP mmHg: 84.553  MAE: 0.794, SBP MAE: 0.902, mmHg: 18.484, DBP MAE: 0.686, mmHg: 6.871
+[2026-06-27 17:31:17] - INFO: Best model saved
+[2026-06-27 17:32:27] - INFO: Epoch: 4, Train loss: 1.152, SBP mmHg: 240.077, DBP mmHg: 58.264, Time: 69.5s
+[2026-06-27 17:32:30] - INFO: Fold 0 Gate cosine similarity: -0.0162
+[2026-06-27 17:32:30] - INFO: Epoch 4, Val loss: 2.022, SBP mmHg: 514.817, DBP mmHg: 79.965  MAE: 0.786, SBP MAE: 0.915, mmHg: 18.750, DBP MAE: 0.657, mmHg: 6.579
+[2026-06-27 17:32:30] - INFO: Best model saved
+[2026-06-27 17:33:40] - INFO: Epoch: 5, Train loss: 1.111, SBP mmHg: 230.880, DBP mmHg: 56.340, Time: 69.9s
+[2026-06-27 17:33:44] - INFO: Fold 0 Gate cosine similarity: -0.0251
+[2026-06-27 17:33:44] - INFO: Epoch 5, Val loss: 1.942, SBP mmHg: 488.682, DBP mmHg: 78.172  MAE: 0.781, SBP MAE: 0.891, mmHg: 18.253, DBP MAE: 0.672, mmHg: 6.733
+[2026-06-27 17:33:44] - INFO: Best model saved
+[2026-06-27 17:34:54] - INFO: Epoch: 6, Train loss: 1.078, SBP mmHg: 223.240, DBP mmHg: 54.812, Time: 69.5s
+[2026-06-27 17:34:57] - INFO: Fold 0 Gate cosine similarity: -0.0485
+[2026-06-27 17:34:57] - INFO: Epoch 6, Val loss: 2.096, SBP mmHg: 544.623, DBP mmHg: 80.247  MAE: 0.797, SBP MAE: 0.936, mmHg: 19.179, DBP MAE: 0.658, mmHg: 6.591
+[2026-06-27 17:36:08] - INFO: Epoch: 7, Train loss: 1.046, SBP mmHg: 215.795, DBP mmHg: 53.435, Time: 70.5s
+[2026-06-27 17:36:11] - INFO: Fold 0 Gate cosine similarity: -0.2597
+[2026-06-27 17:36:11] - INFO: Epoch 7, Val loss: 2.089, SBP mmHg: 540.253, DBP mmHg: 80.612  MAE: 0.805, SBP MAE: 0.938, mmHg: 19.214, DBP MAE: 0.673, mmHg: 6.739
+[2026-06-27 17:37:20] - INFO: Epoch: 8, Train loss: 1.020, SBP mmHg: 209.427, DBP mmHg: 52.316, Time: 69.2s
+[2026-06-27 17:37:24] - INFO: Fold 0 Gate cosine similarity: -0.2864
+[2026-06-27 17:37:24] - INFO: Epoch 8, Val loss: 2.039, SBP mmHg: 526.938, DBP mmHg: 78.685  MAE: 0.788, SBP MAE: 0.926, mmHg: 18.976, DBP MAE: 0.650, mmHg: 6.512
+[2026-06-27 17:38:34] - INFO: Epoch: 9, Train loss: 1.002, SBP mmHg: 204.324, DBP mmHg: 51.700, Time: 69.9s
+[2026-06-27 17:38:37] - INFO: Fold 0 Gate cosine similarity: -0.1026
+[2026-06-27 17:38:37] - INFO: Epoch 9, Val loss: 1.964, SBP mmHg: 492.555, DBP mmHg: 79.437  MAE: 0.776, SBP MAE: 0.889, mmHg: 18.228, DBP MAE: 0.663, mmHg: 6.643
+[2026-06-27 17:39:48] - INFO: Epoch: 10, Train loss: 0.977, SBP mmHg: 198.374, DBP mmHg: 50.650, Time: 70.3s
+[2026-06-27 17:39:51] - INFO: Fold 0 Gate cosine similarity: 0.0565
+[2026-06-27 17:39:51] - INFO: Epoch 10, Val loss: 2.111, SBP mmHg: 540.902, DBP mmHg: 82.635  MAE: 0.808, SBP MAE: 0.940, mmHg: 19.273, DBP MAE: 0.675, mmHg: 6.763
+[2026-06-27 17:41:02] - INFO: Epoch: 11, Train loss: 0.960, SBP mmHg: 194.302, DBP mmHg: 49.963, Time: 70.3s
+[2026-06-27 17:41:06] - INFO: Fold 0 Gate cosine similarity: 0.0175
+[2026-06-27 17:41:06] - INFO: Epoch 11, Val loss: 2.262, SBP mmHg: 586.671, DBP mmHg: 86.870  MAE: 0.827, SBP MAE: 0.979, mmHg: 20.055, DBP MAE: 0.676, mmHg: 6.773
+[2026-06-27 17:42:16] - INFO: Epoch: 12, Train loss: 0.943, SBP mmHg: 189.825, DBP mmHg: 49.250, Time: 70.5s
+[2026-06-27 17:42:20] - INFO: Fold 0 Gate cosine similarity: 0.0229
+[2026-06-27 17:42:20] - INFO: Epoch 12, Val loss: 2.046, SBP mmHg: 518.337, DBP mmHg: 81.462  MAE: 0.798, SBP MAE: 0.916, mmHg: 18.777, DBP MAE: 0.680, mmHg: 6.808
+[2026-06-27 17:43:31] - INFO: Epoch: 13, Train loss: 0.906, SBP mmHg: 181.079, DBP mmHg: 47.632, Time: 71.0s
+[2026-06-27 17:43:34] - INFO: Fold 0 Gate cosine similarity: -0.1650
+[2026-06-27 17:43:34] - INFO: Epoch 13, Val loss: 2.062, SBP mmHg: 518.887, DBP mmHg: 82.914  MAE: 0.795, SBP MAE: 0.916, mmHg: 18.766, DBP MAE: 0.675, mmHg: 6.759
+[2026-06-27 17:44:44] - INFO: Epoch: 14, Train loss: 0.896, SBP mmHg: 178.955, DBP mmHg: 47.163, Time: 69.3s
+[2026-06-27 17:44:47] - INFO: Fold 0 Gate cosine similarity: -0.0042
+[2026-06-27 17:44:47] - INFO: Epoch 14, Val loss: 2.048, SBP mmHg: 523.874, DBP mmHg: 80.351  MAE: 0.788, SBP MAE: 0.921, mmHg: 18.879, DBP MAE: 0.655, mmHg: 6.564
+[2026-06-27 17:45:57] - INFO: Epoch: 15, Train loss: 0.889, SBP mmHg: 177.200, DBP mmHg: 46.892, Time: 69.9s
+[2026-06-27 17:46:01] - INFO: Fold 0 Gate cosine similarity: -0.0353
+[2026-06-27 17:46:01] - INFO: Epoch 15, Val loss: 2.171, SBP mmHg: 546.921, DBP mmHg: 87.164  MAE: 0.812, SBP MAE: 0.931, mmHg: 19.077, DBP MAE: 0.692, mmHg: 6.935
+[2026-06-27 17:47:11] - INFO: Epoch: 16, Train loss: 0.879, SBP mmHg: 174.640, DBP mmHg: 46.526, Time: 70.2s
+[2026-06-27 17:47:15] - INFO: Fold 0 Gate cosine similarity: -0.1030
+[2026-06-27 17:47:15] - INFO: Epoch 16, Val loss: 2.111, SBP mmHg: 541.232, DBP mmHg: 82.501  MAE: 0.807, SBP MAE: 0.933, mmHg: 19.113, DBP MAE: 0.681, mmHg: 6.822
+[2026-06-27 17:48:25] - INFO: Epoch: 17, Train loss: 0.873, SBP mmHg: 173.246, DBP mmHg: 46.267, Time: 69.9s
+[2026-06-27 17:48:29] - INFO: Fold 0 Gate cosine similarity: -0.1087
+[2026-06-27 17:48:29] - INFO: Epoch 17, Val loss: 2.085, SBP mmHg: 529.914, DBP mmHg: 82.672  MAE: 0.796, SBP MAE: 0.921, mmHg: 18.873, DBP MAE: 0.672, mmHg: 6.727
+[2026-06-27 17:49:38] - INFO: Epoch: 18, Train loss: 0.868, SBP mmHg: 172.079, DBP mmHg: 46.037, Time: 70.0s
+[2026-06-27 17:49:42] - INFO: Fold 0 Gate cosine similarity: -0.1410
+[2026-06-27 17:49:42] - INFO: Epoch 18, Val loss: 2.100, SBP mmHg: 534.176, DBP mmHg: 83.115  MAE: 0.801, SBP MAE: 0.924, mmHg: 18.945, DBP MAE: 0.677, mmHg: 6.779
+[2026-06-27 17:50:52] - INFO: Epoch: 19, Train loss: 0.860, SBP mmHg: 169.949, DBP mmHg: 45.679, Time: 70.1s
+[2026-06-27 17:50:56] - INFO: Fold 0 Gate cosine similarity: -0.0433
+[2026-06-27 17:50:56] - INFO: Epoch 19, Val loss: 2.055, SBP mmHg: 514.059, DBP mmHg: 83.361  MAE: 0.790, SBP MAE: 0.907, mmHg: 18.582, DBP MAE: 0.673, mmHg: 6.741
+[2026-06-27 17:52:07] - INFO: Epoch: 20, Train loss: 0.839, SBP mmHg: 165.312, DBP mmHg: 44.732, Time: 70.7s
+[2026-06-27 17:52:10] - INFO: Fold 0 Gate cosine similarity: -0.0419
+[2026-06-27 17:52:10] - INFO: Epoch 20, Val loss: 2.102, SBP mmHg: 535.670, DBP mmHg: 82.973  MAE: 0.794, SBP MAE: 0.926, mmHg: 18.969, DBP MAE: 0.663, mmHg: 6.644
+[2026-06-27 17:53:21] - INFO: Epoch: 21, Train loss: 0.833, SBP mmHg: 163.776, DBP mmHg: 44.505, Time: 71.0s
+[2026-06-27 17:53:25] - INFO: Fold 0 Gate cosine similarity: -0.0112
+[2026-06-27 17:53:25] - INFO: Epoch 21, Val loss: 2.081, SBP mmHg: 526.914, DBP mmHg: 82.953  MAE: 0.799, SBP MAE: 0.915, mmHg: 18.752, DBP MAE: 0.684, mmHg: 6.852
+[2026-06-27 17:54:36] - INFO: Epoch: 22, Train loss: 0.830, SBP mmHg: 163.069, DBP mmHg: 44.352, Time: 70.7s
+[2026-06-27 17:54:39] - INFO: Fold 0 Gate cosine similarity: -0.1017
+[2026-06-27 17:54:39] - INFO: Epoch 22, Val loss: 1.989, SBP mmHg: 495.473, DBP mmHg: 81.210  MAE: 0.779, SBP MAE: 0.890, mmHg: 18.239, DBP MAE: 0.668, mmHg: 6.695
+[2026-06-27 17:55:50] - INFO: Epoch: 23, Train loss: 0.826, SBP mmHg: 162.195, DBP mmHg: 44.115, Time: 70.6s
+[2026-06-27 17:55:54] - INFO: Fold 0 Gate cosine similarity: -0.0106
+[2026-06-27 17:55:54] - INFO: Epoch 23, Val loss: 2.060, SBP mmHg: 514.267, DBP mmHg: 83.868  MAE: 0.791, SBP MAE: 0.903, mmHg: 18.502, DBP MAE: 0.680, mmHg: 6.814
+[2026-06-27 17:57:04] - INFO: Epoch: 24, Train loss: 0.822, SBP mmHg: 161.251, DBP mmHg: 43.995, Time: 70.6s
+[2026-06-27 17:57:08] - INFO: Fold 0 Gate cosine similarity: -0.1497
+[2026-06-27 17:57:08] - INFO: Epoch 24, Val loss: 2.031, SBP mmHg: 506.798, DBP mmHg: 82.735  MAE: 0.791, SBP MAE: 0.894, mmHg: 18.330, DBP MAE: 0.687, mmHg: 6.879
+[2026-06-27 17:58:19] - INFO: Epoch: 25, Train loss: 0.818, SBP mmHg: 160.507, DBP mmHg: 43.756, Time: 70.6s
+[2026-06-27 17:58:22] - INFO: Fold 0 Gate cosine similarity: -0.0964
+[2026-06-27 17:58:22] - INFO: Epoch 25, Val loss: 2.012, SBP mmHg: 498.454, DBP mmHg: 82.824  MAE: 0.788, SBP MAE: 0.886, mmHg: 18.160, DBP MAE: 0.690, mmHg: 6.909
+[2026-06-27 17:59:33] - INFO: Epoch: 26, Train loss: 0.815, SBP mmHg: 159.624, DBP mmHg: 43.623, Time: 70.4s
+[2026-06-27 17:59:37] - INFO: Fold 0 Gate cosine similarity: 0.0193
+[2026-06-27 17:59:37] - INFO: Epoch 26, Val loss: 2.074, SBP mmHg: 519.888, DBP mmHg: 83.962  MAE: 0.795, SBP MAE: 0.905, mmHg: 18.537, DBP MAE: 0.686, mmHg: 6.868
+[2026-06-27 17:59:37] - INFO: Early stopping at epoch 26
+[2026-06-27 17:59:37] - INFO: 1 fold SBP MAE = 18.253 ± 0.000 mmHg
+[2026-06-27 17:59:37] - INFO: 1 fold DBP MAE = 6.733 ± 0.000 mmHg
+[2026-06-27 17:59:37] - INFO: ######## Fold 1 ########
+[2026-06-27 18:00:49] - INFO: Epoch: 0, Train loss: 1.510, SBP mmHg: 333.022, DBP mmHg: 69.102, Time: 71.7s
+[2026-06-27 18:00:53] - INFO: Fold 1 Gate cosine similarity: 0.0551
+[2026-06-27 18:00:53] - INFO: Epoch 0, Val loss: 2.500, SBP mmHg: 432.562, DBP mmHg: 138.416  MAE: 0.838, SBP MAE: 0.777, mmHg: 16.431, DBP MAE: 0.899, mmHg: 8.541
+[2026-06-27 18:00:53] - INFO: Best model saved
+[2026-06-27 18:02:03] - INFO: Epoch: 1, Train loss: 1.331, SBP mmHg: 295.720, DBP mmHg: 60.420, Time: 70.4s
+[2026-06-27 18:02:07] - INFO: Fold 1 Gate cosine similarity: 0.0903
+[2026-06-27 18:02:07] - INFO: Epoch 1, Val loss: 2.519, SBP mmHg: 436.443, DBP mmHg: 139.268  MAE: 0.842, SBP MAE: 0.779, mmHg: 16.469, DBP MAE: 0.904, mmHg: 8.594
+[2026-06-27 18:03:17] - INFO: Epoch: 2, Train loss: 1.262, SBP mmHg: 280.657, DBP mmHg: 57.284, Time: 70.0s
+[2026-06-27 18:03:20] - INFO: Fold 1 Gate cosine similarity: 0.1782
+[2026-06-27 18:03:20] - INFO: Epoch 2, Val loss: 2.524, SBP mmHg: 447.828, DBP mmHg: 137.497  MAE: 0.846, SBP MAE: 0.794, mmHg: 16.791, DBP MAE: 0.899, mmHg: 8.541
+[2026-06-27 18:04:31] - INFO: Epoch: 3, Train loss: 1.212, SBP mmHg: 270.373, DBP mmHg: 54.842, Time: 70.8s
+[2026-06-27 18:04:35] - INFO: Fold 1 Gate cosine similarity: 0.1653
+[2026-06-27 18:04:35] - INFO: Epoch 3, Val loss: 2.557, SBP mmHg: 442.137, DBP mmHg: 141.608  MAE: 0.841, SBP MAE: 0.779, mmHg: 16.469, DBP MAE: 0.902, mmHg: 8.576
+[2026-06-27 18:05:46] - INFO: Epoch: 4, Train loss: 1.174, SBP mmHg: 262.000, DBP mmHg: 53.074, Time: 70.5s
+[2026-06-27 18:05:50] - INFO: Fold 1 Gate cosine similarity: 0.3020
+[2026-06-27 18:05:50] - INFO: Epoch 4, Val loss: 2.593, SBP mmHg: 450.322, DBP mmHg: 143.148  MAE: 0.847, SBP MAE: 0.786, mmHg: 16.622, DBP MAE: 0.907, mmHg: 8.620
+[2026-06-27 18:06:58] - INFO: Epoch: 5, Train loss: 1.140, SBP mmHg: 253.490, DBP mmHg: 51.733, Time: 68.8s
+[2026-06-27 18:07:03] - INFO: Fold 1 Gate cosine similarity: 0.1849
+[2026-06-27 18:07:03] - INFO: Epoch 5, Val loss: 2.683, SBP mmHg: 481.863, DBP mmHg: 144.933  MAE: 0.861, SBP MAE: 0.812, mmHg: 17.158, DBP MAE: 0.910, mmHg: 8.648
+[2026-06-27 18:08:09] - INFO: Epoch: 6, Train loss: 1.114, SBP mmHg: 247.025, DBP mmHg: 50.722, Time: 66.6s
+[2026-06-27 18:08:13] - INFO: Fold 1 Gate cosine similarity: 0.0155
+[2026-06-27 18:08:13] - INFO: Epoch 6, Val loss: 2.682, SBP mmHg: 478.969, DBP mmHg: 145.391  MAE: 0.857, SBP MAE: 0.805, mmHg: 17.011, DBP MAE: 0.909, mmHg: 8.643
+[2026-06-27 18:09:20] - INFO: Epoch: 7, Train loss: 1.090, SBP mmHg: 240.729, DBP mmHg: 49.805, Time: 67.4s
+[2026-06-27 18:09:26] - INFO: Fold 1 Gate cosine similarity: 0.0906
+[2026-06-27 18:09:26] - INFO: Epoch 7, Val loss: 2.634, SBP mmHg: 497.698, DBP mmHg: 137.340  MAE: 0.860, SBP MAE: 0.823, mmHg: 17.398, DBP MAE: 0.897, mmHg: 8.528
+[2026-06-27 18:10:40] - INFO: Epoch: 8, Train loss: 1.055, SBP mmHg: 231.629, DBP mmHg: 48.516, Time: 74.1s
+[2026-06-27 18:10:47] - INFO: Fold 1 Gate cosine similarity: 0.1319
+[2026-06-27 18:10:47] - INFO: Epoch 8, Val loss: 2.714, SBP mmHg: 504.248, DBP mmHg: 143.206  MAE: 0.866, SBP MAE: 0.828, mmHg: 17.505, DBP MAE: 0.904, mmHg: 8.593
+[2026-06-27 18:12:02] - INFO: Epoch: 9, Train loss: 1.045, SBP mmHg: 228.924, DBP mmHg: 48.078, Time: 75.5s
+[2026-06-27 18:12:08] - INFO: Fold 1 Gate cosine similarity: 0.2246
+[2026-06-27 18:12:08] - INFO: Epoch 9, Val loss: 2.682, SBP mmHg: 494.728, DBP mmHg: 142.215  MAE: 0.859, SBP MAE: 0.818, mmHg: 17.291, DBP MAE: 0.900, mmHg: 8.556
+[2026-06-27 18:13:24] - INFO: Epoch: 10, Train loss: 1.034, SBP mmHg: 226.266, DBP mmHg: 47.686, Time: 76.0s
+[2026-06-27 18:13:30] - INFO: Fold 1 Gate cosine similarity: 0.1022
+[2026-06-27 18:13:30] - INFO: Epoch 10, Val loss: 2.682, SBP mmHg: 481.431, DBP mmHg: 144.929  MAE: 0.858, SBP MAE: 0.805, mmHg: 17.016, DBP MAE: 0.911, mmHg: 8.659
+[2026-06-27 18:14:45] - INFO: Epoch: 11, Train loss: 1.027, SBP mmHg: 224.703, DBP mmHg: 47.346, Time: 74.5s
+[2026-06-27 18:14:50] - INFO: Fold 1 Gate cosine similarity: 0.2049
+[2026-06-27 18:14:50] - INFO: Epoch 11, Val loss: 2.672, SBP mmHg: 464.538, DBP mmHg: 147.408  MAE: 0.842, SBP MAE: 0.778, mmHg: 16.450, DBP MAE: 0.907, mmHg: 8.616
+[2026-06-27 18:16:05] - INFO: Epoch: 12, Train loss: 1.018, SBP mmHg: 222.697, DBP mmHg: 46.918, Time: 74.6s
+[2026-06-27 18:16:10] - INFO: Fold 1 Gate cosine similarity: 0.2399
+[2026-06-27 18:16:10] - INFO: Epoch 12, Val loss: 2.729, SBP mmHg: 502.968, DBP mmHg: 144.827  MAE: 0.864, SBP MAE: 0.823, mmHg: 17.393, DBP MAE: 0.906, mmHg: 8.611
+[2026-06-27 18:17:26] - INFO: Epoch: 13, Train loss: 1.011, SBP mmHg: 220.686, DBP mmHg: 46.677, Time: 75.3s
+[2026-06-27 18:17:32] - INFO: Fold 1 Gate cosine similarity: 0.4009
+[2026-06-27 18:17:32] - INFO: Epoch 13, Val loss: 2.691, SBP mmHg: 492.293, DBP mmHg: 143.519  MAE: 0.857, SBP MAE: 0.811, mmHg: 17.134, DBP MAE: 0.904, mmHg: 8.588
+[2026-06-27 18:18:47] - INFO: Epoch: 14, Train loss: 1.003, SBP mmHg: 219.226, DBP mmHg: 46.290, Time: 75.1s
+[2026-06-27 18:18:53] - INFO: Fold 1 Gate cosine similarity: 0.3450
+[2026-06-27 18:18:53] - INFO: Epoch 14, Val loss: 2.681, SBP mmHg: 489.566, DBP mmHg: 143.243  MAE: 0.857, SBP MAE: 0.807, mmHg: 17.059, DBP MAE: 0.908, mmHg: 8.628
+[2026-06-27 18:20:08] - INFO: Epoch: 15, Train loss: 0.985, SBP mmHg: 214.872, DBP mmHg: 45.518, Time: 75.1s
+[2026-06-27 18:20:14] - INFO: Fold 1 Gate cosine similarity: 0.4714
+[2026-06-27 18:20:14] - INFO: Epoch 15, Val loss: 2.721, SBP mmHg: 490.678, DBP mmHg: 146.576  MAE: 0.859, SBP MAE: 0.806, mmHg: 17.032, DBP MAE: 0.913, mmHg: 8.674
+[2026-06-27 18:21:29] - INFO: Epoch: 16, Train loss: 0.979, SBP mmHg: 213.405, DBP mmHg: 45.309, Time: 75.4s
+[2026-06-27 18:21:35] - INFO: Fold 1 Gate cosine similarity: 0.3483
+[2026-06-27 18:21:35] - INFO: Epoch 16, Val loss: 2.773, SBP mmHg: 499.852, DBP mmHg: 149.460  MAE: 0.864, SBP MAE: 0.810, mmHg: 17.131, DBP MAE: 0.918, mmHg: 8.729
+[2026-06-27 18:22:51] - INFO: Epoch: 17, Train loss: 0.975, SBP mmHg: 212.478, DBP mmHg: 45.095, Time: 75.7s
+[2026-06-27 18:22:56] - INFO: Fold 1 Gate cosine similarity: 0.4482
+[2026-06-27 18:22:56] - INFO: Epoch 17, Val loss: 2.729, SBP mmHg: 490.623, DBP mmHg: 147.280  MAE: 0.862, SBP MAE: 0.804, mmHg: 17.001, DBP MAE: 0.919, mmHg: 8.734
+[2026-06-27 18:24:13] - INFO: Epoch: 18, Train loss: 0.973, SBP mmHg: 212.137, DBP mmHg: 44.961, Time: 76.3s
+[2026-06-27 18:24:18] - INFO: Fold 1 Gate cosine similarity: 0.3852
+[2026-06-27 18:24:18] - INFO: Epoch 18, Val loss: 2.756, SBP mmHg: 492.297, DBP mmHg: 149.442  MAE: 0.863, SBP MAE: 0.807, mmHg: 17.064, DBP MAE: 0.919, mmHg: 8.732
+[2026-06-27 18:25:33] - INFO: Epoch: 19, Train loss: 0.968, SBP mmHg: 210.754, DBP mmHg: 44.857, Time: 74.5s
+[2026-06-27 18:25:38] - INFO: Fold 1 Gate cosine similarity: 0.3972
+[2026-06-27 18:25:39] - INFO: Epoch 19, Val loss: 2.747, SBP mmHg: 484.206, DBP mmHg: 150.282  MAE: 0.861, SBP MAE: 0.797, mmHg: 16.841, DBP MAE: 0.926, mmHg: 8.796
+[2026-06-27 18:26:54] - INFO: Epoch: 20, Train loss: 0.965, SBP mmHg: 210.299, DBP mmHg: 44.678, Time: 75.4s
+[2026-06-27 18:26:59] - INFO: Fold 1 Gate cosine similarity: 0.3709
+[2026-06-27 18:26:59] - INFO: Epoch 20, Val loss: 2.733, SBP mmHg: 475.616, DBP mmHg: 150.696  MAE: 0.855, SBP MAE: 0.785, mmHg: 16.588, DBP MAE: 0.925, mmHg: 8.794
+[2026-06-27 18:28:15] - INFO: Epoch: 21, Train loss: 0.960, SBP mmHg: 208.959, DBP mmHg: 44.452, Time: 75.6s
+[2026-06-27 18:28:21] - INFO: Fold 1 Gate cosine similarity: 0.1556
+[2026-06-27 18:28:21] - INFO: Epoch 21, Val loss: 2.725, SBP mmHg: 478.279, DBP mmHg: 149.471  MAE: 0.857, SBP MAE: 0.793, mmHg: 16.757, DBP MAE: 0.920, mmHg: 8.747
+[2026-06-27 18:28:21] - INFO: Early stopping at epoch 21
+[2026-06-27 18:28:21] - INFO: 2 fold SBP MAE = 17.342 ± 0.911 mmHg
+[2026-06-27 18:28:21] - INFO: 2 fold DBP MAE = 7.637 ± 0.904 mmHg
+[2026-06-27 18:28:21] - INFO: ######## Fold 2 ########
+[2026-06-27 18:29:37] - INFO: Epoch: 0, Train loss: 1.579, SBP mmHg: 347.645, DBP mmHg: 80.541, Time: 75.7s
+[2026-06-27 18:29:43] - INFO: Fold 2 Gate cosine similarity: 0.0321
+[2026-06-27 18:29:43] - INFO: Epoch 0, Val loss: 1.614, SBP mmHg: 351.347, DBP mmHg: 83.225  MAE: 0.721, SBP MAE: 0.703, mmHg: 15.143, DBP MAE: 0.739, mmHg: 7.281
+[2026-06-27 18:29:43] - INFO: Best model saved
+[2026-06-27 18:30:59] - INFO: Epoch: 1, Train loss: 1.354, SBP mmHg: 300.766, DBP mmHg: 68.515, Time: 75.4s
+[2026-06-27 18:31:04] - INFO: Fold 2 Gate cosine similarity: 0.0317
+[2026-06-27 18:31:04] - INFO: Epoch 1, Val loss: 1.534, SBP mmHg: 321.487, DBP mmHg: 81.639  MAE: 0.683, SBP MAE: 0.649, mmHg: 13.968, DBP MAE: 0.716, mmHg: 7.062
+[2026-06-27 18:31:04] - INFO: Best model saved
+[2026-06-27 18:32:20] - INFO: Epoch: 2, Train loss: 1.280, SBP mmHg: 283.911, DBP mmHg: 64.839, Time: 75.5s
+[2026-06-27 18:32:26] - INFO: Fold 2 Gate cosine similarity: -0.0225
+[2026-06-27 18:32:26] - INFO: Epoch 2, Val loss: 1.490, SBP mmHg: 302.965, DBP mmHg: 81.314  MAE: 0.663, SBP MAE: 0.624, mmHg: 13.433, DBP MAE: 0.702, mmHg: 6.923
+[2026-06-27 18:32:26] - INFO: Best model saved
+[2026-06-27 18:33:42] - INFO: Epoch: 3, Train loss: 1.220, SBP mmHg: 270.480, DBP mmHg: 61.891, Time: 76.0s
+[2026-06-27 18:33:47] - INFO: Fold 2 Gate cosine similarity: 0.1029
+[2026-06-27 18:33:47] - INFO: Epoch 3, Val loss: 1.419, SBP mmHg: 294.237, DBP mmHg: 76.176  MAE: 0.642, SBP MAE: 0.610, mmHg: 13.136, DBP MAE: 0.675, mmHg: 6.650
+[2026-06-27 18:33:47] - INFO: Best model saved
+[2026-06-27 18:35:02] - INFO: Epoch: 4, Train loss: 1.168, SBP mmHg: 258.741, DBP mmHg: 59.235, Time: 74.9s
+[2026-06-27 18:35:08] - INFO: Fold 2 Gate cosine similarity: 0.0633
+[2026-06-27 18:35:08] - INFO: Epoch 4, Val loss: 1.458, SBP mmHg: 308.980, DBP mmHg: 76.894  MAE: 0.655, SBP MAE: 0.630, mmHg: 13.556, DBP MAE: 0.681, mmHg: 6.714
+[2026-06-27 18:36:23] - INFO: Epoch: 5, Train loss: 1.124, SBP mmHg: 248.401, DBP mmHg: 57.107, Time: 75.2s
+[2026-06-27 18:36:29] - INFO: Fold 2 Gate cosine similarity: 0.2391
+[2026-06-27 18:36:29] - INFO: Epoch 5, Val loss: 1.464, SBP mmHg: 307.105, DBP mmHg: 77.886  MAE: 0.660, SBP MAE: 0.630, mmHg: 13.560, DBP MAE: 0.690, mmHg: 6.799
+[2026-06-27 18:37:44] - INFO: Epoch: 6, Train loss: 1.089, SBP mmHg: 240.655, DBP mmHg: 55.383, Time: 75.4s
+[2026-06-27 18:37:50] - INFO: Fold 2 Gate cosine similarity: 0.1414
+[2026-06-27 18:37:50] - INFO: Epoch 6, Val loss: 1.424, SBP mmHg: 309.056, DBP mmHg: 73.550  MAE: 0.650, SBP MAE: 0.631, mmHg: 13.576, DBP MAE: 0.670, mmHg: 6.601
+[2026-06-27 18:39:05] - INFO: Epoch: 7, Train loss: 1.055, SBP mmHg: 232.565, DBP mmHg: 53.811, Time: 74.6s
+[2026-06-27 18:39:11] - INFO: Fold 2 Gate cosine similarity: 0.0980
+[2026-06-27 18:39:11] - INFO: Epoch 7, Val loss: 1.451, SBP mmHg: 325.459, DBP mmHg: 72.814  MAE: 0.654, SBP MAE: 0.646, mmHg: 13.903, DBP MAE: 0.662, mmHg: 6.526
+[2026-06-27 18:40:26] - INFO: Epoch: 8, Train loss: 1.030, SBP mmHg: 226.774, DBP mmHg: 52.601, Time: 75.8s
+[2026-06-27 18:40:32] - INFO: Fold 2 Gate cosine similarity: 0.0786
+[2026-06-27 18:40:32] - INFO: Epoch 8, Val loss: 1.498, SBP mmHg: 327.225, DBP mmHg: 76.944  MAE: 0.667, SBP MAE: 0.653, mmHg: 14.069, DBP MAE: 0.681, mmHg: 6.710
+[2026-06-27 18:41:48] - INFO: Epoch: 9, Train loss: 1.005, SBP mmHg: 221.175, DBP mmHg: 51.340, Time: 75.8s
+[2026-06-27 18:41:53] - INFO: Fold 2 Gate cosine similarity: -0.1897
+[2026-06-27 18:41:53] - INFO: Epoch 9, Val loss: 1.457, SBP mmHg: 331.484, DBP mmHg: 72.085  MAE: 0.663, SBP MAE: 0.661, mmHg: 14.240, DBP MAE: 0.664, mmHg: 6.544
+[2026-06-27 18:43:08] - INFO: Epoch: 10, Train loss: 0.987, SBP mmHg: 216.693, DBP mmHg: 50.472, Time: 75.4s
+[2026-06-27 18:43:14] - INFO: Fold 2 Gate cosine similarity: -0.1589
+[2026-06-27 18:43:14] - INFO: Epoch 10, Val loss: 1.423, SBP mmHg: 307.629, DBP mmHg: 73.745  MAE: 0.646, SBP MAE: 0.630, mmHg: 13.562, DBP MAE: 0.661, mmHg: 6.517
+[2026-06-27 18:44:30] - INFO: Epoch: 11, Train loss: 0.946, SBP mmHg: 207.435, DBP mmHg: 48.413, Time: 75.9s
+[2026-06-27 18:44:35] - INFO: Fold 2 Gate cosine similarity: 0.0306
+[2026-06-27 18:44:35] - INFO: Epoch 11, Val loss: 1.454, SBP mmHg: 323.662, DBP mmHg: 73.432  MAE: 0.656, SBP MAE: 0.650, mmHg: 13.993, DBP MAE: 0.662, mmHg: 6.521
+[2026-06-27 18:45:50] - INFO: Epoch: 12, Train loss: 0.935, SBP mmHg: 205.267, DBP mmHg: 47.850, Time: 74.9s
+[2026-06-27 18:45:56] - INFO: Fold 2 Gate cosine similarity: -0.1229
+[2026-06-27 18:45:56] - INFO: Epoch 12, Val loss: 1.486, SBP mmHg: 344.997, DBP mmHg: 72.067  MAE: 0.666, SBP MAE: 0.674, mmHg: 14.517, DBP MAE: 0.657, mmHg: 6.476
+[2026-06-27 19:08:49] - INFO: Epoch: 13, Train loss: 0.925, SBP mmHg: 202.714, DBP mmHg: 47.359, Time: 1373.0s
+[2026-06-27 19:08:55] - INFO: Fold 2 Gate cosine similarity: -0.1053
+[2026-06-27 19:08:55] - INFO: Epoch 13, Val loss: 1.452, SBP mmHg: 333.018, DBP mmHg: 71.247  MAE: 0.658, SBP MAE: 0.660, mmHg: 14.213, DBP MAE: 0.656, mmHg: 6.467
+[2026-06-27 19:10:10] - INFO: Epoch: 14, Train loss: 0.916, SBP mmHg: 200.786, DBP mmHg: 46.886, Time: 74.9s
+[2026-06-27 19:10:15] - INFO: Fold 2 Gate cosine similarity: 0.0805
+[2026-06-27 19:10:15] - INFO: Epoch 14, Val loss: 1.424, SBP mmHg: 311.245, DBP mmHg: 73.104  MAE: 0.646, SBP MAE: 0.636, mmHg: 13.704, DBP MAE: 0.656, mmHg: 6.468
+[2026-06-27 19:11:30] - INFO: Epoch: 15, Train loss: 0.906, SBP mmHg: 198.703, DBP mmHg: 46.423, Time: 75.3s
+[2026-06-27 19:11:36] - INFO: Fold 2 Gate cosine similarity: 0.1565
+[2026-06-27 19:11:36] - INFO: Epoch 15, Val loss: 1.502, SBP mmHg: 326.842, DBP mmHg: 77.419  MAE: 0.665, SBP MAE: 0.656, mmHg: 14.116, DBP MAE: 0.673, mmHg: 6.639
+[2026-06-27 19:12:51] - INFO: Epoch: 16, Train loss: 0.900, SBP mmHg: 197.167, DBP mmHg: 46.129, Time: 75.2s
+[2026-06-27 19:12:57] - INFO: Fold 2 Gate cosine similarity: -0.1534
+[2026-06-27 19:12:57] - INFO: Epoch 16, Val loss: 1.465, SBP mmHg: 311.305, DBP mmHg: 77.063  MAE: 0.653, SBP MAE: 0.633, mmHg: 13.629, DBP MAE: 0.672, mmHg: 6.626
+[2026-06-27 19:14:12] - INFO: Epoch: 17, Train loss: 0.893, SBP mmHg: 195.951, DBP mmHg: 45.733, Time: 75.4s
+[2026-06-27 19:14:18] - INFO: Fold 2 Gate cosine similarity: 0.0391
+[2026-06-27 19:14:18] - INFO: Epoch 17, Val loss: 1.537, SBP mmHg: 329.391, DBP mmHg: 80.330  MAE: 0.672, SBP MAE: 0.657, mmHg: 14.135, DBP MAE: 0.688, mmHg: 6.782
+[2026-06-27 19:15:33] - INFO: Epoch: 18, Train loss: 0.868, SBP mmHg: 190.396, DBP mmHg: 44.437, Time: 75.2s
+[2026-06-27 19:15:39] - INFO: Fold 2 Gate cosine similarity: -0.1477
+[2026-06-27 19:15:39] - INFO: Epoch 18, Val loss: 1.493, SBP mmHg: 325.484, DBP mmHg: 76.881  MAE: 0.661, SBP MAE: 0.651, mmHg: 14.018, DBP MAE: 0.672, mmHg: 6.624
+[2026-06-27 19:16:54] - INFO: Epoch: 19, Train loss: 0.862, SBP mmHg: 189.279, DBP mmHg: 44.101, Time: 75.0s
+[2026-06-27 19:17:00] - INFO: Fold 2 Gate cosine similarity: 0.0384
+[2026-06-27 19:17:00] - INFO: Epoch 19, Val loss: 1.460, SBP mmHg: 314.146, DBP mmHg: 76.065  MAE: 0.655, SBP MAE: 0.641, mmHg: 13.812, DBP MAE: 0.668, mmHg: 6.582
+[2026-06-27 19:18:15] - INFO: Epoch: 20, Train loss: 0.858, SBP mmHg: 188.347, DBP mmHg: 43.858, Time: 75.5s
+[2026-06-27 19:18:21] - INFO: Fold 2 Gate cosine similarity: -0.3188
+[2026-06-27 19:18:21] - INFO: Epoch 20, Val loss: 1.450, SBP mmHg: 314.187, DBP mmHg: 75.090  MAE: 0.654, SBP MAE: 0.639, mmHg: 13.763, DBP MAE: 0.668, mmHg: 6.589
+[2026-06-27 19:19:37] - INFO: Epoch: 21, Train loss: 0.854, SBP mmHg: 187.459, DBP mmHg: 43.734, Time: 75.5s
+[2026-06-27 19:19:42] - INFO: Fold 2 Gate cosine similarity: -0.1644
+[2026-06-27 19:19:42] - INFO: Epoch 21, Val loss: 1.466, SBP mmHg: 314.459, DBP mmHg: 76.543  MAE: 0.657, SBP MAE: 0.642, mmHg: 13.812, DBP MAE: 0.673, mmHg: 6.634
+[2026-06-27 19:20:56] - INFO: Epoch: 22, Train loss: 0.850, SBP mmHg: 186.611, DBP mmHg: 43.510, Time: 74.2s
+[2026-06-27 19:21:02] - INFO: Fold 2 Gate cosine similarity: -0.0812
+[2026-06-27 19:21:02] - INFO: Epoch 22, Val loss: 1.442, SBP mmHg: 312.578, DBP mmHg: 74.601  MAE: 0.651, SBP MAE: 0.636, mmHg: 13.683, DBP MAE: 0.666, mmHg: 6.563
+[2026-06-27 19:22:18] - INFO: Epoch: 23, Train loss: 0.845, SBP mmHg: 185.443, DBP mmHg: 43.269, Time: 76.0s
+[2026-06-27 19:22:24] - INFO: Fold 2 Gate cosine similarity: 0.0255
+[2026-06-27 19:22:24] - INFO: Epoch 23, Val loss: 1.481, SBP mmHg: 315.172, DBP mmHg: 77.865  MAE: 0.660, SBP MAE: 0.645, mmHg: 13.894, DBP MAE: 0.675, mmHg: 6.655
+[2026-06-27 19:23:38] - INFO: Epoch: 24, Train loss: 0.841, SBP mmHg: 185.008, DBP mmHg: 42.930, Time: 74.7s
+[2026-06-27 19:23:44] - INFO: Fold 2 Gate cosine similarity: 0.0170
+[2026-06-27 19:23:44] - INFO: Epoch 24, Val loss: 1.462, SBP mmHg: 312.105, DBP mmHg: 76.604  MAE: 0.653, SBP MAE: 0.635, mmHg: 13.668, DBP MAE: 0.671, mmHg: 6.618
+[2026-06-27 19:23:44] - INFO: Early stopping at epoch 24
+[2026-06-27 19:23:44] - INFO: 3 fold SBP MAE = 15.940 ± 2.117 mmHg
+[2026-06-27 19:23:44] - INFO: 3 fold DBP MAE = 7.308 ± 0.872 mmHg
+[2026-06-27 19:23:44] - INFO: ######## Fold 3 ########
+[2026-06-27 19:25:00] - INFO: Epoch: 0, Train loss: 1.515, SBP mmHg: 335.404, DBP mmHg: 82.422, Time: 75.6s
+[2026-06-27 19:25:06] - INFO: Fold 3 Gate cosine similarity: 0.3084
+[2026-06-27 19:25:06] - INFO: Epoch 0, Val loss: 1.496, SBP mmHg: 410.996, DBP mmHg: 62.583  MAE: 0.688, SBP MAE: 0.787, mmHg: 16.729, DBP MAE: 0.589, mmHg: 6.093
+[2026-06-27 19:25:06] - INFO: Best model saved
+[2026-06-27 19:26:22] - INFO: Epoch: 1, Train loss: 1.290, SBP mmHg: 286.588, DBP mmHg: 70.012, Time: 75.4s
+[2026-06-27 19:26:28] - INFO: Fold 3 Gate cosine similarity: 0.3587
+[2026-06-27 19:26:28] - INFO: Epoch 1, Val loss: 1.506, SBP mmHg: 408.164, DBP mmHg: 64.290  MAE: 0.688, SBP MAE: 0.781, mmHg: 16.585, DBP MAE: 0.594, mmHg: 6.144
+[2026-06-27 19:27:43] - INFO: Epoch: 2, Train loss: 1.216, SBP mmHg: 269.130, DBP mmHg: 66.152, Time: 75.5s
+[2026-06-27 19:27:48] - INFO: Fold 3 Gate cosine similarity: 0.1228
+[2026-06-27 19:27:48] - INFO: Epoch 2, Val loss: 1.465, SBP mmHg: 395.841, DBP mmHg: 62.798  MAE: 0.682, SBP MAE: 0.767, mmHg: 16.288, DBP MAE: 0.598, mmHg: 6.182
+[2026-06-27 19:27:48] - INFO: Best model saved
+[2026-06-27 19:29:03] - INFO: Epoch: 3, Train loss: 1.163, SBP mmHg: 258.035, DBP mmHg: 63.120, Time: 74.8s
+[2026-06-27 19:29:09] - INFO: Fold 3 Gate cosine similarity: 0.2268
+[2026-06-27 19:29:09] - INFO: Epoch 3, Val loss: 1.534, SBP mmHg: 407.385, DBP mmHg: 67.399  MAE: 0.695, SBP MAE: 0.777, mmHg: 16.499, DBP MAE: 0.614, mmHg: 6.347
+[2026-06-27 19:30:24] - INFO: Epoch: 4, Train loss: 1.123, SBP mmHg: 248.986, DBP mmHg: 60.979, Time: 74.8s
+[2026-06-27 19:30:30] - INFO: Fold 3 Gate cosine similarity: 0.2833
+[2026-06-27 19:30:30] - INFO: Epoch 4, Val loss: 1.463, SBP mmHg: 399.264, DBP mmHg: 61.835  MAE: 0.671, SBP MAE: 0.762, mmHg: 16.197, DBP MAE: 0.580, mmHg: 5.992
+[2026-06-27 19:30:30] - INFO: Best model saved
+[2026-06-27 19:31:44] - INFO: Epoch: 5, Train loss: 1.082, SBP mmHg: 239.121, DBP mmHg: 58.960, Time: 74.8s
+[2026-06-27 19:31:50] - INFO: Fold 3 Gate cosine similarity: 0.2495
+[2026-06-27 19:31:50] - INFO: Epoch 5, Val loss: 1.480, SBP mmHg: 398.580, DBP mmHg: 63.801  MAE: 0.673, SBP MAE: 0.759, mmHg: 16.120, DBP MAE: 0.587, mmHg: 6.067
+[2026-06-27 19:33:06] - INFO: Epoch: 6, Train loss: 1.048, SBP mmHg: 230.127, DBP mmHg: 57.481, Time: 75.3s
+[2026-06-27 19:33:11] - INFO: Fold 3 Gate cosine similarity: 0.4025
+[2026-06-27 19:33:11] - INFO: Epoch 6, Val loss: 1.704, SBP mmHg: 447.082, DBP mmHg: 76.229  MAE: 0.725, SBP MAE: 0.811, mmHg: 17.231, DBP MAE: 0.639, mmHg: 6.608
+[2026-06-27 19:34:26] - INFO: Epoch: 7, Train loss: 1.020, SBP mmHg: 223.104, DBP mmHg: 56.180, Time: 74.6s
+[2026-06-27 19:34:31] - INFO: Fold 3 Gate cosine similarity: 0.2775
+[2026-06-27 19:34:31] - INFO: Epoch 7, Val loss: 1.570, SBP mmHg: 426.905, DBP mmHg: 66.675  MAE: 0.693, SBP MAE: 0.787, mmHg: 16.715, DBP MAE: 0.598, mmHg: 6.183
+[2026-06-27 19:35:46] - INFO: Epoch: 8, Train loss: 0.992, SBP mmHg: 216.271, DBP mmHg: 54.782, Time: 74.8s
+[2026-06-27 19:35:52] - INFO: Fold 3 Gate cosine similarity: 0.0864
+[2026-06-27 19:35:52] - INFO: Epoch 8, Val loss: 1.581, SBP mmHg: 440.469, DBP mmHg: 64.599  MAE: 0.688, SBP MAE: 0.790, mmHg: 16.789, DBP MAE: 0.586, mmHg: 6.052
+[2026-06-27 19:37:06] - INFO: Epoch: 9, Train loss: 0.975, SBP mmHg: 212.161, DBP mmHg: 53.960, Time: 74.4s
+[2026-06-27 19:37:12] - INFO: Fold 3 Gate cosine similarity: 0.1389
+[2026-06-27 19:37:12] - INFO: Epoch 9, Val loss: 1.657, SBP mmHg: 449.926, DBP mmHg: 70.544  MAE: 0.713, SBP MAE: 0.808, mmHg: 17.159, DBP MAE: 0.618, mmHg: 6.384
+[2026-06-27 19:38:27] - INFO: Epoch: 10, Train loss: 0.955, SBP mmHg: 206.972, DBP mmHg: 53.011, Time: 75.0s
+[2026-06-27 19:38:32] - INFO: Fold 3 Gate cosine similarity: 0.3432
+[2026-06-27 19:38:32] - INFO: Epoch 10, Val loss: 1.615, SBP mmHg: 434.061, DBP mmHg: 69.746  MAE: 0.702, SBP MAE: 0.789, mmHg: 16.766, DBP MAE: 0.615, mmHg: 6.359
+[2026-06-27 19:39:48] - INFO: Epoch: 11, Train loss: 0.939, SBP mmHg: 203.489, DBP mmHg: 52.092, Time: 75.3s
+[2026-06-27 19:39:54] - INFO: Fold 3 Gate cosine similarity: 0.3025
+[2026-06-27 19:39:54] - INFO: Epoch 11, Val loss: 1.699, SBP mmHg: 447.010, DBP mmHg: 75.670  MAE: 0.730, SBP MAE: 0.814, mmHg: 17.303, DBP MAE: 0.646, mmHg: 6.677
+[2026-06-27 19:41:09] - INFO: Epoch: 12, Train loss: 0.903, SBP mmHg: 194.548, DBP mmHg: 50.417, Time: 75.0s
+[2026-06-27 19:41:14] - INFO: Fold 3 Gate cosine similarity: 0.2988
+[2026-06-27 19:41:14] - INFO: Epoch 12, Val loss: 1.646, SBP mmHg: 460.175, DBP mmHg: 66.894  MAE: 0.709, SBP MAE: 0.821, mmHg: 17.443, DBP MAE: 0.596, mmHg: 6.164
+[2026-06-27 19:42:29] - INFO: Epoch: 13, Train loss: 0.893, SBP mmHg: 191.838, DBP mmHg: 49.948, Time: 74.9s
+[2026-06-27 19:42:35] - INFO: Fold 3 Gate cosine similarity: 0.3576
+[2026-06-27 19:42:35] - INFO: Epoch 13, Val loss: 1.734, SBP mmHg: 476.261, DBP mmHg: 72.462  MAE: 0.730, SBP MAE: 0.833, mmHg: 17.704, DBP MAE: 0.626, mmHg: 6.467
+[2026-06-27 19:43:50] - INFO: Epoch: 14, Train loss: 0.883, SBP mmHg: 189.531, DBP mmHg: 49.517, Time: 74.8s
+[2026-06-27 19:43:56] - INFO: Fold 3 Gate cosine similarity: 0.2934
+[2026-06-27 19:43:56] - INFO: Epoch 14, Val loss: 1.831, SBP mmHg: 479.509, DBP mmHg: 82.085  MAE: 0.756, SBP MAE: 0.842, mmHg: 17.887, DBP MAE: 0.671, mmHg: 6.932
+[2026-06-27 19:45:12] - INFO: Epoch: 15, Train loss: 0.880, SBP mmHg: 188.798, DBP mmHg: 49.299, Time: 75.6s
+[2026-06-27 19:45:18] - INFO: Fold 3 Gate cosine similarity: 0.2860
+[2026-06-27 19:45:18] - INFO: Epoch 15, Val loss: 2.014, SBP mmHg: 515.226, DBP mmHg: 93.184  MAE: 0.796, SBP MAE: 0.883, mmHg: 18.762, DBP MAE: 0.709, mmHg: 7.323
+[2026-06-27 19:46:33] - INFO: Epoch: 16, Train loss: 0.869, SBP mmHg: 186.156, DBP mmHg: 48.760, Time: 75.1s
+[2026-06-27 19:46:38] - INFO: Fold 3 Gate cosine similarity: 0.3051
+[2026-06-27 19:46:38] - INFO: Epoch 16, Val loss: 1.691, SBP mmHg: 476.540, DBP mmHg: 67.897  MAE: 0.719, SBP MAE: 0.837, mmHg: 17.791, DBP MAE: 0.600, mmHg: 6.200
+[2026-06-27 19:47:53] - INFO: Epoch: 17, Train loss: 0.865, SBP mmHg: 185.361, DBP mmHg: 48.584, Time: 74.9s
+[2026-06-27 19:47:59] - INFO: Fold 3 Gate cosine similarity: 0.3608
+[2026-06-27 19:47:59] - INFO: Epoch 17, Val loss: 1.995, SBP mmHg: 520.141, DBP mmHg: 90.058  MAE: 0.790, SBP MAE: 0.887, mmHg: 18.837, DBP MAE: 0.694, mmHg: 7.173
+[2026-06-27 19:49:14] - INFO: Epoch: 18, Train loss: 0.856, SBP mmHg: 183.234, DBP mmHg: 48.119, Time: 75.1s
+[2026-06-27 19:49:20] - INFO: Fold 3 Gate cosine similarity: 0.3989
+[2026-06-27 19:49:20] - INFO: Epoch 18, Val loss: 1.900, SBP mmHg: 504.897, DBP mmHg: 83.467  MAE: 0.769, SBP MAE: 0.865, mmHg: 18.387, DBP MAE: 0.672, mmHg: 6.941
+[2026-06-27 19:50:34] - INFO: Epoch: 19, Train loss: 0.836, SBP mmHg: 178.375, DBP mmHg: 47.088, Time: 74.4s
+[2026-06-27 19:50:40] - INFO: Fold 3 Gate cosine similarity: 0.3364
+[2026-06-27 19:50:40] - INFO: Epoch 19, Val loss: 2.026, SBP mmHg: 535.616, DBP mmHg: 89.636  MAE: 0.792, SBP MAE: 0.895, mmHg: 19.025, DBP MAE: 0.689, mmHg: 7.124
+[2026-06-27 19:51:55] - INFO: Epoch: 20, Train loss: 0.829, SBP mmHg: 176.855, DBP mmHg: 46.676, Time: 75.0s
+[2026-06-27 19:52:01] - INFO: Fold 3 Gate cosine similarity: 0.3696
+[2026-06-27 19:52:01] - INFO: Epoch 20, Val loss: 1.937, SBP mmHg: 517.916, DBP mmHg: 84.330  MAE: 0.777, SBP MAE: 0.884, mmHg: 18.784, DBP MAE: 0.670, mmHg: 6.927
+[2026-06-27 19:53:15] - INFO: Epoch: 21, Train loss: 0.829, SBP mmHg: 176.300, DBP mmHg: 46.790, Time: 74.3s
+[2026-06-27 19:53:21] - INFO: Fold 3 Gate cosine similarity: 0.3835
+[2026-06-27 19:53:21] - INFO: Epoch 21, Val loss: 1.933, SBP mmHg: 522.619, DBP mmHg: 82.752  MAE: 0.774, SBP MAE: 0.883, mmHg: 18.770, DBP MAE: 0.665, mmHg: 6.872
+[2026-06-27 19:54:36] - INFO: Epoch: 22, Train loss: 0.824, SBP mmHg: 175.603, DBP mmHg: 46.484, Time: 75.2s
+[2026-06-27 19:54:42] - INFO: Fold 3 Gate cosine similarity: 0.4449
+[2026-06-27 19:54:42] - INFO: Epoch 22, Val loss: 1.823, SBP mmHg: 499.516, DBP mmHg: 76.486  MAE: 0.751, SBP MAE: 0.865, mmHg: 18.382, DBP MAE: 0.637, mmHg: 6.588
+[2026-06-27 19:55:57] - INFO: Epoch: 23, Train loss: 0.821, SBP mmHg: 174.600, DBP mmHg: 46.376, Time: 75.1s
+[2026-06-27 19:56:02] - INFO: Fold 3 Gate cosine similarity: 0.4387
+[2026-06-27 19:56:02] - INFO: Epoch 23, Val loss: 1.835, SBP mmHg: 499.931, DBP mmHg: 77.705  MAE: 0.755, SBP MAE: 0.867, mmHg: 18.412, DBP MAE: 0.644, mmHg: 6.652
+[2026-06-27 20:33:22] - INFO: Epoch: 24, Train loss: 0.817, SBP mmHg: 173.830, DBP mmHg: 46.103, Time: 2239.5s
+[2026-06-27 20:33:28] - INFO: Fold 3 Gate cosine similarity: 0.4829
+[2026-06-27 20:33:28] - INFO: Epoch 24, Val loss: 1.803, SBP mmHg: 497.927, DBP mmHg: 74.742  MAE: 0.750, SBP MAE: 0.860, mmHg: 18.265, DBP MAE: 0.641, mmHg: 6.622
+[2026-06-27 20:34:43] - INFO: Epoch: 25, Train loss: 0.814, SBP mmHg: 172.968, DBP mmHg: 45.964, Time: 75.5s
+[2026-06-27 20:34:49] - INFO: Fold 3 Gate cosine similarity: 0.4370
+[2026-06-27 20:34:49] - INFO: Epoch 25, Val loss: 1.935, SBP mmHg: 525.182, DBP mmHg: 82.387  MAE: 0.772, SBP MAE: 0.885, mmHg: 18.808, DBP MAE: 0.658, mmHg: 6.804
+[2026-06-27 20:34:49] - INFO: Early stopping at epoch 25
+[2026-06-27 20:34:49] - INFO: 4 fold SBP MAE = 16.004 ± 1.837 mmHg
+[2026-06-27 20:34:49] - INFO: 4 fold DBP MAE = 6.979 ± 0.946 mmHg
+[2026-06-27 20:34:49] - INFO: ######## Fold 4 ########
+[2026-06-27 20:36:05] - INFO: Epoch: 0, Train loss: 1.529, SBP mmHg: 325.951, DBP mmHg: 76.071, Time: 75.6s
+[2026-06-27 20:36:11] - INFO: Fold 4 Gate cosine similarity: 0.2724
+[2026-06-27 20:36:11] - INFO: Epoch 0, Val loss: 1.864, SBP mmHg: 408.260, DBP mmHg: 90.254  MAE: 0.769, SBP MAE: 0.809, mmHg: 16.920, DBP MAE: 0.729, mmHg: 7.171
+[2026-06-27 20:36:11] - INFO: Best model saved
+[2026-06-27 20:37:26] - INFO: Epoch: 1, Train loss: 1.342, SBP mmHg: 292.261, DBP mmHg: 65.369, Time: 75.6s
+[2026-06-27 20:37:34] - INFO: Fold 4 Gate cosine similarity: 0.3460
+[2026-06-27 20:37:34] - INFO: Epoch 1, Val loss: 1.871, SBP mmHg: 412.057, DBP mmHg: 90.090  MAE: 0.766, SBP MAE: 0.814, mmHg: 17.037, DBP MAE: 0.717, mmHg: 7.058
+[2026-06-27 20:38:47] - INFO: Epoch: 2, Train loss: 1.279, SBP mmHg: 278.884, DBP mmHg: 62.222, Time: 73.5s
+[2026-06-27 20:38:53] - INFO: Fold 4 Gate cosine similarity: 0.3404
+[2026-06-27 20:38:53] - INFO: Epoch 2, Val loss: 1.867, SBP mmHg: 389.676, DBP mmHg: 94.639  MAE: 0.753, SBP MAE: 0.783, mmHg: 16.393, DBP MAE: 0.723, mmHg: 7.122
+[2026-06-27 20:40:07] - INFO: Epoch: 3, Train loss: 1.238, SBP mmHg: 269.437, DBP mmHg: 60.343, Time: 74.0s
+[2026-06-27 20:40:13] - INFO: Fold 4 Gate cosine similarity: 0.0686
+[2026-06-27 20:40:13] - INFO: Epoch 3, Val loss: 1.852, SBP mmHg: 398.486, DBP mmHg: 91.257  MAE: 0.754, SBP MAE: 0.799, mmHg: 16.719, DBP MAE: 0.708, mmHg: 6.973
+[2026-06-27 20:40:13] - INFO: Best model saved
+[2026-06-27 20:41:27] - INFO: Epoch: 4, Train loss: 1.205, SBP mmHg: 262.253, DBP mmHg: 58.707, Time: 74.6s
+[2026-06-27 20:41:34] - INFO: Fold 4 Gate cosine similarity: 0.2097
+[2026-06-27 20:41:34] - INFO: Epoch 4, Val loss: 1.884, SBP mmHg: 404.239, DBP mmHg: 93.137  MAE: 0.763, SBP MAE: 0.806, mmHg: 16.864, DBP MAE: 0.721, mmHg: 7.093
+[2026-06-27 20:42:50] - INFO: Epoch: 5, Train loss: 1.176, SBP mmHg: 255.505, DBP mmHg: 57.381, Time: 75.9s
+[2026-06-27 20:42:56] - INFO: Fold 4 Gate cosine similarity: 0.2360
+[2026-06-27 20:42:56] - INFO: Epoch 5, Val loss: 1.994, SBP mmHg: 467.245, DBP mmHg: 89.860  MAE: 0.794, SBP MAE: 0.875, mmHg: 18.306, DBP MAE: 0.713, mmHg: 7.022
+[2026-06-27 20:44:12] - INFO: Epoch: 6, Train loss: 1.153, SBP mmHg: 250.190, DBP mmHg: 56.363, Time: 76.0s
+[2026-06-27 20:44:17] - INFO: Fold 4 Gate cosine similarity: 0.1277
+[2026-06-27 20:44:17] - INFO: Epoch 6, Val loss: 2.005, SBP mmHg: 477.586, DBP mmHg: 88.599  MAE: 0.803, SBP MAE: 0.887, mmHg: 18.552, DBP MAE: 0.720, mmHg: 7.090
+[2026-06-27 20:45:32] - INFO: Epoch: 7, Train loss: 1.131, SBP mmHg: 244.636, DBP mmHg: 55.409, Time: 75.0s
+[2026-06-27 20:45:38] - INFO: Fold 4 Gate cosine similarity: 0.2341
+[2026-06-27 20:45:38] - INFO: Epoch 7, Val loss: 1.891, SBP mmHg: 391.875, DBP mmHg: 96.547  MAE: 0.760, SBP MAE: 0.790, mmHg: 16.536, DBP MAE: 0.729, mmHg: 7.179
+[2026-06-27 20:46:53] - INFO: Epoch: 8, Train loss: 1.113, SBP mmHg: 240.252, DBP mmHg: 54.645, Time: 75.3s
+[2026-06-27 20:46:59] - INFO: Fold 4 Gate cosine similarity: 0.2053
+[2026-06-27 20:46:59] - INFO: Epoch 8, Val loss: 1.987, SBP mmHg: 466.441, DBP mmHg: 89.350  MAE: 0.796, SBP MAE: 0.876, mmHg: 18.336, DBP MAE: 0.716, mmHg: 7.050
+[2026-06-27 20:48:15] - INFO: Epoch: 9, Train loss: 1.094, SBP mmHg: 236.205, DBP mmHg: 53.767, Time: 75.6s
+[2026-06-27 20:48:21] - INFO: Fold 4 Gate cosine similarity: 0.0375
+[2026-06-27 20:48:21] - INFO: Epoch 9, Val loss: 1.891, SBP mmHg: 426.892, DBP mmHg: 88.750  MAE: 0.771, SBP MAE: 0.833, mmHg: 17.430, DBP MAE: 0.710, mmHg: 6.987
+[2026-06-27 20:49:36] - INFO: Epoch: 10, Train loss: 1.076, SBP mmHg: 231.678, DBP mmHg: 52.983, Time: 75.2s
+[2026-06-27 20:49:42] - INFO: Fold 4 Gate cosine similarity: 0.1694
+[2026-06-27 20:49:42] - INFO: Epoch 10, Val loss: 1.972, SBP mmHg: 468.097, DBP mmHg: 87.480  MAE: 0.795, SBP MAE: 0.879, mmHg: 18.387, DBP MAE: 0.711, mmHg: 6.997
+[2026-06-27 20:50:55] - INFO: Epoch: 11, Train loss: 1.040, SBP mmHg: 223.764, DBP mmHg: 51.302, Time: 73.7s
+[2026-06-27 20:51:01] - INFO: Fold 4 Gate cosine similarity: 0.0619
+[2026-06-27 20:51:01] - INFO: Epoch 11, Val loss: 2.235, SBP mmHg: 566.830, DBP mmHg: 91.127  MAE: 0.859, SBP MAE: 0.975, mmHg: 20.403, DBP MAE: 0.742, mmHg: 7.309
+[2026-06-27 20:52:16] - INFO: Epoch: 12, Train loss: 1.023, SBP mmHg: 220.061, DBP mmHg: 50.419, Time: 75.4s
+[2026-06-27 20:52:22] - INFO: Fold 4 Gate cosine similarity: 0.2528
+[2026-06-27 20:52:22] - INFO: Epoch 12, Val loss: 2.224, SBP mmHg: 559.921, DBP mmHg: 91.566  MAE: 0.860, SBP MAE: 0.969, mmHg: 20.272, DBP MAE: 0.752, mmHg: 7.404
+[2026-06-27 20:53:39] - INFO: Epoch: 13, Train loss: 1.008, SBP mmHg: 216.553, DBP mmHg: 49.710, Time: 76.5s
+[2026-06-27 20:53:45] - INFO: Fold 4 Gate cosine similarity: 0.3443
+[2026-06-27 20:53:45] - INFO: Epoch 13, Val loss: 2.058, SBP mmHg: 490.227, DBP mmHg: 90.911  MAE: 0.823, SBP MAE: 0.901, mmHg: 18.855, DBP MAE: 0.745, mmHg: 7.330
+[2026-06-27 20:55:00] - INFO: Epoch: 14, Train loss: 0.997, SBP mmHg: 213.835, DBP mmHg: 49.249, Time: 75.7s
+[2026-06-27 20:55:06] - INFO: Fold 4 Gate cosine similarity: 0.1846
+[2026-06-27 20:55:06] - INFO: Epoch 14, Val loss: 1.962, SBP mmHg: 462.638, DBP mmHg: 87.696  MAE: 0.801, SBP MAE: 0.874, mmHg: 18.296, DBP MAE: 0.727, mmHg: 7.156
+[2026-06-27 20:56:21] - INFO: Epoch: 15, Train loss: 0.984, SBP mmHg: 211.282, DBP mmHg: 48.631, Time: 75.0s
+[2026-06-27 20:56:27] - INFO: Fold 4 Gate cosine similarity: 0.2585
+[2026-06-27 20:56:27] - INFO: Epoch 15, Val loss: 2.027, SBP mmHg: 488.217, DBP mmHg: 88.368  MAE: 0.813, SBP MAE: 0.898, mmHg: 18.781, DBP MAE: 0.729, mmHg: 7.180
+[2026-06-27 20:57:42] - INFO: Epoch: 16, Train loss: 0.976, SBP mmHg: 209.909, DBP mmHg: 48.120, Time: 75.5s
+[2026-06-27 20:57:48] - INFO: Fold 4 Gate cosine similarity: 0.1333
+[2026-06-27 20:57:48] - INFO: Epoch 16, Val loss: 1.878, SBP mmHg: 427.188, DBP mmHg: 87.413  MAE: 0.778, SBP MAE: 0.835, mmHg: 17.477, DBP MAE: 0.721, mmHg: 7.097
+[2026-06-27 20:59:04] - INFO: Epoch: 17, Train loss: 0.968, SBP mmHg: 207.818, DBP mmHg: 47.804, Time: 75.4s
+[2026-06-27 20:59:09] - INFO: Fold 4 Gate cosine similarity: 0.3450
+[2026-06-27 20:59:09] - INFO: Epoch 17, Val loss: 1.900, SBP mmHg: 434.622, DBP mmHg: 87.893  MAE: 0.783, SBP MAE: 0.844, mmHg: 17.655, DBP MAE: 0.721, mmHg: 7.101
+[2026-06-27 21:00:25] - INFO: Epoch: 18, Train loss: 0.949, SBP mmHg: 203.692, DBP mmHg: 46.899, Time: 75.3s
+[2026-06-27 21:00:30] - INFO: Fold 4 Gate cosine similarity: 0.4688
+[2026-06-27 21:00:30] - INFO: Epoch 18, Val loss: 1.984, SBP mmHg: 471.926, DBP mmHg: 87.814  MAE: 0.806, SBP MAE: 0.881, mmHg: 18.432, DBP MAE: 0.731, mmHg: 7.198
+[2026-06-27 21:01:44] - INFO: Epoch: 19, Train loss: 0.942, SBP mmHg: 202.409, DBP mmHg: 46.501, Time: 74.1s
+[2026-06-27 21:01:50] - INFO: Fold 4 Gate cosine similarity: 0.3803
+[2026-06-27 21:01:50] - INFO: Epoch 19, Val loss: 2.069, SBP mmHg: 499.195, DBP mmHg: 90.016  MAE: 0.828, SBP MAE: 0.911, mmHg: 19.073, DBP MAE: 0.745, mmHg: 7.333
+[2026-06-27 21:03:05] - INFO: Epoch: 20, Train loss: 0.938, SBP mmHg: 201.148, DBP mmHg: 46.383, Time: 75.1s
+[2026-06-27 21:03:12] - INFO: Fold 4 Gate cosine similarity: 0.3183
+[2026-06-27 21:03:12] - INFO: Epoch 20, Val loss: 2.020, SBP mmHg: 484.932, DBP mmHg: 88.466  MAE: 0.813, SBP MAE: 0.892, mmHg: 18.667, DBP MAE: 0.733, mmHg: 7.220
+[2026-06-27 21:04:26] - INFO: Epoch: 21, Train loss: 0.934, SBP mmHg: 200.187, DBP mmHg: 46.238, Time: 74.9s
+[2026-06-27 21:04:32] - INFO: Fold 4 Gate cosine similarity: 0.4882
+[2026-06-27 21:04:32] - INFO: Epoch 21, Val loss: 1.969, SBP mmHg: 464.762, DBP mmHg: 87.913  MAE: 0.801, SBP MAE: 0.874, mmHg: 18.291, DBP MAE: 0.729, mmHg: 7.175
+[2026-06-27 21:05:48] - INFO: Epoch: 22, Train loss: 0.931, SBP mmHg: 199.768, DBP mmHg: 46.000, Time: 75.7s
+[2026-06-27 21:05:54] - INFO: Fold 4 Gate cosine similarity: 0.4798
+[2026-06-27 21:05:54] - INFO: Epoch 22, Val loss: 1.959, SBP mmHg: 463.396, DBP mmHg: 87.288  MAE: 0.800, SBP MAE: 0.871, mmHg: 18.222, DBP MAE: 0.730, mmHg: 7.185
+[2026-06-27 21:07:08] - INFO: Epoch: 23, Train loss: 0.928, SBP mmHg: 198.766, DBP mmHg: 45.892, Time: 74.5s
+[2026-06-27 21:07:14] - INFO: Fold 4 Gate cosine similarity: 0.4524
+[2026-06-27 21:07:14] - INFO: Epoch 23, Val loss: 2.042, SBP mmHg: 490.142, DBP mmHg: 89.361  MAE: 0.820, SBP MAE: 0.899, mmHg: 18.805, DBP MAE: 0.741, mmHg: 7.291
+[2026-06-27 21:08:29] - INFO: Epoch: 24, Train loss: 0.924, SBP mmHg: 198.126, DBP mmHg: 45.731, Time: 75.3s
+[2026-06-27 21:08:35] - INFO: Fold 4 Gate cosine similarity: 0.2498
+[2026-06-27 21:08:35] - INFO: Epoch 24, Val loss: 1.953, SBP mmHg: 450.662, DBP mmHg: 89.524  MAE: 0.798, SBP MAE: 0.858, mmHg: 17.963, DBP MAE: 0.738, mmHg: 7.265
+[2026-06-27 21:08:35] - INFO: Early stopping at epoch 24
+[2026-06-27 21:08:35] - INFO: 5 fold SBP MAE = 16.147 ± 1.668 mmHg
+[2026-06-27 21:08:35] - INFO: 5 fold DBP MAE = 6.978 ± 0.846 mmHg
+[2026-06-27 21:08:35] - INFO: ============================================================
+[2026-06-27 21:08:35] - INFO: FINAL 5-FOLD CV (FusionGated26)
+[2026-06-27 21:08:35] - INFO: SBP MAE = 16.15 ± 1.67 mmHg
+[2026-06-27 21:08:35] - INFO: DBP MAE = 6.98 ± 0.85 mmHg

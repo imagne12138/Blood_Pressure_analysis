@@ -4,8 +4,7 @@ import torch.nn as nn
 
 class Model_2_Head(nn.Module):
     """
-    三层1dcnn, 双层Bilstm, 线性注意力 
-    最后对中间向量c分头输出，sbp和dbp各一个头(在output后加头和在output前加头)
+    三层1dcnn, 双层Bilstm, 分头注意力 
     """
     def __init__(self, filters, num_layers, num_directions=2, hidden_dim=128, drop_prob=0.2, attn_out_dim=1, out_dim=2):
         super(Model_2_Head, self).__init__()
@@ -29,6 +28,7 @@ class Model_2_Head(nn.Module):
                                     padding=1),
                           nn.BatchNorm1d(num_features=self.filters[i+1]),
                           nn.ReLU(),
+                          nn.Dropout(drop_prob),
                           nn.MaxPool1d(kernel_size=2, stride=2)) # pool stride可选1，对比
                 for i in range(len(self.filters) - 1)
             ]) # 输入1dCNN: [batch_size, feature_dim=1, window_size(seq_len)=1024]
@@ -50,12 +50,15 @@ class Model_2_Head(nn.Module):
                                 batch_first=True,
                                 dropout=drop_prob, 
                                 bidirectional=False)
-        # self.linear_attn = nn.Linear(self.hidden_dim * self.num_directions, self.attn_out) # 单层attention
-        self.linear_attn = nn.Sequential(
-            nn.Linear(self.hidden_dim * self.num_directions, self.hidden_dim),
-            nn.Tanh(),
-            nn.Linear(self.hidden_dim, self.attn_out),
-        )
+        self.sbp_attn = nn.Sequential(nn.Linear(self.hidden_dim * self.num_directions, self.attn_out),
+                                      nn.Tanh())  # 单层attention
+        self.dbp_attn = nn.Sequential(nn.Linear(self.hidden_dim * self.num_directions, self.attn_out),
+                                      nn.Tanh())
+        # self.linear_attn = nn.Sequential(
+        #     nn.Linear(self.hidden_dim * self.num_directions, self.hidden_dim),
+        #     nn.Tanh(),
+        #     nn.Linear(self.hidden_dim, self.attn_out),
+        # )
 
         # 方案1
         self.linear_sbp_out = nn.Sequential(
@@ -96,13 +99,18 @@ class Model_2_Head(nn.Module):
         lstm_out, hidden_state = self.bilstm(conv_out) # 输出output: [batch_size, seq_len, hidden_sizeXnum_directions], hidden: (numdirectionsXn_layers=2X2=4, batch_size, hidden_size=128)
         lstm_out = self.dropout(lstm_out)
         # e = self.tanh(self.linear_attn(lstm_out)) # [batch_size, window_size, 1]
-        e = self.linear_attn(lstm_out) # [batch_size, window_size, 1]
-        alpha = self.softmax(e) # [batch_size, window_size, 1]
-        c = torch.sum(alpha * lstm_out, dim=1) # [batch_size, hidden_sizeXnum_directions]
+        e_sbp = self.sbp_attn(lstm_out) # [batch_size, window_size, 1]
+        alpha_sbp = self.softmax(e_sbp) # [batch_size, window_size, 1]
+        c_sbp = torch.sum(alpha_sbp * lstm_out, dim=1) # [batch_size, hidden_sizeXnum_directions]
+
+        e_dbp = self.dbp_attn(lstm_out) # [batch_size, window_size, 1]
+        alpha_dbp = self.softmax(e_dbp) # [batch_size, window_size, 1]
+        c_dbp = torch.sum(alpha_dbp * lstm_out, dim=1) # [batch_size, hidden_sizeXnum_directions]
+
 
         # 方案一输出
-        dbp_out = self.linear_dbp_out(c) # [batch_size, 1]
-        sbp_out = self.linear_sbp_out(c) # [batch_size, 1]
+        dbp_out = self.linear_dbp_out(c_dbp) # [batch_size, 1]
+        sbp_out = self.linear_sbp_out(c_sbp) # [batch_size, 1]
         
         output = torch.concat((sbp_out, dbp_out), dim=1) # [batch_size, 2]
 

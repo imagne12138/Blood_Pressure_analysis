@@ -24,22 +24,26 @@ class Config():
         # self.base_dir = r"E:\Kaggle_projects\Blood_Pressure_analysis\Blood_pressure_dataset"
         self.base_dir = self.proj_base / "Blood_pressure_dataset"
         # self.datadir = r"E:\Kaggle_projects\Blood_Pressure_analysis\Blood_pressure_dataset\segmented_records.h5"
-        self.datadir = self.base_dir / "segmented_records.h5"
+        self.datadir = self.base_dir / "segmented_records.h5" # 本地训练
+        # self.datadir = "/content/segmented_records.h5" # 使用colab训练
         # self.h5_detrend = r"E:\Kaggle_projects\Blood_Pressure_analysis\Blood_pressure_dataset\detrend_records.h5"
         self.h5_detrend = self.base_dir / "detrend_records.h5"
         # self.h5_scaled = r"E:\Kaggle_projects\Blood_Pressure_analysis\Blood_pressure_dataset\scaled_records.h5"
         self.h5_scaled = self.base_dir / "scaled_records.h5"
         # self.h5_seg = r"E:\Kaggle_projects\Blood_Pressure_analysis\Blood_pressure_dataset\segmented_records.h5"
         self.h5_seg = self.base_dir / "segmented_records.h5"
+        self.h5_feature = self.base_dir / "ppg_features.h5"
+        self.feature_dim = 26
         self.k = 5
         
         #  模型相关配置
         self.batch_size = 128
         self.filters = [1, 32, 64, 128]
-        self.lr = 0.001
+        self.lr = 0.0001
         self.num_layers = 2
         self.num_directions = 2
         self.hidden_dim = 128
+        self.weight_decay = 0.01
 
 
         self.dropout = 0.2
@@ -48,7 +52,7 @@ class Config():
         self.epsilon = 10e-9
         self.device = self._init_device()
         self.epochs = 500
-        self.early_stopping_patience = 10
+        self.early_stopping_patience = 20
         self.model_save_dir = os.path.join(self.proj_base, 'cache')
         if not os.path.exists(self.model_save_dir):
             os.makedirs(self.model_save_dir)

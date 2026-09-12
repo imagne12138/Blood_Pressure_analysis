@@ -15,8 +15,8 @@ cfg = Config()
 
 data_loader = LoadPPGDataset(batch_size=cfg.batch_size)
 
-fold_dir = os.path.join(cfg.base_dir, "cv_fold_0.npz")
-train_iter, val_iter = data_loader.load_train_val_data(data_dir=cfg.datadir, indices_dir=fold_dir)
+fold_dir = os.path.join(cfg.base_dir, "cv_fold_4.npz")
+train_iter, val_iter, _, _, _, _ = data_loader.load_train_val_data(data_dir=cfg.datadir, indices_dir=fold_dir)
 
 print(len(train_iter))
 print(len(val_iter))
@@ -35,5 +35,5 @@ print(np.mean(val_sbp), np.std(val_sbp))
 plt.hist(train_sbp, bins=50, alpha=0.5, label="Train")
 plt.hist(val_sbp, bins=50, alpha=0.5, label="Val")
 plt.legend()
-plt.savefig(r'E:\Kaggle_projects\Blood_Pressure_analysis\imgs\Comparision_of_train_val_sbp(unshuffled_fold0).jpg')
+plt.savefig(r'E:\Kaggle_projects\Blood_Pressure_analysis\imgs\Comparision_of_train_val_sbp(unshuffled_fold4).jpg')
 plt.show()

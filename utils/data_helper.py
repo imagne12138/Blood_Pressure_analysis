@@ -287,3 +287,142 @@ def chain(base_dir: str,
     window_seg(h5_in=h5_scaled, h5_out=h5_seg)
     k_fold_save(k=k, data_path=h5_seg)
 
+
+def feature_extraction_ppg(h5_in: str, h5_out: str):
+    """
+    人工提取PPG信号特征，包含：一个segment内ppg信号的所有峰值和谷值，峰值和谷值的均值，峰值间的平均时间间隔和谷值之间的时间间隔
+    新增：统计特征向量，便于直接输入模型
+    """
+    fs = 125
+    # 六个字段为不同特征
+    ppg_peaks = []
+    ppg_valleys = []
+    avg_ppg_peak = []
+    avg_ppg_valley = []
+    avg_ppg_peak_interval = []
+    avg_ppg_valley_interval = []
+    record_ids = []
+    feature_vectors = []  # 新增：固定长度特征向量
+
+    with h5py.File(h5_in, "r") as fin:
+        ppg_seg = fin["ppg"]
+        for i in tqdm(range(len(ppg_seg)), desc="Extracting PPG features as input...", colour="cyan"):
+            segment = ppg_seg[i]  # 第i个窗口的PPG信号
+            peaks_ppg, _ = find_peaks(
+                segment,
+                distance=int(0.4 * fs), # 峰值之间最少间隔0.4s，防止抖动影响
+                prominence=0.5
+            )
+
+            valleys_ppg, _ = find_peaks(
+                -segment,
+                distance=int(0.4 * fs),
+                prominence=0.5
+            )
+
+            if len(peaks_ppg) == 0 or len(valleys_ppg) == 0:
+                continue  # 跳过没有峰值或谷值的窗口
+
+            all_ppg_peak_values = segment[peaks_ppg]
+            all_ppg_valley_values = segment[valleys_ppg]
+
+            avg_ppg_peak_value = np.mean(all_ppg_peak_values)
+            avg_ppg_valley_value = np.mean(all_ppg_valley_values)
+
+            peak_intervals_samples = np.diff(peaks_ppg)
+            peak_intervals_seconds = peak_intervals_samples / fs
+
+            valley_intervals_samples = np.diff(valleys_ppg)
+            valley_intervals_seconds = valley_intervals_samples / fs
+
+            # 每个ppg_seg取出的特征分别存入
+            ppg_peaks.append(all_ppg_peak_values.astype(np.float32))
+            ppg_valleys.append(all_ppg_valley_values.astype(np.float32))
+            avg_ppg_peak.append(avg_ppg_peak_value)
+            avg_ppg_valley.append(avg_ppg_valley_value)
+            avg_ppg_peak_interval.append(peak_intervals_seconds.astype(np.float32))
+            avg_ppg_valley_interval.append(valley_intervals_seconds.astype(np.float32))
+            record_ids.append(i)
+
+            # 计算统计特征向量（固定长度）
+            # 1. 峰值值的统计量：均值、标准差、最小值、最大值、25%, 50%, 75%分位数、数量
+            peak_stats = []
+            if len(all_ppg_peak_values) > 0:
+                peak_stats.extend([
+                    np.mean(all_ppg_peak_values),
+                    np.std(all_ppg_peak_values),
+                    np.min(all_ppg_peak_values),
+                    np.max(all_ppg_peak_values),
+                    np.percentile(all_ppg_peak_values, 25),
+                    np.percentile(all_ppg_peak_values, 50),
+                    np.percentile(all_ppg_peak_values, 75),
+                    len(all_ppg_peak_values)
+                ])
+            else:
+                peak_stats.extend([0.0] * 8)
+
+            # 2. 谷值值的统计量
+            valley_stats = []
+            if len(all_ppg_valley_values) > 0:
+                valley_stats.extend([
+                    np.mean(all_ppg_valley_values),
+                    np.std(all_ppg_valley_values),
+                    np.min(all_ppg_valley_values),
+                    np.max(all_ppg_valley_values),
+                    np.percentile(all_ppg_valley_values, 25),
+                    np.percentile(all_ppg_valley_values, 50),
+                    np.percentile(all_ppg_valley_values, 75),
+                    len(all_ppg_valley_values)
+                ])
+            else:
+                valley_stats.extend([0.0] * 8)
+
+            # 3. 峰值间隔的统计量：均值、标准差、最小值、最大值、数量（间隔数）
+            peak_interval_stats = []
+            if len(peak_intervals_seconds) > 0:
+                peak_interval_stats.extend([
+                    np.mean(peak_intervals_seconds),
+                    np.std(peak_intervals_seconds),
+                    np.min(peak_intervals_seconds),
+                    np.max(peak_intervals_seconds),
+                    len(peak_intervals_seconds)
+                ])
+            else:
+                peak_interval_stats.extend([0.0] * 5)
+
+            # 4. 谷值间隔的统计量
+            valley_interval_stats = []
+            if len(valley_intervals_seconds) > 0:
+                valley_interval_stats.extend([
+                    np.mean(valley_intervals_seconds),
+                    np.std(valley_intervals_seconds),
+                    np.min(valley_intervals_seconds),
+                    np.max(valley_intervals_seconds),
+                    len(valley_intervals_seconds)
+                ])
+            else:
+                valley_interval_stats.extend([0.0] * 5)
+
+            # 拼接所有统计特征
+            feature_vector = peak_stats + valley_stats + peak_interval_stats + valley_interval_stats
+            feature_vectors.append(np.array(feature_vector, dtype=np.float32))
+
+    # 转换为对象数组以存储可变长度数据
+    ppg_peaks_arr = np.array(ppg_peaks, dtype=object)
+    ppg_valleys_arr = np.array(ppg_valleys, dtype=object)
+    avg_ppg_peak_arr = np.array(avg_ppg_peak, dtype=np.float32)
+    avg_ppg_valley_arr = np.array(avg_ppg_valley, dtype=np.float32)
+    avg_ppg_peak_interval_arr = np.array(avg_ppg_peak_interval, dtype=object)
+    avg_ppg_valley_interval_arr = np.array(avg_ppg_valley_interval, dtype=object)
+    feature_matrix = np.stack(feature_vectors) if feature_vectors else np.array([], dtype=np.float32).reshape(0, 26)
+
+    with h5py.File(h5_out, "w") as fout:
+            fout.create_dataset("ppg_peaks", data=ppg_peaks_arr, dtype=h5py.vlen_dtype(np.float32))
+            fout.create_dataset("ppg_valleys", data=ppg_valleys_arr, dtype=h5py.vlen_dtype(np.float32))
+            fout.create_dataset("avg_ppg_peak", data=avg_ppg_peak_arr, dtype=np.float32)
+            fout.create_dataset("avg_ppg_valley", data=avg_ppg_valley_arr, dtype=np.float32)
+            fout.create_dataset("avg_ppg_peak_interval", data=avg_ppg_peak_interval_arr, dtype=h5py.vlen_dtype(np.float32))
+            fout.create_dataset("avg_ppg_valley_interval", data=avg_ppg_valley_interval_arr, dtype=h5py.vlen_dtype(np.float32))
+            fout.create_dataset("record_id", data=np.array(record_ids, dtype=np.int32))
+            fout.create_dataset("ppg_features", data=feature_matrix, dtype=np.float32)
+
