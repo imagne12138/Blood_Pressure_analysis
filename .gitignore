@@ -1,6 +1,6 @@
 __pycache__
-Blood_pressure_dataset
-tmp
+Blood_pressure_dataset/
+tmp/
 
 # cache 目录下的文档文件
 cache/**/*.docx
@@ -8,4 +8,5 @@ cache/**/*.md
 cache/**/*.pptx
 cache/**/*.pdf
 
-graphify-out
+graphify-out/
+presentation/

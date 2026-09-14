@@ -1,267 +1,220 @@
-# Blood Pressure Analysis — Project File Structure Guide
+# Blood Pressure Analysis
 
-This project investigates deep learning approaches for blood pressure (BP) estimation from photoplethysmography (PPG) signals using the MIMIC II database. It develops and evaluates a series of progressively more sophisticated model architectures, including pure-PPG CNNs, hand-crafted feature MLPs, fused multi-modal architectures, and attention-based models.
+基于光电容积脉搏波（photoplethysmography，PPG）信号进行收缩压（SBP）和舒张压（DBP）估计的研究代码库。本项目比较纯 PPG 深度学习模型、手工特征模型以及 PPG–特征融合模型，并使用 5 折交叉验证评估泛化性能。
 
----
+> **项目状态**：实验代码与结果整理中。详细实验记录见 [`EXPERIMENTS.md`](EXPERIMENTS.md)，结果汇总见 [`cache/实验训练结果总结.md`](cache/实验训练结果总结.md)。
 
-## File Tree
+## 研究概览
 
-```
+### 数据与预处理
+
+- 数据来源：UCI/BPD PPG 数据集（Kachuee et al., 2015）。
+- 原始数据：`Blood_pressure_dataset/part_1.mat` 至 `part_12.mat`。
+- 过滤后约 **1,967 条 recording**，切分为约 **517,305 个窗口**。
+- PPG 输入：单通道、长度 1024 的窗口（采样率 125 Hz，约 8.192 s）。
+- 标签：每个窗口对应的 SBP 与 DBP。
+- 交叉验证：预先生成的 5 折索引位于 `Blood_pressure_dataset/cv_fold_*.npz`。
+- 手工特征：
+  - 26 维峰值/谷值统计特征，位于 `ppg_features.h5`；
+  - 169 维 Liu et al. (2023) 特征，位于 `liu2023_features.h5`（如已生成）。
+
+### 当前实验结论
+
+在已完成并记录的实验中，`Model2 + 26-dim feature fusion` 是综合表现最佳的方案：
+
+| 模型 | 特征 | SBP MAE (mmHg) | DBP MAE (mmHg) |
+| --- | --- | ---: | ---: |
+| Model 2 + 26 维融合 | PPG + 26 维统计特征 | **15.525 ± 1.382** | **6.859 ± 0.931** |
+| Baseline + 26 维融合 | PPG + 26 维统计特征 | 15.680 ± 1.230 | **6.760 ± 0.940** |
+| Model 2（纯 PPG） | PPG | 15.782 ± 1.429 | 6.953 ± 0.956 |
+| Model 2 + 169 维融合 | PPG + Liu2023 特征 | 16.381 ± 1.266 | 7.170 ± 0.840 |
+| 改进 Liu2023 MLP | 169 维特征 | 16.515 ± 1.202 | 7.262 ± 0.800 |
+
+详细的逐折结果、其他模型以及实验解释请以 [`EXPERIMENTS.md`](EXPERIMENTS.md) 为准。总体观察是：在本数据集和当前实验设置下，低维 26 维统计特征比 169 维特征更稳定；PPG 时序信息与统计特征具有互补性。
+
+## 目录结构
+
+```text
 Blood_Pressure_analysis/
+├── Readme.md                         # 项目说明
+├── EXPERIMENTS.md                    # 实验记录与结果对比
+├── requirements.txt                  # Python 依赖
+├── Blood_pressure.ipynb              # 探索性分析与原型
+├── Visualization.ipynb               # 可视化分析（文件名以实际文件为准）
 │
-├── train.py                          # Main training (Baseline / Model 2)
-├── train_for_MLP.py                  # Simple Feature MLP
-├── train_for_MLP_Liu2023.py          # Liu2023 Feature MLP
-├── train_for_LightGBM_Liu2023.py     # LightGBM on 169-dim features
-├── train_fusion_26.py                # FusionModel26 (best model)
-├── train_fusion_169.py               # FusionModel169
-├── train_fusion_baseline.py          # Baseline + 169 fusion
-├── train_fusion_baseline_26.py       # Baseline + 26 fusion
-├── train_fusion_opt.py               # Fusion_Opt
-├── train_fusion_gated26.py           # Gated Fusion 26
-├── train_fusion_gated169.py          # Gated Fusion 169
-├── train_fusion_ordinal.py           # CORAL ordinal (26-dim)
-├── train_fusion_ordinal169.py        # CORAL ordinal (169-dim)
-├── train_mlp_opt.py                  # MLP-Opt
-├── Blood_pressure.ipynb              # EDA notebook
-├── Visualisation.ipynb               # Visualisation notebook
-├── requirements.txt
-├── EXPERIMENTS.md
+├── training_scripts/                 # 训练入口
+│   ├── train.py                     # Baseline / Model 2
+│   ├── train_for_MLP.py             # 26 维特征 MLP
+│   ├── train_for_MLP_Liu2023.py     # 169 维 Liu2023 特征 MLP
+│   ├── train_for_LightGBM_Liu2023.py
+│   ├── train_fusion_26.py            # Model 2 + 26 维融合
+│   ├── train_fusion_169.py           # Model 2 + 169 维融合
+│   ├── train_fusion_baseline.py      # Baseline + 169 维融合
+│   ├── train_fusion_baseline_26.py   # Baseline + 26 维融合
+│   ├── train_mlp_opt.py              # SBP/DBP 专用子集 MLP
+│   ├── train_fusion_opt.py           # SBP/DBP 专用子集融合
+│   ├── train_fusion_gated26.py       # Gated Fusion（26 维）
+│   ├── train_fusion_gated169.py      # Gated Fusion（169 维）
+│   ├── train_fusion_ordinal.py       # CORAL ordinal（26 维）
+│   └── train_fusion_ordinal169.py    # CORAL ordinal（169 维）
 │
-├── model/                            # PyTorch model definitions
-│   ├── baseline_model.py             #   Shared-attention baseline
-│   ├── model_2.py                    #   Separate-attention Model 2
-│   ├── MLP_for_Liu2023.py            #   169-dim MLP
-│   ├── MLP_for_feature.py            #   26-dim simple MLP
-│   ├── MLP_Opt.py                    #   Task-specific MLPs
-│   ├── LightGBM_for_Liu2023.py       #   LightGBM wrapper
-│   ├── Fusion_Baseline.py            #   Baseline + 169 fusion
-│   ├── Fusion_Baseline_26.py         #   Baseline + 26 fusion
-│   ├── Fusion_Model_169.py           #   Model2 + 169 fusion
-│   ├── Fusion_Model_26.py            #   ★ BEST: Model2 + 26 fusion
-│   ├── Fusion_Opt.py                 #   Task-specific fusion
-│   ├── Fusion_Gated.py               #   Gated fusion
-│   ├── Fusion_HeadConcat.py          #   Head concat ablation
-│   ├── Fusion_Ordinal.py             #   CORAL ordinal
-│   ├── two_stage_bp.py               #   Two-stage pipeline
-│   ├── custom_losses.py
+├── model/                            # PyTorch 模型定义
+│   ├── baseline_model.py             # 共享注意力的纯 PPG 基线
+│   ├── model_2.py                    # SBP/DBP 分头注意力模型
+│   ├── MLP_for_feature.py            # 26 维特征 MLP
+│   ├── MLP_for_Liu2023.py            # 169 维特征 MLP
+│   ├── MLP_Opt.py                    # 专用特征子集 MLP
+│   ├── LightGBM_for_Liu2023.py       # LightGBM 基线
+│   ├── Fusion_Model_26.py            # 分头注意力 + 26 维融合
+│   ├── Fusion_Model_169.py           # 分头注意力 + 169 维融合
+│   ├── Fusion_Baseline_26.py         # 共享注意力 + 26 维融合
+│   ├── Fusion_Baseline.py            # 共享注意力 + 169 维融合
+│   ├── Fusion_Opt.py                 # 专用子集融合
+│   ├── Fusion_Gated.py               # 门控融合
+│   ├── Fusion_HeadConcat.py          # Head concat 消融模型
+│   ├── Fusion_Ordinal.py             # CORAL ordinal 模型
+│   ├── two_stage_bp.py               # 两阶段血压估计
+│   ├── custom_losses.py              # 自定义损失
 │   └── custom_scheduler_for_transformer.py
 │
-├── utils/                            # Shared utilities
-│   ├── create_data.py                #   CV dataset splitting
-│   ├── data_helper.py                #   DataLoader & preprocessing
-│   ├── liu2023_features.py           #   169-dim feature extraction
-│   ├── ppg_spectrogram.py            #   Spectrogram generation
-│   ├── log_helper.py                 #   Logging
-│   └── stratified_sampler.py         #   Stratified CV sampling
+├── utils/                            # 数据、特征与日志工具
+│   ├── create_data.py                # 数据集构建与交叉验证加载
+│   ├── data_helper.py                # 原始数据读取与预处理
+│   ├── liu2023_features.py           # Liu2023 特征提取
+│   ├── ppg_spectrogram.py            # PPG 频谱图工具
+│   ├── stratified_sampler.py         # 分层采样
+│   └── log_helper.py                 # 日志配置
 │
-├── config/
-│   └── config.py                     # Paths & hyperparameters
-│
-├── Blood_pressure_dataset/           # MIMIC II PPG-BP data
-│   ├── part_1.mat ... part_12.mat    #   12 MATLAB files (~12k recordings)
-│   ├── Samples/                      #   Sample CSVs
-│   └── shuffled_cv/                  #   Pre-computed CV indices
-│
-├── cache/                            #   Logs, results and drafts are stored here
-│   ├── log_train_*.txt               #   Training logs
-│   ├── baseline/                     #   Baseline experiment logs
-│   ├── model2_fusion_26dim/          #   FusionModel26 logs
-│   ├── model2_fusion_169dim/         #   FusionModel169 logs
-│   ├── fusion_gated26/               #   Gated 26 logs
-│   ├── fusion_gated169/              #   Gated 169 logs
-│   ├── liu2023_feature_mlp/          #   Liu2023 MLP logs
-│   ├── liu2023lgbm/                  #   LightGBM logs
-│   ├── mlp_opt/                      #   MLP-Opt logs
-│   ├── Fusion_ordinal/               #   CORAL logs
-│   ├── figures/                      #   Generated figures
-│   └── scripts_extraction_visualization/  # Plot scripts
-│
-├── Tests/                            # Unit & verification tests （Unit test, Only to confirm function working）
-│   ├── model_test.py
-│   ├── model_2_test.py
-│   ├── check_fusion26.py
-│   ├── check_fusion169.py
-│   ├── data_loader_test.py
-│   ├── data_distribution_test.py
-│   ├── feature_data_analysis.py
-│   └── ...
-│
-├── imgs/                             # Diagram sources
-│   ├── cross_validation.drawio
-│   ├── model.drawio
-│   └── pipeline.drawio
-│
-└── experiments_improved/
-    └── improved_loss_demo.py
+├── config/config.py                  # 路径和训练超参数
+├── Blood_pressure_dataset/           # 数据、HDF5 文件、样本与 CV 索引
+├── cache/                            # 日志、checkpoint、图表和中间结果
+├── Tests/                            # 模型、数据加载和特征验证脚本
+├── experiments_improved/             # 改进损失函数实验
+└── tmp/                              # 临时分析与文档生成脚本
 ```
 
-The 
+## 模型演化
 
+```text
+纯 PPG
+  BaselineModel
+      └── Model_2_Head（SBP/DBP 分头注意力与输出）
 
----
+纯手工特征
+  26 维统计特征 MLP
+  169 维 Liu2023 特征 MLP / LightGBM
+  SBP/DBP 专用子集 MLP
 
-## Root Directory Files
-
-| File                              | Purpose                                                                                                                                                                                |
-| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `train.py`                      | Main training entrypoint (Baseline / Model 2)                                                                                                                                          |
-| `train_for_MLP.py`              | Training: Simple Feature MLP                                                                                                                                                           |
-| `train_for_MLP_Liu2023.py`      | Training: Liu2023 Feature MLP                                                                                                                                                          |
-| `train_for_LightGBM_Liu2023.py` | Training: LightGBM on Liu2023 features<br />(An exploratory experiment, not reported in final report)                                                                                  |
-| `train_fusion_26.py`            | Training: FusionModel26 (Model2 + 26-dim fusion)                                                                                                                                       |
-| `train_fusion_169.py`           | Training: FusionModel169 (Model2 + 169-dim fusion)                                                                                                                                     |
-| `train_fusion_baseline.py`      | Training: Baseline + 169-dim fusion                                                                                                                                                    |
-| `train_fusion_baseline_26.py`   | Training: Baseline + 26-dim fusion                                                                                                                                                     |
-| `train_fusion_opt.py`           | Training: Fusion_Opt (task-specific features)                                                                                                                                          |
-| `train_fusion_gated26.py`       | Training: Gated Fusion (26-dim)                                                                                                                                                        |
-| `train_fusion_gated169.py`      | Training: Gated Fusion (169-dim)                                                                                                                                                       |
-| `train_fusion_ordinal.py`       | Training: CORAL ordinal regression (26-dim)<br />(Exploratory, experiment was interrupted thus lack the result of fold 4. As an extension and mentioned in future work in chapter 8)  |
-| `train_fusion_ordinal169.py`    | Training: CORAL ordinal regression (169-dim)<br />(Exploratory, experiment was interrupted thus lack the result of fold 4. As an extension and mentioned in future work in chapter 8) |
-| `train_mlp_opt.py`              | Training: MLP-Opt (task-specific MLPs)                                                                                                                                                 |
-| `Blood_pressure.ipynb`          | Jupyter notebook: exploratory data analysis & prototyping                                                                                                                              |
-| `Visualisation.ipynb`           | Jupyter notebook: visualisation scripts                                                                                                                                                |
-| `requirements.txt`              | Python package dependencies                                                                                                                                                            |
-| `EXPERIMENTS.md`                | Experiment log index                                                                                                                                                                   |
-|                                   |                                                                                                                                                                                        |
-
----
-
-## `model/` — Model Architecture Definitions
-
-Each file defines one PyTorch model class. Models are organised by increasing complexity.
-
-| File                                    | Description                                                         |
-| --------------------------------------- | ------------------------------------------------------------------- |
-| `baseline_model.py`                   | Baseline CNN-BiLSTM with shared attention + shared output           |
-| `model_2.py`                          | Model 2: separate SBP/DBP attention heads + output heads            |
-| `MLP_for_Liu2023.py`                  | MLP on 169-dim Liu2023 features (no BN / with BN variants)          |
-| `MLP_for_feature.py`                  | Simple MLP on 26-dim statistical features                           |
-| `MLP_Opt.py`                          | Dual-branch MLP: SBP uses 17-dim, DBP uses 12-dim                   |
-| `LightGBM_for_Liu2023.py`             | LightGBM wrapper for 169-dim features                               |
-| `Fusion_Baseline.py`                  | Baseline + 169-dim feature fusion (shared attention)                |
-| `Fusion_Baseline_26.py`               | Baseline + 26-dim feature fusion (shared attention)                 |
-| `Fusion_Model_169.py`                 | Model2 + 169-dim fusion (separate attention)                        |
-| `Fusion_Model_26.py`                  | **Model2 + 26-dim fusion (separate attention) — BEST MODEL** |
-| `Fusion_Opt.py`                       | Model2 + task-specific optimal feature subsets                      |
-| `Fusion_Gated.py`                     | Gated fusion mechanism (26-dim / 169-dim)                           |
-| `Fusion_HeadConcat.py`                | Ablation: head concatenation fusion variant                         |
-| `Fusion_Ordinal.py`                   | CORAL ordinal regression fusion model                               |
-| `two_stage_bp.py`                     | Two-stage BP estimation pipeline                                    |
-| `custom_losses.py`                    | Custom loss functions (log-cosh, etc.)                              |
-| `custom_scheduler_for_transformer.py` | Learning rate schedulers                                            |
-
----
-
-## `utils/` — Shared Utilities
-
-| File                      | Purpose                                                       |
-| ------------------------- | ------------------------------------------------------------- |
-| `create_data.py`        | Dataset splitting & 5-fold CV generation                      |
-| `data_helper.py`        | DataLoader, preprocessing, augmentation                       |
-| `liu2023_features.py`   | 169-dim feature extraction (Liu et al. 2023)                  |
-| `ppg_spectrogram.py`    | PPG spectrogram generation (Just prepared for possible ideas) |
-| `log_helper.py`         | Logging utilities                                             |
-| `stratified_sampler.py` | Stratified sampling for balanced CV                           |
-
----
-
-## `config/` — Configuration
-
-| File          | Purpose                                        |
-| ------------- | ---------------------------------------------- |
-| `config.py` | Dataset paths, hyperparameters, model settings |
-
----
-
-## `Blood_pressure_dataset/` — Dataset Storage
-
-Contains the MIMIC II PPG-BP dataset preprocessed by Kachuee et al. (2015).
-
+PPG + 手工特征融合
+  Baseline + 26/169 维特征
+  Model 2 + 26/169 维特征
+  Gated Fusion / Fusion Opt / CORAL Ordinal
 ```
+
+核心时序编码器通常为：
+
+```text
+PPG [B, 1, 1024]
+  → 3 层 Conv1D + BatchNorm + ReLU + MaxPool
+  → 双向 LSTM（hidden size = 128）
+  → 注意力池化（共享或 SBP/DBP 分头）
+  → 回归输出
+```
+
+融合模型在注意力得到的 256 维上下文向量上加入手工特征投影，再分别预测 SBP 与 DBP。
+
+## 快速开始
+
+### 1. 创建环境
+
+```bash
+conda create -n Pytorch python=3.10
+conda activate Pytorch
+pip install -r requirements.txt
+```
+
+实际 Python、PyTorch 和 CUDA 版本应根据本机环境调整。
+
+### 2. 准备数据
+
+将数据文件放入：
+
+```text
 Blood_pressure_dataset/
-├── part_1.mat  ...  part_12.mat   # 12 MATLAB files, ~1,000 recordings each
-├── Samples/                        # Pre-split sample files
-└── shuffled_cv/                    # Pre-computed 5-fold CV indices
+├── part_1.mat ... part_12.mat
+├── segmented_records.h5
+├── ppg_features.h5
+├── liu2023_features.h5       # 运行 169 维实验时需要
+└── cv_fold_0.npz ... cv_fold_4.npz
 ```
+
+`config/config.py` 使用项目目录的相对路径，不要求修改硬编码的绝对路径。若 HDF5 文件尚未生成，可先参考 `utils/data_helper.py` 中的数据处理函数，并使用对应测试脚本检查输出形状。
+
+### 3. 训练
+
+在项目根目录执行，例如：
+
+```bash
+conda run -n Pytorch python training_scripts/train.py
+conda run -n Pytorch python training_scripts/train_fusion_26.py
+conda run -n Pytorch python training_scripts/train_fusion_169.py
+```
+
+默认配置位于 [`config/config.py`](config/config.py)，包括：
+
+- 5 折交叉验证；
+- batch size = 128；
+- learning rate = 1e-4；
+- 最大训练轮数 = 500；
+- early stopping patience = 20；
+- 自动选择 CUDA、Apple MPS 或 CPU。
+
+训练日志和模型 checkpoint 默认写入 `cache/`。不同实验脚本可能会在 `cache/` 下使用不同的子目录，运行前请查看脚本顶部的说明和保存路径。
+
+### 4. 验证模型与数据
+
+```bash
+conda run -n Pytorch python Tests/model_test.py
+conda run -n Pytorch python Tests/model_2_test.py
+conda run -n Pytorch python Tests/check_fusion26.py
+conda run -n Pytorch python Tests/check_fusion169.py
+conda run -n Pytorch python Tests/data_loader_test.py
+```
+
+这些脚本主要用于确认 forward pass、输入输出维度、数据加载和特征处理正常，并不替代完整训练评估。
+
+## 评价指标与结果解释
+
+主要报告：
+
+- **MAE**：SBP/DBP 的平均绝对误差，单位为 mmHg；
+- **RMSE**：均方根误差；
+- **Pearson r**：预测值与真实值的线性相关性；
+- **Bias 与 95% limits of agreement**：用于误差一致性分析。
+
+注意：MAE、RMSE、相关系数和 Bland–Altman 一致性界限反映的是不同性质，不能相互替代。注意力分析中，若比较注意力模式，应明确区分 pre-softmax 得分和 post-softmax 权重，并使用与分析目标一致的相似度指标。
+
+## 注意事项
+
+1. **模型实现与历史结果需对应。** `EXPERIMENTS.md` 记录了不同时间的实验版本；修改模型结构、特征投影或归一化方式后，应使用新的实验名和日志目录，避免覆盖旧结果。
+2. **FusionModel26 的特征维度要保持一致。** 直接拼接版本与带投影版本的融合维度不同；checkpoint 加载前必须确认模型定义、投影层和保存时的 `fusion_dim` 完全一致。
+3. **交叉验证应按 recording 划分。** 同一 recording 切出的窗口不能同时出现在训练集和验证集，否则会导致数据泄漏和过于乐观的结果。
+4. **结果表中的平均值应由逐折结果重新计算。** 不要手工复制单折结果或用四舍五入后的数值计算均值和标准差。
+5. `tmp/` 中的脚本是一次性分析和文档生成工具，不是稳定的训练 API；使用前请检查输入路径和输出文件。
+6. 数据文件可能占用较大空间，不应将原始数据、HDF5 中间文件或训练 checkpoint 提交到不适合存储大文件的仓库。
+
+## 参考资料
+
+- Kachuee, M. et al. (2015). *Cuffless Blood Pressure Estimation Using a Smartwatch-Based Photoplethysmography Signal*. IEEE International Conference on Healthcare Informatics.
+- Liu, et al. (2023). PPG-based blood pressure estimation using geometric and derivative waveform features. *Biomedical Signal Processing and Control*, 86.
+
+## 相关文档
+
+- [`EXPERIMENTS.md`](EXPERIMENTS.md)：实验设计、逐折指标和架构比较。
+- [`cache/实验训练结果总结.md`](cache/实验训练结果总结.md)：中英文实验结果汇总。
+- [`config/config.py`](config/config.py)：默认路径与训练配置。
+- [`presentation/presentation_plan.md`](presentation/presentation_plan.md)：汇报/演示结构。
 
 ---
 
-## `cache/` — Training Logs & Experiment Results
-
-Each experiment variant has its own subdirectory containing `log_train_*.txt` with full per-epoch and per-fold metrics.
-
-```
-cache/
-├── log_train_*.txt                    # Root-level training logs
-├── baseline/                          # Original & improved Baseline
-├── model2/                            # Model 2 (separate attention)
-├── model2_fusion_26dim/               # FusionModel26 ★ best model
-├── model2_fusion_169dim/              # FusionModel169
-├── model2_fusion_opt/                 # Fusion_Opt (task-specific features)
-├── baseline_fusion_26dim/             # Baseline + 26-dim fusion
-├── baseline_fusion_169dim/            # Baseline + 169-dim fusion
-├── fusion_gated26/                    # Gated fusion (26-dim)
-├── fusion_gated169/                   # Gated fusion (169-dim)
-├── Fusion_ordinal/                    # CORAL ordinal regression
-├── liu2023_feature_mlp/               # Liu2023 MLP (2 variants)
-├── liu2023lgbm/                       # LightGBM
-├── mlp_opt/                           # MLP-Opt
-├── 简单特征提取+mlp/                   # Simple Feature MLP
-└── figures/                           # Generated plots (.png)
-```
-
-## `Tests/` — Unit & Verification Tests
-
-Scripts to verify model forward passes, data loading, feature extraction, and dataset distribution analysis.
-
-## `imgs/` — Diagram Sources (.drawio)
-
-Pipeline, model architecture, and cross-validation diagrams.
-
-## `experiments_improved/` — Experimental Loss Variants
-
-## `tmp/` — Ad-hoc Helper Scripts
-
-One-off scripts for docx generation, figure plotting, and model verification.
-
----
-
-## Model Evolution Summary
-
-| Stage                               | Model File                       | Description                                         |
-| ----------------------------------- | -------------------------------- | --------------------------------------------------- |
-| 1. Pure-PPG Baseline                | `baseline_model.py`            | CNN+BiLSTM+shared attention+shared output           |
-| 2. Pure-PPG Improved                | `model_2.py`                   | Separate SBP/DBP attention + output heads           |
-| 3. Feature MLP (no BN)              | `MLP_for_Liu2023.py`           | 169-dim MLP, dropout 0.3, no BN                     |
-| 4. Feature MLP (BN)                 | `MLP_for_Liu2023.py`           | 169-dim MLP, BN, dropout 0.1                        |
-| 5. Simple Feature MLP               | `MLP_for_feature.py`           | 26-dim MLP, minimal architecture                    |
-| 6. MLP-Opt                          | `MLP_Opt.py`                   | SBP 17-dim + DBP 12-dim, separate MLPs              |
-| 7. LightGBM                         | `LightGBM_for_Liu2023.py`      | Gradient boosting on 169-dim                        |
-| 8. Baseline + 26 Fusion             | `Fusion_Baseline_26.py`        | Shared attention + 26-dim fusion                    |
-| 9. Baseline + 169 Fusion            | `Fusion_Baseline.py`           | Shared attention + 169-dim fusion                   |
-| 10. Model2 + 169 Fusion             | `Fusion_Model_169.py`          | Separate attention + 169-dim fusion                 |
-| **11. Model2 + 26 Fusion ★** | **`Fusion_Model_26.py`** | **Separate attention + 26-dim fusion [BEST]** |
-| 12. Fusion_Opt                      | `Fusion_Opt.py`                | Task-specific optimal feature subsets               |
-| 13. Gated Fusion                    | `Fusion_Gated.py`              | Gated fusion (26/169-dim)                           |
-| 14. CORAL Ordinal                   | `Fusion_Ordinal.py`            | Ordinal regression fusion                           |
-
----
-
-## Key Results (Best Model: FusionModel26)
-
-| Metric         | SBP             | DBP            |
-| -------------- | --------------- | -------------- |
-| MAE (mmHg)     | 15.53 ± 11.77  | 6.86 ± 6.38   |
-| RMSE (mmHg)    | 19.49           | 9.37           |
-| Pearson R      | 0.391           | 0.360          |
-| Bias (mmHg)    | −0.11 ± 19.49 | −0.90 ± 9.32 |
-| 95% LoA (mmHg) | ±38.64         | ±18.02        |
-
-**Notes:**
-
-- All models use 5-fold cross-validation on ~517k samples from MIMIC II.
-- PPG input is 1×1024 raw signal sampled at 125 Hz.
-- 26-dim features are peak/valley statistics (pulse width, amplitude, heart rate, etc.).
-- 169-dim features follow the Liu et al. (2023) framework (PPG geometric + VPG/APG features).
-- Reference: Liu et al., *Biomedical Signal Processing and Control*, Vol. 86, 2023.
+最后更新：2026-09-14
